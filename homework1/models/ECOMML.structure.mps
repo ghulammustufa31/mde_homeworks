@@ -189,17 +189,17 @@
     <node concept="1TJgyi" id="1npxiKIW9YM" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275698" />
       <property role="TrG5h" value="height" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4K0tozXMVAv" resolve="float" />
     </node>
     <node concept="1TJgyi" id="1npxiKIW9YR" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275703" />
       <property role="TrG5h" value="weight" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4K0tozXMVAv" resolve="float" />
     </node>
     <node concept="1TJgyi" id="1npxiKIW9YX" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275709" />
       <property role="TrG5h" value="price" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4K0tozXMVAv" resolve="float" />
     </node>
     <node concept="1TJgyi" id="1npxiKIW9Zc" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275724" />
@@ -479,6 +479,11 @@
       <property role="3tVfz5" value="5476506378116144300" />
       <property role="TrG5h" value="delivered" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="4K0tozXMVAv">
+    <property role="3F6X1D" value="5476506378116512159" />
+    <property role="TrG5h" value="float" />
+    <property role="FLfZY" value="^[-+][0-9]+\\.[0-9]+$" />
   </node>
 </model>
 

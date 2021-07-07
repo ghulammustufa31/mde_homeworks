@@ -34,6 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationOrderStatus = new EnumerationDescriptor_OrderStatus();
   /*package*/ final EnumerationDescriptor myEnumerationShipmentStatus = new EnumerationDescriptor_ShipmentStatus();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a070L, "date", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275888", "/^(0[1-9]|1[0-2])\\/(0[1-9]|1\\d|2\\d|3[01])\\/(19|20)\\d{2}$/");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypefloat = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL, "float", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116512159", "^[-+][0-9]+\\.[0-9]+$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -88,7 +89,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationOrderStatus, myEnumerationShipmentStatus, myCSDatatypedate);
+    return Arrays.asList(myEnumerationOrderStatus, myEnumerationShipmentStatus, myCSDatatypedate, myCSDatatypefloat);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -209,7 +210,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("stock", 0x15d9852c2ef09faeL).type(PrimitiveTypeId.INTEGER).origin("1574435969555275694").done();
     b.property("height", 0x15d9852c2ef09fb2L).type(PrimitiveTypeId.INTEGER).origin("1574435969555275698").done();
     b.property("weight", 0x15d9852c2ef09fb7L).type(PrimitiveTypeId.INTEGER).origin("1574435969555275703").done();
-    b.property("price", 0x15d9852c2ef09fbdL).type(PrimitiveTypeId.INTEGER).origin("1574435969555275709").done();
+    b.property("price", 0x15d9852c2ef09fbdL).type(MetaIdFactory.dataTypeId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL)).origin("1574435969555275709").done();
     b.property("description", 0x15d9852c2ef09fccL).type(PrimitiveTypeId.STRING).origin("1574435969555275724").done();
     b.aggregate("images", 0x4c007588fdc61c59L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c56L).optional(true).ordered(true).multiple(true).origin("5476506378116144217").done();
     return b.create();
