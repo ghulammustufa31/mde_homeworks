@@ -53,6 +53,9 @@ public class Language extends LanguageRuntime {
     if (aspectClass.isAssignableFrom(RulesConstraintsAspect.class)) {
       return aspectClass.cast(new GeneratedRulesConstraintsAspect());
     }
+
+
+    // AP: legacy part, must be migrated from switch: please use lang.descriptor mapping label 
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return aspectClass.cast(new ECOMML.constraints.ConstraintsAspectDescriptor());
     }

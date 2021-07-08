@@ -61,19 +61,7 @@
   </registry>
   <node concept="VahCT" id="4K0tozXMVAl">
     <property role="TrG5h" value="clothes_shop" />
-    <node concept="VahDD" id="4K0tozXNzp8" role="VahDZ">
-      <node concept="VahD$" id="4K0tozXNzpa" role="2LLAA_">
-        <property role="TrG5h" value="p1" />
-        <property role="VahEr" value="12" />
-        <property role="VahEu" value="12" />
-        <property role="VahE2" value="12" />
-        <property role="VahFw" value="abc" />
-        <property role="VahEh" value="-12.1" />
-      </node>
-    </node>
-    <node concept="Vailw" id="4K0tozXMVAr" role="VaAJw">
-      <node concept="VahFo" id="4K0tozXMVAs" role="2LMwyu" />
-    </node>
+    <node concept="VahDD" id="4K0tozXNzp8" role="VahDZ" />
     <node concept="Vail_" id="4K0tozXMVAm" role="VahDy">
       <property role="TrG5h" value="admin" />
       <property role="VahDt" value="john doe" />
@@ -85,6 +73,14 @@
   </node>
   <node concept="VahCT" id="3b_VjWVOptT">
     <property role="TrG5h" value="MusicShop" />
+    <node concept="Vail_" id="3b_VjWVOptU" role="VahDy">
+      <property role="TrG5h" value="admin_1" />
+      <property role="VahDt" value="liam allan" />
+      <property role="VahDo" value="lial" />
+      <property role="VahDk" value="TopSecretPass!" />
+      <property role="VahDh" value="true" />
+      <property role="VahEJ" value="email@musicshop.it" />
+    </node>
     <node concept="VahDD" id="3b_VjWVOP7N" role="VahDZ">
       <property role="TrG5h" value="Instruments" />
       <property role="VahEK" value="1" />
@@ -175,14 +171,6 @@
         <property role="VaikB" value="+39 234 546 3423" />
         <property role="VaikY" value="true" />
       </node>
-    </node>
-    <node concept="Vail_" id="3b_VjWVOptU" role="VahDy">
-      <property role="TrG5h" value="admin_1" />
-      <property role="VahDt" value="liam allan" />
-      <property role="VahDo" value="lial" />
-      <property role="VahDk" value="TopSecretPass!" />
-      <property role="VahDh" value="true" />
-      <property role="VahEJ" value="email@musicshop.it" />
     </node>
   </node>
 </model>

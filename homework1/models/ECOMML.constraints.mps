@@ -277,5 +277,204 @@
       </node>
     </node>
   </node>
+  <node concept="3Oh7Pa" id="7fyrZuvDE5Z">
+    <ref role="3Oh7Pe" to="1zbd:1npxiKIW9X2" resolve="User" />
+    <node concept="3OnDbq" id="7fyrZuvDL$I" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="7fyrZuvDL$K" role="3OnDbr">
+        <node concept="3Qq5Rn" id="7fyrZuvDL$L" role="2j4cqI">
+          <property role="EcuMT" value="8350359768424454449" />
+          <property role="TrG5h" value="EmailValidation" />
+          <node concept="2K0Yjh" id="7fyrZuvDL$M" role="2K0Fuo">
+            <node concept="2OqwBi" id="7fyrZuvDMmX" role="2K0yoH">
+              <node concept="2OqwBi" id="7fyrZuvDLN1" role="2Oq$k0">
+                <node concept="3QpRc$" id="7fyrZuvDLBz" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="7fyrZuvDLYa" role="2OqNvi">
+                  <ref role="3TsBF5" to="1zbd:1npxiKIW9Y3" resolve="email" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7fyrZuvDMDh" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="7fyrZuvDMED" role="37wK5m">
+                  <property role="Xl_RC" value="^[A-Za-z0-9+_.-]+@(.+)$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="7fyrZuvDL$O" role="1DCEQI">
+          <node concept="16I2mz" id="7fyrZuvDMID" role="16N$OO">
+            <node concept="16N$OT" id="7fyrZuvDMIY" role="16I2mt">
+              <property role="16N$OU" value="Warning: Should be a valid" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvDMJ9" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvDMIZ" role="16I2mt">
+              <property role="16N$OU" value=" email" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvDMJN" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="7fyrZuvDMMM" role="3OnDbr">
+        <node concept="3Qq5Rn" id="7fyrZuvDMMO" role="2j4cqI">
+          <property role="EcuMT" value="8350359768424459444" />
+          <property role="TrG5h" value="UsernameValidation" />
+          <node concept="2K0Yjh" id="7fyrZuvDMMQ" role="2K0Fuo">
+            <node concept="2OqwBi" id="7fyrZuvDNvb" role="2K0yoH">
+              <node concept="2OqwBi" id="7fyrZuvDMZp" role="2Oq$k0">
+                <node concept="3QpRc$" id="7fyrZuvDMPA" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="7fyrZuvDN8g" role="2OqNvi">
+                  <ref role="3TsBF5" to="1zbd:1npxiKIW9XO" resolve="username" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7fyrZuvDNHW" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="7fyrZuvDNMm" role="37wK5m">
+                  <property role="Xl_RC" value="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="7fyrZuvDMMU" role="1DCEQI">
+          <node concept="16I2mz" id="7fyrZuvDNO1" role="16N$OO">
+            <node concept="16N$OT" id="7fyrZuvDNO2" role="16I2mt">
+              <property role="16N$OU" value="Warning: Should be a valid username (Only alphanumeric chars, '.', '-', '_')" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="7fyrZuvDJxZ">
+    <ref role="3Oh7Pe" to="1zbd:4K0tozXLxLm" resolve="ProductImage" />
+    <node concept="3OnDbq" id="7fyrZuvDJyY" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="7fyrZuvDJz0" role="3OnDbr">
+        <node concept="3Qq5Rn" id="7fyrZuvDJz1" role="2j4cqI">
+          <property role="EcuMT" value="8350359768424446145" />
+          <property role="TrG5h" value="RefLength" />
+          <node concept="2K0Yjh" id="7fyrZuvDJz2" role="2K0Fuo">
+            <node concept="3eOVzh" id="7fyrZuvDLoB" role="2K0yoH">
+              <node concept="3cmrfG" id="7fyrZuvDLsS" role="3uHU7w">
+                <property role="3cmrfH" value="2048" />
+              </node>
+              <node concept="2OqwBi" id="7fyrZuvDKg$" role="3uHU7B">
+                <node concept="2OqwBi" id="7fyrZuvDJHr" role="2Oq$k0">
+                  <node concept="3QpRc$" id="7fyrZuvDJ$i" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="7fyrZuvDJQo" role="2OqNvi">
+                    <ref role="3TsBF5" to="1zbd:4K0tozXLxLn" resolve="ref" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7fyrZuvDKvl" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="7fyrZuvDJz4" role="1DCEQI">
+          <node concept="16I2mz" id="7fyrZuvDLy4" role="16N$OO">
+            <node concept="16N$OT" id="7fyrZuvDLy5" role="16I2mt">
+              <property role="16N$OU" value="Warning: The length should be less than 2048" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="7fyrZuvDJy0">
+    <ref role="3Oh7Pe" to="1zbd:1npxiKIWa0q" resolve="Order" />
+  </node>
+  <node concept="3Oh7Pa" id="7fyrZuvDJy1">
+    <ref role="3Oh7Pe" to="1zbd:4K0tozXLxLZ" resolve="Shipment" />
+  </node>
+  <node concept="3Oh7Pa" id="7fyrZuvF6ib">
+    <ref role="3Oh7Pe" to="1zbd:1npxiKIWa19" resolve="Administrator" />
+    <node concept="3OnDbq" id="7fyrZuvF6iE" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="7fyrZuvF6iF" role="3OnDbr">
+        <node concept="3Qq5Rn" id="7fyrZuvF6iG" role="2j4cqI">
+          <property role="EcuMT" value="8350359768424801452" />
+          <property role="TrG5h" value="EmailValidation" />
+          <node concept="2K0Yjh" id="7fyrZuvF6iH" role="2K0Fuo">
+            <node concept="2OqwBi" id="7fyrZuvF6iI" role="2K0yoH">
+              <node concept="2OqwBi" id="7fyrZuvF6iJ" role="2Oq$k0">
+                <node concept="3QpRc$" id="7fyrZuvF6iK" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="7fyrZuvF6iL" role="2OqNvi">
+                  <ref role="3TsBF5" to="1zbd:1npxiKIW9Y3" resolve="email" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7fyrZuvF6iM" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="7fyrZuvF6iN" role="37wK5m">
+                  <property role="Xl_RC" value="^[A-Za-z0-9+_.-]+@(.+)$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="7fyrZuvF6iO" role="1DCEQI">
+          <node concept="16I2mz" id="7fyrZuvF6iP" role="16N$OO">
+            <node concept="16N$OT" id="7fyrZuvF6iQ" role="16I2mt">
+              <property role="16N$OU" value="Warning: Should be a valid" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvF6iR" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvF6iS" role="16I2mt">
+              <property role="16N$OU" value=" email" />
+            </node>
+            <node concept="16N$OT" id="7fyrZuvF6iT" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="7fyrZuvF6iU" role="3OnDbr">
+        <node concept="3Qq5Rn" id="7fyrZuvF6iV" role="2j4cqI">
+          <property role="EcuMT" value="8350359768424801467" />
+          <property role="TrG5h" value="UsernameValidation" />
+          <node concept="2K0Yjh" id="7fyrZuvF6iW" role="2K0Fuo">
+            <node concept="2OqwBi" id="7fyrZuvF6iX" role="2K0yoH">
+              <node concept="2OqwBi" id="7fyrZuvF6iY" role="2Oq$k0">
+                <node concept="3QpRc$" id="7fyrZuvF6iZ" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="7fyrZuvF6j0" role="2OqNvi">
+                  <ref role="3TsBF5" to="1zbd:1npxiKIW9XO" resolve="username" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7fyrZuvF6j1" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="7fyrZuvF6j2" role="37wK5m">
+                  <property role="Xl_RC" value="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="7fyrZuvF6j3" role="1DCEQI">
+          <node concept="16I2mz" id="7fyrZuvF6j4" role="16N$OO">
+            <node concept="16N$OT" id="7fyrZuvF6j5" role="16I2mt">
+              <property role="16N$OU" value="Warning: Should be a valid username (Only alphanumeric chars, '.', '-', '_')" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

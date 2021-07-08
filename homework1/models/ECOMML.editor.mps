@@ -9,6 +9,7 @@
   <imports>
     <import index="1zbd" ref="r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -21,13 +22,18 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -56,10 +62,67 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
   </registry>
@@ -795,6 +858,132 @@
       </node>
       <node concept="3F0A7n" id="4K0tozXMj0n" role="3EZMnx">
         <ref role="1NtTu8" to="1zbd:1npxiKIWa0A" resolve="order_status" />
+        <node concept="30gYXW" id="7fyrZuvDYr3" role="3F10Kt">
+          <node concept="3ZlJ5R" id="7fyrZuvDYr4" role="VblUZ">
+            <node concept="3clFbS" id="7fyrZuvDYr5" role="2VODD2">
+              <node concept="3clFbJ" id="7fyrZuvDYr6" role="3cqZAp">
+                <node concept="15s5l7" id="7fyrZuvE5Ab" role="lGtFl">
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Return expected&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/1223640343628]&quot;;" />
+                  <property role="huDt6" value="Error: Return expected" />
+                </node>
+                <node concept="2OqwBi" id="7fyrZuvE1r0" role="3clFbw">
+                  <node concept="2OqwBi" id="7fyrZuvE10I" role="2Oq$k0">
+                    <node concept="pncrf" id="7fyrZuvDYr9" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="7fyrZuvE11N" role="2OqNvi">
+                      <ref role="3TsBF5" to="1zbd:1npxiKIWa0A" resolve="order_status" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="7fyrZuvE1zE" role="2OqNvi">
+                    <node concept="21nZrQ" id="7fyrZuvE1$i" role="21noJM">
+                      <ref role="21nZrZ" to="1zbd:4K0tozXLxMu" resolve="unpaid" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7fyrZuvDYrc" role="3clFbx">
+                  <node concept="3cpWs6" id="7fyrZuvE1I0" role="3cqZAp">
+                    <node concept="15s5l7" id="7fyrZuvEe0w" role="lGtFl">
+                      <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type int is not a subtype of boolean&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/2062135263152102064]&quot;;" />
+                      <property role="huDt6" value="Error: type int is not a subtype of boolean" />
+                    </node>
+                    <node concept="15s5l7" id="7fyrZuvEdWz" role="lGtFl">
+                      <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: wrong number of parameters&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/1219948518456]&quot;;" />
+                      <property role="huDt6" value="Error: wrong number of parameters" />
+                    </node>
+                    <node concept="15s5l7" id="7fyrZuvE9Xu" role="lGtFl">
+                      <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Color(int,boolean) (baseMethodDeclaration) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643458]&quot;;" />
+                      <property role="huDt6" value="The reference  Color(int,boolean) (baseMethodDeclaration) is out of search scope" />
+                    </node>
+                    <node concept="15s5l7" id="7fyrZuvE9Ed" role="lGtFl">
+                      <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Reference to wrong overridden method&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/869282237625479726]&quot;;" />
+                      <property role="huDt6" value="Error: Reference to wrong overridden method" />
+                    </node>
+                    <node concept="2ShNRf" id="7fyrZuvEdE7" role="3cqZAk">
+                      <node concept="1pGfFk" id="7fyrZuvEdE6" role="2ShVmc">
+                        <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,boolean)" resolve="Color" />
+                        <node concept="3cmrfG" id="7fyrZuvEdH1" role="37wK5m">
+                          <property role="3cmrfH" value="255" />
+                        </node>
+                        <node concept="3cmrfG" id="7fyrZuvEdP2" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="7fyrZuvEdS$" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="7fyrZuvE3Vz" role="3eNLev">
+                  <node concept="2OqwBi" id="7fyrZuvE4BG" role="3eO9$A">
+                    <node concept="2OqwBi" id="7fyrZuvE4b5" role="2Oq$k0">
+                      <node concept="pncrf" id="7fyrZuvE3Xe" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="7fyrZuvE4tP" role="2OqNvi">
+                        <ref role="3TsBF5" to="1zbd:1npxiKIWa0A" resolve="order_status" />
+                      </node>
+                    </node>
+                    <node concept="21noJN" id="7fyrZuvE4Ml" role="2OqNvi">
+                      <node concept="21nZrQ" id="7fyrZuvE4O9" role="21noJM">
+                        <ref role="21nZrZ" to="1zbd:1npxiKIWa1B" resolve="paid" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="7fyrZuvE3V_" role="3eOfB_">
+                    <node concept="3cpWs6" id="7fyrZuvE4PU" role="3cqZAp">
+                      <node concept="15s5l7" id="7fyrZuvEek6" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Color(int,int,int) (baseMethodDeclaration) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643458]&quot;;" />
+                        <property role="huDt6" value="The reference  Color(int,int,int) (baseMethodDeclaration) is out of search scope" />
+                      </node>
+                      <node concept="2ShNRf" id="7fyrZuvE59S" role="3cqZAk">
+                        <node concept="1pGfFk" id="7fyrZuvE59R" role="2ShVmc">
+                          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                          <node concept="3cmrfG" id="7fyrZuvE5hT" role="37wK5m">
+                            <property role="3cmrfH" value="255" />
+                          </node>
+                          <node concept="3cmrfG" id="7fyrZuvE7NV" role="37wK5m">
+                            <property role="3cmrfH" value="255" />
+                          </node>
+                          <node concept="3cmrfG" id="7fyrZuvE7Wh" role="37wK5m">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="9aQIb" id="7fyrZuvE5U4" role="9aQIa">
+                  <node concept="3clFbS" id="7fyrZuvE5U5" role="9aQI4">
+                    <node concept="3cpWs6" id="7fyrZuvE5X5" role="3cqZAp">
+                      <node concept="15s5l7" id="7fyrZuvE9Az" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Color(int) (baseMethodDeclaration) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)/6836281137582643458]&quot;;" />
+                        <property role="huDt6" value="The reference  Color(int) (baseMethodDeclaration) is out of search scope" />
+                      </node>
+                      <node concept="15s5l7" id="7fyrZuvE9yA" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: wrong number of parameters&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/1219948518456]&quot;;" />
+                        <property role="huDt6" value="Error: wrong number of parameters" />
+                      </node>
+                      <node concept="2ShNRf" id="7fyrZuvE62B" role="3cqZAk">
+                        <node concept="1pGfFk" id="7fyrZuvE62A" role="2ShVmc">
+                          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                          <node concept="3cmrfG" id="7fyrZuvE8qq" role="37wK5m">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                          <node concept="3cmrfG" id="7fyrZuvE9mH" role="37wK5m">
+                            <property role="3cmrfH" value="255" />
+                          </node>
+                          <node concept="3cmrfG" id="7fyrZuvE9uS" role="37wK5m">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="7fyrZuvE5CQ" role="3cqZAp" />
+              <node concept="3clFbH" id="7fyrZuvE3S5" role="3cqZAp" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="4K0tozXMj0o" role="3EZMnx">
         <property role="3F0ifm" value="," />
