@@ -40,6 +40,7 @@
         <property id="1574435969555275651" name="email" index="VahEJ" />
       </concept>
       <concept id="1574435969555275764" name="ECOMML.structure.Address" flags="ng" index="VahFo">
+        <property id="3667598327405648143" name="street_address" index="9cngK" />
         <property id="1574435969555275772" name="state" index="VahFg" />
         <property id="1574435969555275769" name="country" index="VahFl" />
         <property id="1574435969555275787" name="phone" index="VaikB" />
@@ -99,7 +100,7 @@
           <property role="VahE2" value="2" />
           <property role="VahEu" value="+109.0" />
           <property role="VahEr" value="+174.0" />
-          <property role="VahEh" value="+3.444" />
+          <property role="VahEh" value="+3444.0" />
           <property role="VahFw" value="By way of example, b1 embodies the design principles of Yamaha, with the term &quot;value&quot; being redefined to some degree. Yamaha quality standards are met in every respect." />
           <node concept="2LLABu" id="3b_VjWVOP7W" role="2LLABh">
             <property role="2LLABv" value="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp" />
@@ -144,6 +145,7 @@
         <property role="VaikD" value="234234" />
         <property role="VaikB" value="+01 234 234 2564" />
         <property role="VaikY" value="true" />
+        <property role="9cngK" value="4455 Landing Lange" />
       </node>
     </node>
     <node concept="Vailw" id="3b_VjWVOP7H" role="VaAJw">
@@ -154,11 +156,22 @@
       <property role="VahDh" value="true" />
       <property role="VahEJ" value="wilfro@ext.com" />
       <node concept="VahFo" id="3b_VjWVOP7I" role="2LMwyu">
-        <property role="TrG5h" value="MainAddress" />
+        <property role="TrG5h" value="Home" />
         <property role="VahFl" value="Europe" />
         <property role="VahFg" value="Italy" />
         <property role="VaikG" value="Milano" />
         <property role="VaikD" value="20019" />
+        <property role="VaikB" value="+39 234 546 3423" />
+        <property role="VaikY" value="true" />
+        <property role="9cngK" value="6543 N 9th Street" />
+      </node>
+      <node concept="VahFo" id="3b_VjWVQIlU" role="2LMwyu">
+        <property role="TrG5h" value="Work" />
+        <property role="9cngK" value="5432 N 2nd Street" />
+        <property role="VaikG" value="Milano" />
+        <property role="VaikD" value="20019" />
+        <property role="VahFg" value="Italy" />
+        <property role="VahFl" value="Europe" />
         <property role="VaikB" value="+39 234 546 3423" />
         <property role="VaikY" value="true" />
       </node>

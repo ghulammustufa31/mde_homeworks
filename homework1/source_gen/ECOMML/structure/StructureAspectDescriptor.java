@@ -106,6 +106,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("state", 0x15d9852c2ef09ffcL).type(PrimitiveTypeId.STRING).origin("1574435969555275772").done();
     b.property("city", 0x15d9852c2ef0a000L).type(PrimitiveTypeId.STRING).origin("1574435969555275776").done();
     b.property("post_code", 0x15d9852c2ef0a005L).type(PrimitiveTypeId.STRING).origin("1574435969555275781").done();
+    b.property("street_address", 0x32e5ed3f3bd4990fL).type(PrimitiveTypeId.STRING).origin("3667598327405648143").done();
     b.property("phone", 0x15d9852c2ef0a00bL).type(PrimitiveTypeId.STRING).origin("1574435969555275787").done();
     b.property("active", 0x15d9852c2ef0a012L).type(PrimitiveTypeId.BOOLEAN).origin("1574435969555275794").done();
     return b.create();

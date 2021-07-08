@@ -23,7 +23,7 @@ public final class Category_ConstraintsFeedback extends BaseFeedbackDescriptor {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {
-      return new MessageProvider.StringMsg("Warning: depth cannot be negative");
+      return new MessageProvider.StringMsg("Warning: depth cannot be negative" + "");
     }
   };
 

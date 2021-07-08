@@ -140,7 +140,7 @@
     </file>
     <file name="Category_ConstraintsFeedback.java">
       <node id="3667598327405543535" at="20,0,21,0" concept="3" trace="CONCEPT" />
-      <node id="3667598327405543571" at="25,73,26,80" concept="2" />
+      <node id="3667598327405543571" at="25,73,26,85" concept="2" />
       <node id="3667598327405543535" at="30,0,31,0" concept="3" trace="PROVIDERS" />
       <node id="3667598327405543535" at="32,41,33,19" concept="4" />
       <node id="3667598327405543535" at="38,58,39,30" concept="2" />
@@ -148,7 +148,7 @@
       <node id="3667598327405543571" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
       <node id="3667598327405543535" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
       <node id="3667598327405543571" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_8ajuz1_a" />
-      <scope id="3667598327405543571" at="25,73,26,80" />
+      <scope id="3667598327405543571" at="25,73,26,85" />
       <scope id="3667598327405543535" at="32,41,33,19" />
       <scope id="3667598327405543535" at="38,58,39,30" />
       <scope id="3667598327405543535" at="32,0,35,0" />
