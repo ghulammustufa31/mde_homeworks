@@ -11,6 +11,11 @@
       <concept id="5476506378116144214" name="ECOMML.structure.ProductImage" flags="ng" index="2LLABu">
         <property id="5476506378116144215" name="ref" index="2LLABv" />
       </concept>
+      <concept id="5476506378116144255" name="ECOMML.structure.Shipment" flags="ng" index="2LLABR">
+        <property id="5476506378116144258" name="shipment_status" index="2LLA$a" />
+        <property id="5476506378116144263" name="shipment_no" index="2LLA$f" />
+        <reference id="5476506378116144267" name="address" index="2LLA$3" />
+      </concept>
       <concept id="1574435969555275541" name="ECOMML.structure.EcommerceSystem" flags="ng" index="VahCT">
         <child id="1574435969555275598" name="administrators" index="VahDy" />
         <child id="1574435969555275603" name="categories" index="VahDZ" />
@@ -24,6 +29,11 @@
         <property id="1574435969555275698" name="height" index="VahEu" />
         <property id="1574435969555275724" name="description" index="VahFw" />
         <child id="5476506378116144217" name="images" index="2LLABh" />
+      </concept>
+      <concept id="1574435969555275595" name="ECOMML.structure.Cart" flags="ng" index="VahDB">
+        <property id="1574435969555275745" name="date_created" index="VahFd" />
+        <child id="1574435969555275869" name="items" index="VailL" />
+        <child id="1574435969555275871" name="orders" index="VailN" />
       </concept>
       <concept id="1574435969555275589" name="ECOMML.structure.Category" flags="ng" index="VahDD">
         <property id="1574435969555275682" name="root_cat" index="VahEe" />
@@ -39,6 +49,10 @@
         <property id="1574435969555275633" name="fullname" index="VahDt" />
         <property id="1574435969555275651" name="email" index="VahEJ" />
       </concept>
+      <concept id="1574435969555275752" name="ECOMML.structure.ItemCart" flags="ng" index="VahF4">
+        <property id="1574435969555275757" name="quantity" index="VahF1" />
+        <reference id="5476506378116144191" name="product" index="2LLAAR" />
+      </concept>
       <concept id="1574435969555275764" name="ECOMML.structure.Address" flags="ng" index="VahFo">
         <property id="3667598327405648143" name="street_address" index="9cngK" />
         <property id="1574435969555275772" name="state" index="VahFg" />
@@ -48,8 +62,19 @@
         <property id="1574435969555275776" name="city" index="VaikG" />
         <property id="1574435969555275794" name="active" index="VaikY" />
       </concept>
+      <concept id="1574435969555275832" name="ECOMML.structure.Invoice" flags="ng" index="Vaikk">
+        <property id="1574435969555275835" name="invoice_id" index="Vaikn" />
+      </concept>
+      <concept id="1574435969555275802" name="ECOMML.structure.Order" flags="ng" index="VaikQ">
+        <property id="1574435969555275814" name="order_status" index="Vaika" />
+        <property id="1574435969555275810" name="total_price" index="Vaike" />
+        <property id="1574435969555275807" name="reference_number" index="VaikN" />
+        <child id="5476506378116144382" name="shipment" index="2LLA_Q" />
+        <child id="1574435969555275874" name="invoice" index="Vaile" />
+      </concept>
       <concept id="1574435969555275852" name="ECOMML.structure.Customer" flags="ng" index="Vailw">
         <child id="5476506378116431126" name="addresses" index="2LMwyu" />
+        <child id="8350359768424797232" name="cart" index="3GjzJ7" />
       </concept>
       <concept id="1574435969555275849" name="ECOMML.structure.Administrator" flags="ng" index="Vail_" />
     </language>
@@ -142,6 +167,31 @@
         <property role="VaikB" value="+01 234 234 2564" />
         <property role="VaikY" value="true" />
         <property role="9cngK" value="4455 Landing Lange" />
+      </node>
+      <node concept="VahDB" id="7fyrZuvGG9E" role="3GjzJ7">
+        <property role="TrG5h" value="cart_1" />
+        <property role="VahFd" value="2021-07-08" />
+        <node concept="VahF4" id="7fyrZuvGG9G" role="VailL">
+          <property role="TrG5h" value="item_1" />
+          <property role="VahF1" value="12" />
+          <ref role="2LLAAR" node="3b_VjWVOP7Y" resolve="Fender Player Series Strat MN BCR" />
+        </node>
+        <node concept="VaikQ" id="7fyrZuvGG9I" role="VailN">
+          <property role="TrG5h" value="order_1" />
+          <property role="VaikN" value="abcd" />
+          <property role="Vaike" value="10" />
+          <property role="Vaika" value="1npxiKIWa1B/paid" />
+          <node concept="2LLABR" id="7fyrZuvGGkr" role="2LLA_Q">
+            <property role="TrG5h" value="ship_1" />
+            <property role="2LLA$a" value="4K0tozXLxMC/pending" />
+            <property role="2LLA$f" value="123" />
+            <ref role="2LLA$3" node="3b_VjWVOP7I" resolve="Home" />
+          </node>
+          <node concept="Vaikk" id="7fyrZuvGGkp" role="Vaile">
+            <property role="TrG5h" value="invoice_1" />
+            <property role="Vaikn" value="12" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="Vailw" id="3b_VjWVOP7H" role="VaAJw">

@@ -15,12 +15,12 @@ public class EnumerationDescriptor_ShipmentStatus extends EnumerationDescriptorB
     super(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61ca7L, "ShipmentStatus", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144295");
   }
 
-  private final EnumerationDescriptor.MemberDescriptor myMember_pending_0 = new EnumerationDescriptor.MemberDescriptor("pending", "pending", 0x4c007588fdc61ca8L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144296");
-  private final EnumerationDescriptor.MemberDescriptor myMember_traveling_0 = new EnumerationDescriptor.MemberDescriptor("traveling", "traveling", 0x4c007588fdc61ca9L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144297");
-  private final EnumerationDescriptor.MemberDescriptor myMember_delivered_0 = new EnumerationDescriptor.MemberDescriptor("delivered", "delivered", 0x4c007588fdc61cacL, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144300");
+  private final EnumerationDescriptor.MemberDescriptor myMember_PENDING_0 = new EnumerationDescriptor.MemberDescriptor("PENDING", "PENDING", 0x4c007588fdc61ca8L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144296");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TRAVELING_0 = new EnumerationDescriptor.MemberDescriptor("TRAVELING", "TRAVELING", 0x4c007588fdc61ca9L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144297");
+  private final EnumerationDescriptor.MemberDescriptor myMember_DELIVERED_0 = new EnumerationDescriptor.MemberDescriptor("DELIVERED", "DELIVERED", 0x4c007588fdc61cacL, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144300");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61ca7L, 0x4c007588fdc61ca8L, 0x4c007588fdc61ca9L, 0x4c007588fdc61cacL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_pending_0, myMember_traveling_0, myMember_delivered_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_PENDING_0, myMember_TRAVELING_0, myMember_DELIVERED_0);
 
   @Nullable
   @Override
@@ -41,12 +41,12 @@ public class EnumerationDescriptor_ShipmentStatus extends EnumerationDescriptorB
       return null;
     }
     switch (memberName) {
-      case "pending":
-        return myMember_pending_0;
-      case "traveling":
-        return myMember_traveling_0;
-      case "delivered":
-        return myMember_delivered_0;
+      case "PENDING":
+        return myMember_PENDING_0;
+      case "TRAVELING":
+        return myMember_TRAVELING_0;
+      case "DELIVERED":
+        return myMember_DELIVERED_0;
     }
     return null;
   }

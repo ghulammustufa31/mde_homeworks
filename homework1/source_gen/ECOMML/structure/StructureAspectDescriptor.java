@@ -127,7 +127,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275595");
     b.version(2);
     b.property("date_created", 0x15d9852c2ef09fe1L).type(PrimitiveTypeId.STRING).origin("1574435969555275745").done();
-    b.associate("customer", 0x4c007588fdc61c38L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a04cL).optional(false).origin("5476506378116144184").done();
     b.aggregate("items", 0x15d9852c2ef0a05dL).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09fe8L).optional(true).ordered(true).multiple(true).origin("1574435969555275869").done();
     b.aggregate("orders", 0x15d9852c2ef0a05fL).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a01aL).optional(true).ordered(true).multiple(false).origin("1574435969555275871").done();
     return b.create();

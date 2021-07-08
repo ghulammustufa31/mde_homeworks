@@ -36,6 +36,10 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.openapi.editor.style.StyleRegistry;
+import java.awt.Color;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -251,6 +255,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.setCellId("property_shipment_status");
       Style style = new StyleImpl();
       style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+      style.set(StyleAttributes.TEXT_BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(_StyleParameter_QueryFunction_qor655_a1c5a()));
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
@@ -268,6 +273,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     } finally {
       getCellFactory().popCellContext();
     }
+  }
+  private Color _StyleParameter_QueryFunction_qor655_a1c5a() {
+    if (SEnumOperations.isMember(SPropertyOperations.getEnum(getNode(), PROPS.shipment_status$qQ$u), 0x4c007588fdc61ca8L)) {
+      return new Color(255, 0, 0);
+    } else if (SEnumOperations.isMember(SPropertyOperations.getEnum(getNode(), PROPS.shipment_status$qQ$u), 0x4c007588fdc61ca9L)) {
+      return new Color(255, 255, 0);
+    } else {
+      return new Color(0, 255, 0);
+    }
+
+
   }
   private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "date");

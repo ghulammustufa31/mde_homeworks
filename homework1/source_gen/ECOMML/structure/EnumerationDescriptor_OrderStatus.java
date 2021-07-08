@@ -15,12 +15,12 @@ public class EnumerationDescriptor_OrderStatus extends EnumerationDescriptorBase
     super(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a066L, "OrderStatus", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275878");
   }
 
-  private final EnumerationDescriptor.MemberDescriptor myMember_paid_0 = new EnumerationDescriptor.MemberDescriptor("paid", "paid", 0x15d9852c2ef0a067L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275879");
-  private final EnumerationDescriptor.MemberDescriptor myMember_commited_0 = new EnumerationDescriptor.MemberDescriptor("commited", "commited", 0x15d9852c2ef0a068L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275880");
-  private final EnumerationDescriptor.MemberDescriptor myMember_unpaid_0 = new EnumerationDescriptor.MemberDescriptor("unpaid", "unpaid", 0x4c007588fdc61c9eL, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144286");
+  private final EnumerationDescriptor.MemberDescriptor myMember_PAID_0 = new EnumerationDescriptor.MemberDescriptor("PAID", "PAID", 0x15d9852c2ef0a067L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275879");
+  private final EnumerationDescriptor.MemberDescriptor myMember_COMMITED_0 = new EnumerationDescriptor.MemberDescriptor("COMMITED", "COMMITED", 0x15d9852c2ef0a068L, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275880");
+  private final EnumerationDescriptor.MemberDescriptor myMember_UNPAID_0 = new EnumerationDescriptor.MemberDescriptor("UNPAID", "UNPAID", 0x4c007588fdc61c9eL, "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144286");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a066L, 0x15d9852c2ef0a067L, 0x15d9852c2ef0a068L, 0x4c007588fdc61c9eL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_paid_0, myMember_commited_0, myMember_unpaid_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_PAID_0, myMember_COMMITED_0, myMember_UNPAID_0);
 
   @Nullable
   @Override
@@ -41,12 +41,12 @@ public class EnumerationDescriptor_OrderStatus extends EnumerationDescriptorBase
       return null;
     }
     switch (memberName) {
-      case "paid":
-        return myMember_paid_0;
-      case "commited":
-        return myMember_commited_0;
-      case "unpaid":
-        return myMember_unpaid_0;
+      case "PAID":
+        return myMember_PAID_0;
+      case "COMMITED":
+        return myMember_COMMITED_0;
+      case "UNPAID":
+        return myMember_UNPAID_0;
     }
     return null;
   }

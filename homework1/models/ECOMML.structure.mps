@@ -241,12 +241,6 @@
       <property role="20kJfa" value="orders" />
       <ref role="20lvS9" node="1npxiKIWa0q" resolve="Order" />
     </node>
-    <node concept="1TJgyj" id="4K0tozXLxKS" role="1TKVEi">
-      <property role="IQ2ns" value="5476506378116144184" />
-      <property role="20kJfa" value="customer" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1npxiKIWa1c" resolve="Customer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1npxiKIW9ZC">
     <property role="EcuMT" value="1574435969555275752" />
@@ -416,15 +410,15 @@
     <property role="3GE5qa" value="Order" />
     <node concept="25R33" id="1npxiKIWa1B" role="25R1y">
       <property role="3tVfz5" value="1574435969555275879" />
-      <property role="TrG5h" value="paid" />
+      <property role="TrG5h" value="PAID" />
     </node>
     <node concept="25R33" id="1npxiKIWa1C" role="25R1y">
       <property role="3tVfz5" value="1574435969555275880" />
-      <property role="TrG5h" value="commited" />
+      <property role="TrG5h" value="COMMITED" />
     </node>
     <node concept="25R33" id="4K0tozXLxMu" role="25R1y">
       <property role="3tVfz5" value="5476506378116144286" />
-      <property role="TrG5h" value="unpaid" />
+      <property role="TrG5h" value="UNPAID" />
     </node>
   </node>
   <node concept="Az7Fb" id="1npxiKIWa1K">
@@ -481,15 +475,15 @@
     <property role="TrG5h" value="ShipmentStatus" />
     <node concept="25R33" id="4K0tozXLxMC" role="25R1y">
       <property role="3tVfz5" value="5476506378116144296" />
-      <property role="TrG5h" value="pending" />
+      <property role="TrG5h" value="PENDING" />
     </node>
     <node concept="25R33" id="4K0tozXLxMD" role="25R1y">
       <property role="3tVfz5" value="5476506378116144297" />
-      <property role="TrG5h" value="traveling" />
+      <property role="TrG5h" value="TRAVELING" />
     </node>
     <node concept="25R33" id="4K0tozXLxMG" role="25R1y">
       <property role="3tVfz5" value="5476506378116144300" />
-      <property role="TrG5h" value="delivered" />
+      <property role="TrG5h" value="DELIVERED" />
     </node>
   </node>
   <node concept="Az7Fb" id="4K0tozXMVAv">
