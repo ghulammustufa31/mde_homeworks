@@ -153,6 +153,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275852");
     b.version(2);
     b.aggregate("addresses", 0x4c007588fdca7d16L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09ff4L).optional(false).ordered(true).multiple(true).origin("5476506378116431126").done();
+    b.aggregate("cart", 0x73e26ff79fac5430L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f4bL).optional(true).ordered(true).multiple(false).origin("8350359768424797232").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEcommerceSystem() {

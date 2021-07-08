@@ -20,22 +20,24 @@ public final class GeneratedRulesConstraintsAspect implements RulesConstraintsAs
       case 0:
         return new Address_ConstraintRules();
       case 1:
-        return new Category_ConstraintRules();
+        return new Administrator_ConstraintRules();
       case 2:
-        return new ItemCart_ConstraintRules();
+        return new Category_ConstraintRules();
       case 3:
-        return new Order_ConstraintRules();
+        return new ItemCart_ConstraintRules();
       case 4:
-        return new Product_ConstraintRules();
+        return new Order_ConstraintRules();
       case 5:
-        return new ProductImage_ConstraintRules();
+        return new Product_ConstraintRules();
       case 6:
-        return new Shipment_ConstraintRules();
+        return new ProductImage_ConstraintRules();
       case 7:
+        return new Shipment_ConstraintRules();
+      case 8:
         return new User_ConstraintRules();
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09ff4L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f45L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09fe8L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a01aL), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f48L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c56L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c7fL), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f42L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09ff4L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a049L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f45L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09fe8L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a01aL), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f48L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c56L), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c7fL), MetaIdFactory.conceptId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f42L)).seal();
 }
