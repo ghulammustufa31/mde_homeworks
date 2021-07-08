@@ -5,6 +5,7 @@
     <semanticResources>model.genmodel</semanticResources>
     <semanticResources>application.xmi</semanticResources>
     <semanticResources>model.emf</semanticResources>
+    <semanticResources>application1.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_7OqKANtcEeu_Vu1vXiEawg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_7PqPkNtcEeu_Vu1vXiEawg" name="model" repPath="#_7PlXENtcEeu_Vu1vXiEawg" changeId="469a73d1-2cba-4810-b5d8-2e39baf3f801">
