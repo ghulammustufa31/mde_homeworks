@@ -8,6 +8,9 @@
   <imports />
   <registry>
     <language id="0ec1bc84-4bf7-4e86-9b15-a8f6767d0e4e" name="ECOMML">
+      <concept id="5476506378116144214" name="ECOMML.structure.ProductImage" flags="ng" index="2LLABu">
+        <property id="5476506378116144215" name="ref" index="2LLABv" />
+      </concept>
       <concept id="1574435969555275541" name="ECOMML.structure.EcommerceSystem" flags="ng" index="VahCT">
         <child id="1574435969555275598" name="administrators" index="VahDy" />
         <child id="1574435969555275603" name="categories" index="VahDZ" />
@@ -15,13 +18,19 @@
       </concept>
       <concept id="1574435969555275592" name="ECOMML.structure.Product" flags="ng" index="VahD$">
         <property id="1574435969555275694" name="stock" index="VahE2" />
+        <property id="1574435969555275691" name="available" index="VahE7" />
         <property id="1574435969555275709" name="price" index="VahEh" />
         <property id="1574435969555275703" name="weight" index="VahEr" />
         <property id="1574435969555275698" name="height" index="VahEu" />
         <property id="1574435969555275724" name="description" index="VahFw" />
+        <child id="5476506378116144217" name="images" index="2LLABh" />
       </concept>
       <concept id="1574435969555275589" name="ECOMML.structure.Category" flags="ng" index="VahDD">
+        <property id="1574435969555275682" name="root_cat" index="VahEe" />
+        <property id="1574435969555275676" name="depth" index="VahEK" />
+        <property id="1574435969555275664" name="active" index="VahEW" />
         <child id="5476506378116144173" name="products" index="2LLAA_" />
+        <child id="1574435969555275860" name="subcategories" index="VailS" />
       </concept>
       <concept id="1574435969555275586" name="ECOMML.structure.User" flags="ng" index="VahDI">
         <property id="1574435969555275645" name="active" index="VahDh" />
@@ -30,7 +39,14 @@
         <property id="1574435969555275633" name="fullname" index="VahDt" />
         <property id="1574435969555275651" name="email" index="VahEJ" />
       </concept>
-      <concept id="1574435969555275764" name="ECOMML.structure.Address" flags="ng" index="VahFo" />
+      <concept id="1574435969555275764" name="ECOMML.structure.Address" flags="ng" index="VahFo">
+        <property id="1574435969555275772" name="state" index="VahFg" />
+        <property id="1574435969555275769" name="country" index="VahFl" />
+        <property id="1574435969555275787" name="phone" index="VaikB" />
+        <property id="1574435969555275781" name="post_code" index="VaikD" />
+        <property id="1574435969555275776" name="city" index="VaikG" />
+        <property id="1574435969555275794" name="active" index="VaikY" />
+      </concept>
       <concept id="1574435969555275852" name="ECOMML.structure.Customer" flags="ng" index="Vailw">
         <child id="5476506378116431126" name="addresses" index="2LMwyu" />
       </concept>
@@ -64,6 +80,96 @@
       <property role="VahDk" value="abc" />
       <property role="VahDh" value="true" />
       <property role="VahEJ" value="john.doe@shop.com" />
+    </node>
+  </node>
+  <node concept="VahCT" id="3b_VjWVOptT">
+    <property role="TrG5h" value="MusicShop" />
+    <node concept="VahDD" id="3b_VjWVOP7N" role="VahDZ">
+      <property role="TrG5h" value="Instruments" />
+      <property role="VahEK" value="1" />
+      <property role="VahEe" value="true" />
+      <property role="VahEW" value="true" />
+      <node concept="VahDD" id="3b_VjWVOP7P" role="VailS">
+        <property role="TrG5h" value="Piano" />
+        <property role="VahEW" value="true" />
+        <property role="VahEK" value="2" />
+        <node concept="VahD$" id="3b_VjWVOP7U" role="2LLAA_">
+          <property role="TrG5h" value="Yamaha B1 PE" />
+          <property role="VahE7" value="true" />
+          <property role="VahE2" value="2" />
+          <property role="VahEu" value="+109.0" />
+          <property role="VahEr" value="+174.0" />
+          <property role="VahEh" value="+3.444" />
+          <property role="VahFw" value="By way of example, b1 embodies the design principles of Yamaha, with the term &quot;value&quot; being redefined to some degree. Yamaha quality standards are met in every respect." />
+          <node concept="2LLABu" id="3b_VjWVOP7W" role="2LLABh">
+            <property role="2LLABv" value="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp" />
+          </node>
+        </node>
+      </node>
+      <node concept="VahDD" id="3b_VjWVOP7R" role="VailS">
+        <property role="TrG5h" value="Guitar" />
+        <property role="VahEW" value="true" />
+        <property role="VahEK" value="2" />
+        <node concept="VahD$" id="3b_VjWVOP7Y" role="2LLAA_">
+          <property role="TrG5h" value="Fender Player Series Strat MN BCR" />
+          <property role="VahE2" value="0" />
+          <property role="VahEu" value="+1.0" />
+          <property role="VahEr" value="+5.0" />
+          <property role="VahEh" value="+666.0" />
+          <property role="VahFw" value="Arguably the most famous model in the Fender line, this Fender Stratocaster player is a traditional take on the classic with modern appointments. The Fender Stratocaster player features three powerful Single Player Series coils with Alnico V magnets for crisp, clear Strat sounds, whose classic circuitry with master volume control and two tone controls produces typical Strat sounds from all positions.\n\nOther Fender Player Series Strat features include a synchronized 2-point Tremolo for Vibrato sounds, a solid and precise die-cast action and a classic three-ply Pickguard saddle, while the synthetic bone saddle promotes attack-rich and resonant sounds." />
+          <node concept="2LLABu" id="3b_VjWVOP80" role="2LLABh">
+            <property role="2LLABv" value="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp" />
+          </node>
+          <node concept="2LLABu" id="3b_VjWVOP82" role="2LLABh">
+            <property role="2LLABv" value="https://images.static-thomann.de/pics/bdb/439059/13206231_800.jpg" />
+          </node>
+          <node concept="2LLABu" id="3b_VjWVOP85" role="2LLABh">
+            <property role="2LLABv" value="https://images.static-thomann.de/pics/bdb/439059/13206241_800.jpg" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Vailw" id="3b_VjWVOptV" role="VaAJw">
+      <property role="TrG5h" value="customer_1" />
+      <property role="VahDt" value="Lea Brown" />
+      <property role="VahDo" value="LeBra" />
+      <property role="VahDk" value="Pass!" />
+      <property role="VahDh" value="true" />
+      <property role="VahEJ" value="leabra@extemail.com" />
+      <node concept="VahFo" id="3b_VjWVOptW" role="2LMwyu">
+        <property role="TrG5h" value="MainAddress" />
+        <property role="VahFl" value="America" />
+        <property role="VahFg" value="Alabama" />
+        <property role="VaikG" value="Birmingham" />
+        <property role="VaikD" value="234234" />
+        <property role="VaikB" value="+01 234 234 2564" />
+        <property role="VaikY" value="true" />
+      </node>
+    </node>
+    <node concept="Vailw" id="3b_VjWVOP7H" role="VaAJw">
+      <property role="TrG5h" value="customer_2" />
+      <property role="VahDt" value="Wilfred Roth" />
+      <property role="VahDo" value="Wilro" />
+      <property role="VahDk" value="WRP!" />
+      <property role="VahDh" value="true" />
+      <property role="VahEJ" value="wilfro@ext.com" />
+      <node concept="VahFo" id="3b_VjWVOP7I" role="2LMwyu">
+        <property role="TrG5h" value="MainAddress" />
+        <property role="VahFl" value="Europe" />
+        <property role="VahFg" value="Italy" />
+        <property role="VaikG" value="Milano" />
+        <property role="VaikD" value="20019" />
+        <property role="VaikB" value="+39 234 546 3423" />
+        <property role="VaikY" value="true" />
+      </node>
+    </node>
+    <node concept="Vail_" id="3b_VjWVOptU" role="VahDy">
+      <property role="TrG5h" value="admin_1" />
+      <property role="VahDt" value="liam allan" />
+      <property role="VahDo" value="lial" />
+      <property role="VahDk" value="TopSecretPass!" />
+      <property role="VahDh" value="true" />
+      <property role="VahEJ" value="email@musicshop.it" />
     </node>
   </node>
 </model>

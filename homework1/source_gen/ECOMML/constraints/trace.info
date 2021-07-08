@@ -1,8 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
       <unit at="10,0,20,0" name="ECOMML.constraints.ConstraintsAspectDescriptor" />
+    </file>
+    <file name="GeneratedFeedbackAspectConstraints.java">
+      <unit at="10,0,17,0" name="ECOMML.constraints.GeneratedFeedbackAspectConstraints" />
+    </file>
+    <file name="GeneratedRulesConstraintsAspect.java">
+      <unit at="14,0,34,0" name="ECOMML.constraints.GeneratedRulesConstraintsAspect" />
+    </file>
+  </root>
+  <root nodeRef="r:e37bf0b8-68b1-4e87-8693-247fc650f609(ECOMML.constraints)/3667598327405334752">
+    <file name="Address_ConstraintRules.java">
+      <node id="3667598327405334752" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405335577" at="25,0,26,0" concept="3" trace="check_id3667598327405335577" />
+      <node id="3667598327405451864" at="26,0,27,0" concept="3" trace="check_id3667598327405451864" />
+      <node id="3667598327405334752" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="3667598327405334752" at="32,43,33,17" concept="2" />
+      <node id="3667598327405335577" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="3667598327405335577" at="38,0,39,0" concept="3" trace="ID_LengthPostCode" />
+      <node id="3667598327405335577" at="40,34,41,91" concept="4" />
+      <node id="3667598327405335577" at="45,63,46,103" concept="2" />
+      <node id="3667598327405335577" at="50,67,51,18" concept="2" />
+      <node id="3667598327405451864" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="3667598327405451864" at="57,0,58,0" concept="3" trace="ID_IntegerPostCode" />
+      <node id="3667598327405451864" at="59,35,60,92" concept="4" />
+      <node id="3667598327405451864" at="64,63,65,105" concept="2" />
+      <node id="3667598327405451864" at="69,67,70,18" concept="2" />
+      <node id="3667598327405334752" at="74,41,75,19" concept="4" />
+      <node id="3667598327405334752" at="79,0,80,0" concept="3" trace="post_code$JB3Q" />
+      <node id="3667598327405335577" at="40,0,43,0" concept="0" trace="Rule_LengthPostCode#()V" />
+      <node id="3667598327405451864" at="59,0,62,0" concept="0" trace="Rule_IntegerPostCode#()V" />
+      <node id="3667598327405334752" at="74,0,77,0" concept="0" trace="Address_ConstraintRules#()V" />
+      <node id="3667598327405335577" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405335577" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405451864" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405451864" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405334752" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="3667598327405334752" at="32,43,33,17" />
+      <scope id="3667598327405335577" at="40,34,41,91" />
+      <scope id="3667598327405335577" at="45,63,46,103" />
+      <scope id="3667598327405335577" at="50,67,51,18" />
+      <scope id="3667598327405451864" at="59,35,60,92" />
+      <scope id="3667598327405451864" at="64,63,65,105" />
+      <scope id="3667598327405451864" at="69,67,70,18" />
+      <scope id="3667598327405334752" at="74,41,75,19" />
+      <scope id="3667598327405335577" at="40,0,43,0" />
+      <scope id="3667598327405451864" at="59,0,62,0" />
+      <scope id="3667598327405334752" at="74,0,77,0" />
+      <scope id="3667598327405335577" at="44,0,48,0">
+        <var name="context" id="3667598327405335577" />
+      </scope>
+      <scope id="3667598327405335577" at="49,0,53,0">
+        <var name="context" id="3667598327405335577" />
+      </scope>
+      <scope id="3667598327405451864" at="63,0,67,0">
+        <var name="context" id="3667598327405451864" />
+      </scope>
+      <scope id="3667598327405451864" at="68,0,72,0">
+        <var name="context" id="3667598327405451864" />
+      </scope>
+      <scope id="3667598327405334752" at="30,0,35,0" />
+      <unit id="3667598327405334752" at="78,0,81,0" name="ECOMML.constraints.Address_ConstraintRules$PROPS" />
+      <unit id="3667598327405335577" at="36,0,54,0" name="ECOMML.constraints.Address_ConstraintRules$Rule_LengthPostCode" />
+      <unit id="3667598327405451864" at="55,0,73,0" name="ECOMML.constraints.Address_ConstraintRules$Rule_IntegerPostCode" />
+      <unit id="3667598327405334752" at="22,0,82,0" name="ECOMML.constraints.Address_ConstraintRules" />
+    </file>
+    <file name="Address_ConstraintsFeedback.java">
+      <node id="3667598327405334752" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405335576" at="25,73,26,102" concept="2" />
+      <node id="3667598327405451862" at="32,73,33,108" concept="2" />
+      <node id="3667598327405334752" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="3667598327405334752" at="39,40,40,19" concept="4" />
+      <node id="3667598327405334752" at="45,58,46,30" concept="2" />
+      <node id="3667598327405334752" at="39,0,42,0" concept="0" trace="Address_ConstraintsFeedback#()V" />
+      <node id="3667598327405335576" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="3667598327405451862" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="3667598327405334752" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="3667598327405335576" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_a" />
+      <node id="3667598327405451862" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_b" />
+      <scope id="3667598327405335576" at="25,73,26,102" />
+      <scope id="3667598327405451862" at="32,73,33,108" />
+      <scope id="3667598327405334752" at="39,40,40,19" />
+      <scope id="3667598327405334752" at="45,58,46,30" />
+      <scope id="3667598327405334752" at="39,0,42,0" />
+      <scope id="3667598327405335576" at="23,0,28,0">
+        <var name="context" id="3667598327405335576" />
+      </scope>
+      <scope id="3667598327405451862" at="30,0,35,0">
+        <var name="context" id="3667598327405451862" />
+      </scope>
+      <scope id="3667598327405334752" at="43,0,48,0" />
+      <unit id="3667598327405335576" at="22,111,28,3" name="ECOMML.constraints.Address_ConstraintsFeedback$1" />
+      <unit id="3667598327405451862" at="29,111,35,3" name="ECOMML.constraints.Address_ConstraintsFeedback$2" />
+      <unit id="3667598327405334752" at="19,0,49,0" name="ECOMML.constraints.Address_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:e37bf0b8-68b1-4e87-8693-247fc650f609(ECOMML.constraints)/3667598327405543535">
+    <file name="Category_ConstraintRules.java">
+      <node id="3667598327405543535" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405543572" at="25,0,26,0" concept="3" trace="check_id3667598327405543572" />
+      <node id="3667598327405543535" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="3667598327405543535" at="31,43,32,17" concept="2" />
+      <node id="3667598327405543572" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="3667598327405543572" at="37,0,38,0" concept="3" trace="ID_PositiveDepth" />
+      <node id="3667598327405543572" at="39,33,40,90" concept="4" />
+      <node id="3667598327405543572" at="44,63,45,91" concept="2" />
+      <node id="3667598327405543572" at="49,67,50,18" concept="2" />
+      <node id="3667598327405543535" at="54,42,55,19" concept="4" />
+      <node id="3667598327405543535" at="59,0,60,0" concept="3" trace="depth$FLsU" />
+      <node id="3667598327405543572" at="39,0,42,0" concept="0" trace="Rule_PositiveDepth#()V" />
+      <node id="3667598327405543535" at="54,0,57,0" concept="0" trace="Category_ConstraintRules#()V" />
+      <node id="3667598327405543572" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405543572" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405543535" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="3667598327405543535" at="31,43,32,17" />
+      <scope id="3667598327405543572" at="39,33,40,90" />
+      <scope id="3667598327405543572" at="44,63,45,91" />
+      <scope id="3667598327405543572" at="49,67,50,18" />
+      <scope id="3667598327405543535" at="54,42,55,19" />
+      <scope id="3667598327405543572" at="39,0,42,0" />
+      <scope id="3667598327405543535" at="54,0,57,0" />
+      <scope id="3667598327405543572" at="43,0,47,0">
+        <var name="context" id="3667598327405543572" />
+      </scope>
+      <scope id="3667598327405543572" at="48,0,52,0">
+        <var name="context" id="3667598327405543572" />
+      </scope>
+      <scope id="3667598327405543535" at="29,0,34,0" />
+      <unit id="3667598327405543535" at="58,0,61,0" name="ECOMML.constraints.Category_ConstraintRules$PROPS" />
+      <unit id="3667598327405543572" at="35,0,53,0" name="ECOMML.constraints.Category_ConstraintRules$Rule_PositiveDepth" />
+      <unit id="3667598327405543535" at="22,0,62,0" name="ECOMML.constraints.Category_ConstraintRules" />
+    </file>
+    <file name="Category_ConstraintsFeedback.java">
+      <node id="3667598327405543535" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405543571" at="25,73,26,80" concept="2" />
+      <node id="3667598327405543535" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="3667598327405543535" at="32,41,33,19" concept="4" />
+      <node id="3667598327405543535" at="38,58,39,30" concept="2" />
+      <node id="3667598327405543535" at="32,0,35,0" concept="0" trace="Category_ConstraintsFeedback#()V" />
+      <node id="3667598327405543571" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="3667598327405543535" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="3667598327405543571" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_8ajuz1_a" />
+      <scope id="3667598327405543571" at="25,73,26,80" />
+      <scope id="3667598327405543535" at="32,41,33,19" />
+      <scope id="3667598327405543535" at="38,58,39,30" />
+      <scope id="3667598327405543535" at="32,0,35,0" />
+      <scope id="3667598327405543571" at="23,0,28,0">
+        <var name="context" id="3667598327405543571" />
+      </scope>
+      <scope id="3667598327405543535" at="36,0,41,0" />
+      <unit id="3667598327405543571" at="22,111,28,3" name="ECOMML.constraints.Category_ConstraintsFeedback$1" />
+      <unit id="3667598327405543535" at="19,0,42,0" name="ECOMML.constraints.Category_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:e37bf0b8-68b1-4e87-8693-247fc650f609(ECOMML.constraints)/3667598327405549139">
+    <file name="Product_ConstraintRules.java">
+      <node id="3667598327405549139" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405549143" at="25,0,26,0" concept="3" trace="check_id3667598327405549143" />
+      <node id="3667598327405549139" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="3667598327405549139" at="31,43,32,17" concept="2" />
+      <node id="3667598327405549143" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="3667598327405549143" at="37,0,38,0" concept="3" trace="ID_PositivePrice" />
+      <node id="3667598327405549143" at="39,33,40,90" concept="4" />
+      <node id="3667598327405549143" at="44,63,45,117" concept="2" />
+      <node id="3667598327405549143" at="49,67,50,18" concept="2" />
+      <node id="3667598327405549139" at="54,41,55,19" concept="4" />
+      <node id="3667598327405549139" at="59,0,60,0" concept="3" trace="price$IwTd" />
+      <node id="3667598327405549143" at="39,0,42,0" concept="0" trace="Rule_PositivePrice#()V" />
+      <node id="3667598327405549139" at="54,0,57,0" concept="0" trace="Product_ConstraintRules#()V" />
+      <node id="3667598327405549143" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405549143" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405549139" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="3667598327405549139" at="31,43,32,17" />
+      <scope id="3667598327405549143" at="39,33,40,90" />
+      <scope id="3667598327405549143" at="44,63,45,117" />
+      <scope id="3667598327405549143" at="49,67,50,18" />
+      <scope id="3667598327405549139" at="54,41,55,19" />
+      <scope id="3667598327405549143" at="39,0,42,0" />
+      <scope id="3667598327405549139" at="54,0,57,0" />
+      <scope id="3667598327405549143" at="43,0,47,0">
+        <var name="context" id="3667598327405549143" />
+      </scope>
+      <scope id="3667598327405549143" at="48,0,52,0">
+        <var name="context" id="3667598327405549143" />
+      </scope>
+      <scope id="3667598327405549139" at="29,0,34,0" />
+      <unit id="3667598327405549139" at="58,0,61,0" name="ECOMML.constraints.Product_ConstraintRules$PROPS" />
+      <unit id="3667598327405549143" at="35,0,53,0" name="ECOMML.constraints.Product_ConstraintRules$Rule_PositivePrice" />
+      <unit id="3667598327405549139" at="22,0,62,0" name="ECOMML.constraints.Product_ConstraintRules" />
+    </file>
+    <file name="Product_ConstraintsFeedback.java">
+      <node id="3667598327405549139" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405549142" at="25,73,26,78" concept="2" />
+      <node id="3667598327405549139" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="3667598327405549139" at="32,40,33,19" concept="4" />
+      <node id="3667598327405549139" at="38,58,39,30" concept="2" />
+      <node id="3667598327405549139" at="32,0,35,0" concept="0" trace="Product_ConstraintsFeedback#()V" />
+      <node id="3667598327405549142" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="3667598327405549139" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="3667598327405549142" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_7dos9x_a" />
+      <scope id="3667598327405549142" at="25,73,26,78" />
+      <scope id="3667598327405549139" at="32,40,33,19" />
+      <scope id="3667598327405549139" at="38,58,39,30" />
+      <scope id="3667598327405549139" at="32,0,35,0" />
+      <scope id="3667598327405549142" at="23,0,28,0">
+        <var name="context" id="3667598327405549142" />
+      </scope>
+      <scope id="3667598327405549139" at="36,0,41,0" />
+      <unit id="3667598327405549142" at="22,111,28,3" name="ECOMML.constraints.Product_ConstraintsFeedback$1" />
+      <unit id="3667598327405549139" at="19,0,42,0" name="ECOMML.constraints.Product_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:e37bf0b8-68b1-4e87-8693-247fc650f609(ECOMML.constraints)/3667598327405558760">
+    <file name="ItemCart_ConstraintRules.java">
+      <node id="3667598327405558760" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405558764" at="25,0,26,0" concept="3" trace="check_id3667598327405558764" />
+      <node id="3667598327405558760" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="3667598327405558760" at="31,43,32,17" concept="2" />
+      <node id="3667598327405558764" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="3667598327405558764" at="37,0,38,0" concept="3" trace="ID_PositiveQuantity" />
+      <node id="3667598327405558764" at="39,36,40,93" concept="4" />
+      <node id="3667598327405558764" at="44,63,45,94" concept="2" />
+      <node id="3667598327405558764" at="49,67,50,18" concept="2" />
+      <node id="3667598327405558760" at="54,42,55,19" concept="4" />
+      <node id="3667598327405558760" at="59,0,60,0" concept="3" trace="quantity$Jipw" />
+      <node id="3667598327405558764" at="39,0,42,0" concept="0" trace="Rule_PositiveQuantity#()V" />
+      <node id="3667598327405558760" at="54,0,57,0" concept="0" trace="ItemCart_ConstraintRules#()V" />
+      <node id="3667598327405558764" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405558764" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="3667598327405558760" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="3667598327405558760" at="31,43,32,17" />
+      <scope id="3667598327405558764" at="39,36,40,93" />
+      <scope id="3667598327405558764" at="44,63,45,94" />
+      <scope id="3667598327405558764" at="49,67,50,18" />
+      <scope id="3667598327405558760" at="54,42,55,19" />
+      <scope id="3667598327405558764" at="39,0,42,0" />
+      <scope id="3667598327405558760" at="54,0,57,0" />
+      <scope id="3667598327405558764" at="43,0,47,0">
+        <var name="context" id="3667598327405558764" />
+      </scope>
+      <scope id="3667598327405558764" at="48,0,52,0">
+        <var name="context" id="3667598327405558764" />
+      </scope>
+      <scope id="3667598327405558760" at="29,0,34,0" />
+      <unit id="3667598327405558760" at="58,0,61,0" name="ECOMML.constraints.ItemCart_ConstraintRules$PROPS" />
+      <unit id="3667598327405558764" at="35,0,53,0" name="ECOMML.constraints.ItemCart_ConstraintRules$Rule_PositiveQuantity" />
+      <unit id="3667598327405558760" at="22,0,62,0" name="ECOMML.constraints.ItemCart_ConstraintRules" />
+    </file>
+    <file name="ItemCart_ConstraintsFeedback.java">
+      <node id="3667598327405558760" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="3667598327405558763" at="25,73,26,87" concept="2" />
+      <node id="3667598327405558760" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="3667598327405558760" at="32,41,33,19" concept="4" />
+      <node id="3667598327405558760" at="38,58,39,30" concept="2" />
+      <node id="3667598327405558760" at="32,0,35,0" concept="0" trace="ItemCart_ConstraintsFeedback#()V" />
+      <node id="3667598327405558763" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="3667598327405558760" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="3667598327405558763" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_en5kc7_a" />
+      <scope id="3667598327405558763" at="25,73,26,87" />
+      <scope id="3667598327405558760" at="32,41,33,19" />
+      <scope id="3667598327405558760" at="38,58,39,30" />
+      <scope id="3667598327405558760" at="32,0,35,0" />
+      <scope id="3667598327405558763" at="23,0,28,0">
+        <var name="context" id="3667598327405558763" />
+      </scope>
+      <scope id="3667598327405558760" at="36,0,41,0" />
+      <unit id="3667598327405558763" at="22,111,28,3" name="ECOMML.constraints.ItemCart_ConstraintsFeedback$1" />
+      <unit id="3667598327405558760" at="19,0,42,0" name="ECOMML.constraints.ItemCart_ConstraintsFeedback" />
     </file>
   </root>
 </debug-info>

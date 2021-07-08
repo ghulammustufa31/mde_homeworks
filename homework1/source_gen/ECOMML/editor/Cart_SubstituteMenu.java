@@ -49,7 +49,7 @@ public class Cart_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_e9hiq4_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_e9hiq4_a() {
-      // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
+      // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
       super((SAbstractConcept) CONCEPTS.Cart$Ee, LINKS.customer$5g7);
     }
     @NotNull

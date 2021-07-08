@@ -419,7 +419,8 @@
   <node concept="Az7Fb" id="1npxiKIWa1K">
     <property role="3F6X1D" value="1574435969555275888" />
     <property role="TrG5h" value="date" />
-    <property role="FLfZY" value="/^(0[1-9]|1[0-2])\\/(0[1-9]|1\\d|2\\d|3[01])\\/(19|20)\\d{2}$/" />
+    <property role="FLfZY" value="/^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/" />
+    <property role="3GE5qa" value="DataTypes" />
   </node>
   <node concept="1TIwiD" id="4K0tozXLxLm">
     <property role="EcuMT" value="5476506378116144214" />
@@ -484,6 +485,7 @@
     <property role="3F6X1D" value="5476506378116512159" />
     <property role="TrG5h" value="float" />
     <property role="FLfZY" value="^[-+][0-9]+\\.[0-9]+$" />
+    <property role="3GE5qa" value="DataTypes" />
   </node>
 </model>
 
