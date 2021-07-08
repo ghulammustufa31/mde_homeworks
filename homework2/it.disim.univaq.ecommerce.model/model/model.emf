@@ -1,0 +1,103 @@
+@namespace(uri="http://it.disim.univaq.ecommerce/model", prefix="ecommerce_application")
+package ecommerce_application;
+
+class application extends Named {
+	val Shop[+] app_have_shops;
+}
+
+class Shop extends Named {
+	id attr int shop_id;
+	val User[*] shop_has_users;
+	val Category[*] shop_have_categories;
+	val Product[*] shop_have_products;
+	val Shopping_Cart[*] shop_have_carts;
+}
+
+class Named {
+	attr String name;
+}
+
+class Category extends Named {
+	id attr int cat_id;
+	attr boolean active;
+	attr EDate date_added;
+	attr EDate date_updated;
+	attr int depth;
+	attr boolean root_cat;
+	val Category[*] have_sub_categories;
+}
+
+class Product extends Named {
+	id attr int prod_id;
+	attr boolean active;
+	attr int stock;
+	attr float height;
+	attr float weight;
+	attr float price;
+	attr String description;
+	attr String long_description;
+	val Category have_category;
+}
+
+class User extends Named {
+	id attr int user_id;
+	attr String username;
+	attr String password;
+	attr boolean active;
+	attr String email;
+	val Address[+] have_addresses;
+}
+
+class Shopping_Cart extends Named {
+	id attr int cart_id;
+	attr EDate date_added;
+	attr boolean active;
+	val Item_Shopping_Cart[*] cart_have_items;
+	val Sale cart_have_sale;
+}
+
+class Item_Shopping_Cart extends Named {
+	id attr int item_cart_id;
+	attr int units;
+	attr float price;
+	val Product[1] item_cart_have_product;
+}
+
+class Address {
+	id attr int address_id;
+	attr String country;
+	attr String state;
+	attr String city;
+	attr String post_code;
+	attr String phone;
+	attr boolean active;
+}
+
+class Sale {
+	id attr int sale_id;
+	attr String reference_number;
+	attr float total_price;
+	attr EDate date;
+	attr State state;
+	val Invoice[1] sale_has_invoice;
+}
+
+enum State {
+	Paid = 0;
+	Envoy = 0;
+	Committed = 0;
+}
+
+class Invoice {
+	id attr int invoice_id;
+	attr String description;
+	attr String products_list;
+	attr float rates;
+}
+
+class Administrator extends User {
+}
+
+class Client extends User {
+}
+
