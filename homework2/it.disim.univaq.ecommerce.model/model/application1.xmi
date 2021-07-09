@@ -20,7 +20,7 @@
         <have_products
             name="Yamaha B1 PE"
             available="true"
-            stock="2"
+            stock="50"
             height="109.0"
             weight="174.0"
             price="3444.0"
@@ -36,7 +36,7 @@
         <have_products
             name="Fender Player Series Strat MN BCR"
             available="true"
-            stock="1"
+            stock="50"
             height="1.0"
             weight="5.0"
             price="666.0"
@@ -69,18 +69,26 @@
           date_added="2021-07-08T01:00:00.000+0200">
         <cart_have_items
             name="item_1"
-            quantity="12"
+            quantity="3"
             item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+        <cart_have_items
+            name="item_2"
+            quantity="2"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
         <cart_have_order
             reference_number="abcd"
             total_price="10.0"
-            date_created="2021-07-08T00:00:00.000+0200">
+            date_created="2021-07-08T00:00:00.000+0200"
+            order_state="COMMITED"
+            order_for_cart="//@app_have_shops.0/@have_clients/@customer_have_cart">
           <order_has_invoice
               name="invoice_1"
               invoice_id="12"
-              date="2021-07-08T00:00:00.000+0200"/>
+              date="2021-07-08T00:00:00.000+0200"
+              invoice_for_order="//@app_have_shops.0/@have_clients/@customer_have_cart/@cart_have_order"/>
           <order_have_shipment
               name="ship_1"
+              shipment_status="TRAVELING"
               date="2021-07-08T00:00:00.000+0200"
               shipment_no="123"
               shipment_has_address="//@app_have_shops.0/@have_clients/@customer_have_address.0"/>
