@@ -2,8 +2,8 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application.impl;
 
+import it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem;
 import it.disim.univaq.ecommerce.ecommerce_application.ModelPackage;
-import it.disim.univaq.ecommerce.ecommerce_application.Shop;
 import it.disim.univaq.ecommerce.ecommerce_application.application;
 
 import java.util.Collection;
@@ -40,7 +40,7 @@ public class applicationImpl extends NamedImpl implements application {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Shop> app_have_shops;
+	protected EList<EcommerceSystem> app_have_shops;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -66,9 +66,9 @@ public class applicationImpl extends NamedImpl implements application {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Shop> getApp_have_shops() {
+	public EList<EcommerceSystem> getApp_have_shops() {
 		if (app_have_shops == null) {
-			app_have_shops = new EObjectContainmentEList<Shop>(Shop.class, this,
+			app_have_shops = new EObjectContainmentEList<EcommerceSystem>(EcommerceSystem.class, this,
 					ModelPackage.APPLICATION__APP_HAVE_SHOPS);
 		}
 		return app_have_shops;
@@ -113,7 +113,7 @@ public class applicationImpl extends NamedImpl implements application {
 		switch (featureID) {
 		case ModelPackage.APPLICATION__APP_HAVE_SHOPS:
 			getApp_have_shops().clear();
-			getApp_have_shops().addAll((Collection<? extends Shop>) newValue);
+			getApp_have_shops().addAll((Collection<? extends EcommerceSystem>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

@@ -5,12 +5,13 @@ package it.disim.univaq.ecommerce.ecommerce_application.impl;
 import it.disim.univaq.ecommerce.ecommerce_application.Invoice;
 import it.disim.univaq.ecommerce.ecommerce_application.ModelPackage;
 
+import java.util.Date;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,14 +22,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl#getInvoice_id <em>Invoice id</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl#getProducts_list <em>Products list</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl#getRates <em>Rates</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl#getDate <em>Date</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice {
+public class InvoiceImpl extends NamedImpl implements Invoice {
 	/**
 	 * The default value of the '{@link #getInvoice_id() <em>Invoice id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -50,64 +49,24 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 	protected int invoice_id = INVOICE_ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDescription()
+	 * @see #getDate()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DESCRIPTION_EDEFAULT = null;
+	protected static final Date DATE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * The cached value of the '{@link #getDate() <em>Date</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDescription()
+	 * @see #getDate()
 	 * @generated
 	 * @ordered
 	 */
-	protected String description = DESCRIPTION_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getProducts_list() <em>Products list</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProducts_list()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PRODUCTS_LIST_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getProducts_list() <em>Products list</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getProducts_list()
-	 * @generated
-	 * @ordered
-	 */
-	protected String products_list = PRODUCTS_LIST_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getRates() <em>Rates</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRates()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final float RATES_EDEFAULT = 0.0F;
-
-	/**
-	 * The cached value of the '{@link #getRates() <em>Rates</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRates()
-	 * @generated
-	 * @ordered
-	 */
-	protected float rates = RATES_EDEFAULT;
+	protected Date date = DATE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,8 +114,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getDescription() {
-		return description;
+	public Date getDate() {
+		return date;
 	}
 
 	/**
@@ -164,55 +123,11 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
+	public void setDate(Date newDate) {
+		Date oldDate = date;
+		date = newDate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.INVOICE__DESCRIPTION, oldDescription,
-					description));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getProducts_list() {
-		return products_list;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setProducts_list(String newProducts_list) {
-		String oldProducts_list = products_list;
-		products_list = newProducts_list;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.INVOICE__PRODUCTS_LIST, oldProducts_list,
-					products_list));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public float getRates() {
-		return rates;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setRates(float newRates) {
-		float oldRates = rates;
-		rates = newRates;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.INVOICE__RATES, oldRates, rates));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.INVOICE__DATE, oldDate, date));
 	}
 
 	/**
@@ -225,12 +140,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 		switch (featureID) {
 		case ModelPackage.INVOICE__INVOICE_ID:
 			return getInvoice_id();
-		case ModelPackage.INVOICE__DESCRIPTION:
-			return getDescription();
-		case ModelPackage.INVOICE__PRODUCTS_LIST:
-			return getProducts_list();
-		case ModelPackage.INVOICE__RATES:
-			return getRates();
+		case ModelPackage.INVOICE__DATE:
+			return getDate();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -246,14 +157,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 		case ModelPackage.INVOICE__INVOICE_ID:
 			setInvoice_id((Integer) newValue);
 			return;
-		case ModelPackage.INVOICE__DESCRIPTION:
-			setDescription((String) newValue);
-			return;
-		case ModelPackage.INVOICE__PRODUCTS_LIST:
-			setProducts_list((String) newValue);
-			return;
-		case ModelPackage.INVOICE__RATES:
-			setRates((Float) newValue);
+		case ModelPackage.INVOICE__DATE:
+			setDate((Date) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -270,14 +175,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 		case ModelPackage.INVOICE__INVOICE_ID:
 			setInvoice_id(INVOICE_ID_EDEFAULT);
 			return;
-		case ModelPackage.INVOICE__DESCRIPTION:
-			setDescription(DESCRIPTION_EDEFAULT);
-			return;
-		case ModelPackage.INVOICE__PRODUCTS_LIST:
-			setProducts_list(PRODUCTS_LIST_EDEFAULT);
-			return;
-		case ModelPackage.INVOICE__RATES:
-			setRates(RATES_EDEFAULT);
+		case ModelPackage.INVOICE__DATE:
+			setDate(DATE_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -293,13 +192,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 		switch (featureID) {
 		case ModelPackage.INVOICE__INVOICE_ID:
 			return invoice_id != INVOICE_ID_EDEFAULT;
-		case ModelPackage.INVOICE__DESCRIPTION:
-			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-		case ModelPackage.INVOICE__PRODUCTS_LIST:
-			return PRODUCTS_LIST_EDEFAULT == null ? products_list != null
-					: !PRODUCTS_LIST_EDEFAULT.equals(products_list);
-		case ModelPackage.INVOICE__RATES:
-			return rates != RATES_EDEFAULT;
+		case ModelPackage.INVOICE__DATE:
+			return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -317,12 +211,8 @@ public class InvoiceImpl extends MinimalEObjectImpl.Container implements Invoice
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (invoice_id: ");
 		result.append(invoice_id);
-		result.append(", description: ");
-		result.append(description);
-		result.append(", products_list: ");
-		result.append(products_list);
-		result.append(", rates: ");
-		result.append(rates);
+		result.append(", date: ");
+		result.append(date);
 		result.append(')');
 		return result.toString();
 	}

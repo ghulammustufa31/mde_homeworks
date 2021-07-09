@@ -75,11 +75,11 @@ public class ModelSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ModelPackage.SHOP: {
-			Shop shop = (Shop) theEObject;
-			T result = caseShop(shop);
+		case ModelPackage.ECOMMERCE_SYSTEM: {
+			EcommerceSystem ecommerceSystem = (EcommerceSystem) theEObject;
+			T result = caseEcommerceSystem(ecommerceSystem);
 			if (result == null)
-				result = caseNamed(shop);
+				result = caseNamed(ecommerceSystem);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -113,25 +113,23 @@ public class ModelSwitch<T> extends Switch<T> {
 			User user = (User) theEObject;
 			T result = caseUser(user);
 			if (result == null)
-				result = caseNamed(user);
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ModelPackage.CART: {
+			Cart cart = (Cart) theEObject;
+			T result = caseCart(cart);
+			if (result == null)
+				result = caseNamed(cart);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ModelPackage.SHOPPING_CART: {
-			Shopping_Cart shopping_Cart = (Shopping_Cart) theEObject;
-			T result = caseShopping_Cart(shopping_Cart);
+		case ModelPackage.ITEM_CART: {
+			ItemCart itemCart = (ItemCart) theEObject;
+			T result = caseItemCart(itemCart);
 			if (result == null)
-				result = caseNamed(shopping_Cart);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case ModelPackage.ITEM_SHOPPING_CART: {
-			Item_Shopping_Cart item_Shopping_Cart = (Item_Shopping_Cart) theEObject;
-			T result = caseItem_Shopping_Cart(item_Shopping_Cart);
-			if (result == null)
-				result = caseNamed(item_Shopping_Cart);
+				result = caseNamed(itemCart);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -140,12 +138,23 @@ public class ModelSwitch<T> extends Switch<T> {
 			Address address = (Address) theEObject;
 			T result = caseAddress(address);
 			if (result == null)
+				result = caseNamed(address);
+			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ModelPackage.SALE: {
-			Sale sale = (Sale) theEObject;
-			T result = caseSale(sale);
+		case ModelPackage.ORDER: {
+			Order order = (Order) theEObject;
+			T result = caseOrder(order);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ModelPackage.SHIPMENT: {
+			Shipment shipment = (Shipment) theEObject;
+			T result = caseShipment(shipment);
+			if (result == null)
+				result = caseNamed(shipment);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -153,6 +162,8 @@ public class ModelSwitch<T> extends Switch<T> {
 		case ModelPackage.INVOICE: {
 			Invoice invoice = (Invoice) theEObject;
 			T result = caseInvoice(invoice);
+			if (result == null)
+				result = caseNamed(invoice);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -163,18 +174,21 @@ public class ModelSwitch<T> extends Switch<T> {
 			if (result == null)
 				result = caseUser(administrator);
 			if (result == null)
-				result = caseNamed(administrator);
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case ModelPackage.CUSTOMER: {
+			Customer customer = (Customer) theEObject;
+			T result = caseCustomer(customer);
+			if (result == null)
+				result = caseUser(customer);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case ModelPackage.CLIENT: {
-			Client client = (Client) theEObject;
-			T result = caseClient(client);
-			if (result == null)
-				result = caseUser(client);
-			if (result == null)
-				result = caseNamed(client);
+		case ModelPackage.PRODUCT_IMAGE: {
+			ProductImage productImage = (ProductImage) theEObject;
+			T result = caseProductImage(productImage);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -200,17 +214,17 @@ public class ModelSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Shop</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Ecommerce System</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Shop</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Ecommerce System</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseShop(Shop object) {
+	public T caseEcommerceSystem(EcommerceSystem object) {
 		return null;
 	}
 
@@ -275,32 +289,32 @@ public class ModelSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Shopping Cart</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Cart</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Shopping Cart</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Cart</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseShopping_Cart(Shopping_Cart object) {
+	public T caseCart(Cart object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Item Shopping Cart</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Item Cart</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Item Shopping Cart</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Item Cart</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseItem_Shopping_Cart(Item_Shopping_Cart object) {
+	public T caseItemCart(ItemCart object) {
 		return null;
 	}
 
@@ -320,17 +334,32 @@ public class ModelSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sale</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sale</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Order</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSale(Sale object) {
+	public T caseOrder(Order object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Shipment</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Shipment</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseShipment(Shipment object) {
 		return null;
 	}
 
@@ -365,17 +394,32 @@ public class ModelSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Client</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Customer</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Client</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Customer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClient(Client object) {
+	public T caseCustomer(Customer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Product Image</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Product Image</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProductImage(ProductImage object) {
 		return null;
 	}
 

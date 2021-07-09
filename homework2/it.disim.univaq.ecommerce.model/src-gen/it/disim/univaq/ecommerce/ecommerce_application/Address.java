@@ -2,8 +2,6 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Address</b></em>'.
@@ -13,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getAddress_id <em>Address id</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getCountry <em>Country</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getState <em>State</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getCity <em>City</em>}</li>
@@ -26,29 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Address extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Address id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Address id</em>' attribute.
-	 * @see #setAddress_id(int)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getAddress_Address_id()
-	 * @model id="true"
-	 * @generated
-	 */
-	int getAddress_id();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getAddress_id <em>Address id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Address id</em>' attribute.
-	 * @see #getAddress_id()
-	 * @generated
-	 */
-	void setAddress_id(int value);
-
+public interface Address extends Named {
 	/**
 	 * Returns the value of the '<em><b>Country</b></em>' attribute.
 	 * <!-- begin-user-doc -->

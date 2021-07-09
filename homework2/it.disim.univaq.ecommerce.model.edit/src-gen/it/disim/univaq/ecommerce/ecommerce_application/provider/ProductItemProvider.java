@@ -47,47 +47,29 @@ public class ProductItemProvider extends NamedItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addProd_idPropertyDescriptor(object);
-			addActivePropertyDescriptor(object);
+			addAvailablePropertyDescriptor(object);
 			addStockPropertyDescriptor(object);
 			addHeightPropertyDescriptor(object);
 			addWeightPropertyDescriptor(object);
 			addPricePropertyDescriptor(object);
 			addDescriptionPropertyDescriptor(object);
-			addLong_descriptionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Prod id feature.
+	 * This adds a property descriptor for the Available feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addProd_idPropertyDescriptor(Object object) {
+	protected void addAvailablePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Product_prod_id_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Product_prod_id_feature",
+						getResourceLocator(), getString("_UI_Product_available_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Product_available_feature",
 								"_UI_Product_type"),
-						ModelPackage.Literals.PRODUCT__PROD_ID, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Active feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addActivePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Product_active_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Product_active_feature",
-								"_UI_Product_type"),
-						ModelPackage.Literals.PRODUCT__ACTIVE, true, false, false,
+						ModelPackage.Literals.PRODUCT__AVAILABLE, true, false, false,
 						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
 	}
 
@@ -172,22 +154,6 @@ public class ProductItemProvider extends NamedItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Long description feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addLong_descriptionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Product_long_description_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Product_long_description_feature",
-								"_UI_Product_type"),
-						ModelPackage.Literals.PRODUCT__LONG_DESCRIPTION, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -199,7 +165,7 @@ public class ProductItemProvider extends NamedItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(ModelPackage.Literals.PRODUCT__HAVE_CATEGORY);
+			childrenFeatures.add(ModelPackage.Literals.PRODUCT__PRODUCT_HAVE_IMAGES);
 		}
 		return childrenFeatures;
 	}
@@ -263,17 +229,15 @@ public class ProductItemProvider extends NamedItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Product.class)) {
-		case ModelPackage.PRODUCT__PROD_ID:
-		case ModelPackage.PRODUCT__ACTIVE:
+		case ModelPackage.PRODUCT__AVAILABLE:
 		case ModelPackage.PRODUCT__STOCK:
 		case ModelPackage.PRODUCT__HEIGHT:
 		case ModelPackage.PRODUCT__WEIGHT:
 		case ModelPackage.PRODUCT__PRICE:
 		case ModelPackage.PRODUCT__DESCRIPTION:
-		case ModelPackage.PRODUCT__LONG_DESCRIPTION:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
-		case ModelPackage.PRODUCT__HAVE_CATEGORY:
+		case ModelPackage.PRODUCT__PRODUCT_HAVE_IMAGES:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -291,8 +255,8 @@ public class ProductItemProvider extends NamedItemProvider {
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(ModelPackage.Literals.PRODUCT__HAVE_CATEGORY,
-				ModelFactory.eINSTANCE.createCategory()));
+		newChildDescriptors.add(createChildParameter(ModelPackage.Literals.PRODUCT__PRODUCT_HAVE_IMAGES,
+				ModelFactory.eINSTANCE.createProductImage()));
 	}
 
 }

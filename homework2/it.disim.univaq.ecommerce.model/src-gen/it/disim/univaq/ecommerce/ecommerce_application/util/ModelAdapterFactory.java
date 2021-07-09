@@ -72,8 +72,8 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseShop(Shop object) {
-			return createShopAdapter();
+		public Adapter caseEcommerceSystem(EcommerceSystem object) {
+			return createEcommerceSystemAdapter();
 		}
 
 		@Override
@@ -97,13 +97,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseShopping_Cart(Shopping_Cart object) {
-			return createShopping_CartAdapter();
+		public Adapter caseCart(Cart object) {
+			return createCartAdapter();
 		}
 
 		@Override
-		public Adapter caseItem_Shopping_Cart(Item_Shopping_Cart object) {
-			return createItem_Shopping_CartAdapter();
+		public Adapter caseItemCart(ItemCart object) {
+			return createItemCartAdapter();
 		}
 
 		@Override
@@ -112,8 +112,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSale(Sale object) {
-			return createSaleAdapter();
+		public Adapter caseOrder(Order object) {
+			return createOrderAdapter();
+		}
+
+		@Override
+		public Adapter caseShipment(Shipment object) {
+			return createShipmentAdapter();
 		}
 
 		@Override
@@ -127,8 +132,13 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseClient(Client object) {
-			return createClientAdapter();
+		public Adapter caseCustomer(Customer object) {
+			return createCustomerAdapter();
+		}
+
+		@Override
+		public Adapter caseProductImage(ProductImage object) {
+			return createProductImageAdapter();
 		}
 
 		@Override
@@ -165,16 +175,16 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop <em>Shop</em>}'.
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem <em>Ecommerce System</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem
 	 * @generated
 	 */
-	public Adapter createShopAdapter() {
+	public Adapter createEcommerceSystemAdapter() {
 		return null;
 	}
 
@@ -235,30 +245,30 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart <em>Shopping Cart</em>}'.
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Cart <em>Cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Cart
 	 * @generated
 	 */
-	public Adapter createShopping_CartAdapter() {
+	public Adapter createCartAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart <em>Item Shopping Cart</em>}'.
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart <em>Item Cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ItemCart
 	 * @generated
 	 */
-	public Adapter createItem_Shopping_CartAdapter() {
+	public Adapter createItemCartAdapter() {
 		return null;
 	}
 
@@ -277,16 +287,30 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale <em>Sale</em>}'.
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Order <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order
 	 * @generated
 	 */
-	public Adapter createSaleAdapter() {
+	public Adapter createOrderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment <em>Shipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment
+	 * @generated
+	 */
+	public Adapter createShipmentAdapter() {
 		return null;
 	}
 
@@ -319,16 +343,30 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Client <em>Client</em>}'.
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.Customer <em>Customer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Client
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Customer
 	 * @generated
 	 */
-	public Adapter createClientAdapter() {
+	public Adapter createCustomerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage <em>Product Image</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ProductImage
+	 * @generated
+	 */
+	public Adapter createProductImageAdapter() {
 		return null;
 	}
 

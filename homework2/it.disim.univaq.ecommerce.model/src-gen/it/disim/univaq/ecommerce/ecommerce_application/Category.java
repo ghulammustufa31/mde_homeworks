@@ -2,8 +2,6 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application;
 
-import java.util.Date;
-
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -15,13 +13,11 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getCat_id <em>Cat id</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#isActive <em>Active</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_added <em>Date added</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_updated <em>Date updated</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDepth <em>Depth</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#isRoot_cat <em>Root cat</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getHave_sub_categories <em>Have sub categories</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getHave_products <em>Have products</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getCategory()
@@ -29,28 +25,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Category extends Named {
-	/**
-	 * Returns the value of the '<em><b>Cat id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cat id</em>' attribute.
-	 * @see #setCat_id(int)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getCategory_Cat_id()
-	 * @model id="true"
-	 * @generated
-	 */
-	int getCat_id();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getCat_id <em>Cat id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cat id</em>' attribute.
-	 * @see #getCat_id()
-	 * @generated
-	 */
-	void setCat_id(int value);
-
 	/**
 	 * Returns the value of the '<em><b>Active</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -72,50 +46,6 @@ public interface Category extends Named {
 	 * @generated
 	 */
 	void setActive(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Date added</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date added</em>' attribute.
-	 * @see #setDate_added(Date)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getCategory_Date_added()
-	 * @model
-	 * @generated
-	 */
-	Date getDate_added();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_added <em>Date added</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Date added</em>' attribute.
-	 * @see #getDate_added()
-	 * @generated
-	 */
-	void setDate_added(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Date updated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date updated</em>' attribute.
-	 * @see #setDate_updated(Date)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getCategory_Date_updated()
-	 * @model
-	 * @generated
-	 */
-	Date getDate_updated();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_updated <em>Date updated</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Date updated</em>' attribute.
-	 * @see #getDate_updated()
-	 * @generated
-	 */
-	void setDate_updated(Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Depth</b></em>' attribute.
@@ -172,5 +102,17 @@ public interface Category extends Named {
 	 * @generated
 	 */
 	EList<Category> getHave_sub_categories();
+
+	/**
+	 * Returns the value of the '<em><b>Have products</b></em>' containment reference list.
+	 * The list contents are of type {@link it.disim.univaq.ecommerce.ecommerce_application.Product}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Have products</em>' containment reference list.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getCategory_Have_products()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Product> getHave_products();
 
 } // Category

@@ -141,14 +141,14 @@ public interface ModelPackage extends EPackage {
 	int APPLICATION_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ShopImpl <em>Shop</em>}' class.
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.EcommerceSystemImpl <em>Ecommerce System</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ShopImpl
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShop()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.EcommerceSystemImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getEcommerceSystem()
 	 * @generated
 	 */
-	int SHOP = 1;
+	int ECOMMERCE_SYSTEM = 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -157,25 +157,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP__NAME = NAMED__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Shop id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHOP__SHOP_ID = NAMED_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Shop has users</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHOP__SHOP_HAS_USERS = NAMED_FEATURE_COUNT + 1;
+	int ECOMMERCE_SYSTEM__NAME = NAMED__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Shop have categories</b></em>' containment reference list.
@@ -184,43 +166,43 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP__SHOP_HAVE_CATEGORIES = NAMED_FEATURE_COUNT + 2;
+	int ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES = NAMED_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Shop have products</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Have clients</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP__SHOP_HAVE_PRODUCTS = NAMED_FEATURE_COUNT + 3;
+	int ECOMMERCE_SYSTEM__HAVE_CLIENTS = NAMED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Shop have carts</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Shop have administrators</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP__SHOP_HAVE_CARTS = NAMED_FEATURE_COUNT + 4;
+	int ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS = NAMED_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Shop</em>' class.
+	 * The number of structural features of the '<em>Ecommerce System</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
+	int ECOMMERCE_SYSTEM_FEATURE_COUNT = NAMED_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of operations of the '<em>Shop</em>' class.
+	 * The number of operations of the '<em>Ecommerce System</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOP_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int ECOMMERCE_SYSTEM_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.CategoryImpl <em>Category</em>}' class.
@@ -242,40 +224,13 @@ public interface ModelPackage extends EPackage {
 	int CATEGORY__NAME = NAMED__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Cat id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__CAT_ID = NAMED_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Active</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY__ACTIVE = NAMED_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Date added</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__DATE_ADDED = NAMED_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Date updated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__DATE_UPDATED = NAMED_FEATURE_COUNT + 3;
+	int CATEGORY__ACTIVE = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Depth</b></em>' attribute.
@@ -284,7 +239,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY__DEPTH = NAMED_FEATURE_COUNT + 4;
+	int CATEGORY__DEPTH = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Root cat</b></em>' attribute.
@@ -293,7 +248,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY__ROOT_CAT = NAMED_FEATURE_COUNT + 5;
+	int CATEGORY__ROOT_CAT = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Have sub categories</b></em>' containment reference list.
@@ -302,7 +257,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY__HAVE_SUB_CATEGORIES = NAMED_FEATURE_COUNT + 6;
+	int CATEGORY__HAVE_SUB_CATEGORIES = NAMED_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Have products</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CATEGORY__HAVE_PRODUCTS = NAMED_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Category</em>' class.
@@ -311,7 +275,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY_FEATURE_COUNT = NAMED_FEATURE_COUNT + 7;
+	int CATEGORY_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Category</em>' class.
@@ -342,22 +306,13 @@ public interface ModelPackage extends EPackage {
 	int PRODUCT__NAME = NAMED__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Prod id</b></em>' attribute.
+	 * The feature id for the '<em><b>Available</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PROD_ID = NAMED_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT__ACTIVE = NAMED_FEATURE_COUNT + 1;
+	int PRODUCT__AVAILABLE = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Stock</b></em>' attribute.
@@ -366,7 +321,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__STOCK = NAMED_FEATURE_COUNT + 2;
+	int PRODUCT__STOCK = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -375,7 +330,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__HEIGHT = NAMED_FEATURE_COUNT + 3;
+	int PRODUCT__HEIGHT = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Weight</b></em>' attribute.
@@ -384,7 +339,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__WEIGHT = NAMED_FEATURE_COUNT + 4;
+	int PRODUCT__WEIGHT = NAMED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Price</b></em>' attribute.
@@ -393,7 +348,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRICE = NAMED_FEATURE_COUNT + 5;
+	int PRODUCT__PRICE = NAMED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -402,25 +357,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__DESCRIPTION = NAMED_FEATURE_COUNT + 6;
+	int PRODUCT__DESCRIPTION = NAMED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Long description</b></em>' attribute.
+	 * The feature id for the '<em><b>Product have images</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__LONG_DESCRIPTION = NAMED_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Have category</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT__HAVE_CATEGORY = NAMED_FEATURE_COUNT + 8;
+	int PRODUCT__PRODUCT_HAVE_IMAGES = NAMED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Product</em>' class.
@@ -429,7 +375,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_COUNT = NAMED_FEATURE_COUNT + 9;
+	int PRODUCT_FEATURE_COUNT = NAMED_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Product</em>' class.
@@ -451,22 +397,13 @@ public interface ModelPackage extends EPackage {
 	int USER = 5;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Surname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER__NAME = NAMED__NAME;
-
-	/**
-	 * The feature id for the '<em><b>User id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__USER_ID = NAMED_FEATURE_COUNT + 0;
+	int USER__SURNAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Username</b></em>' attribute.
@@ -475,7 +412,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER__USERNAME = NAMED_FEATURE_COUNT + 1;
+	int USER__USERNAME = 1;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -484,7 +421,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER__PASSWORD = NAMED_FEATURE_COUNT + 2;
+	int USER__PASSWORD = 2;
 
 	/**
 	 * The feature id for the '<em><b>Active</b></em>' attribute.
@@ -493,7 +430,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER__ACTIVE = NAMED_FEATURE_COUNT + 3;
+	int USER__ACTIVE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Email</b></em>' attribute.
@@ -502,16 +439,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER__EMAIL = NAMED_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Have addresses</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER__HAVE_ADDRESSES = NAMED_FEATURE_COUNT + 5;
+	int USER__EMAIL = 4;
 
 	/**
 	 * The number of structural features of the '<em>User</em>' class.
@@ -520,7 +448,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_FEATURE_COUNT = NAMED_FEATURE_COUNT + 6;
+	int USER_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>User</em>' class.
@@ -529,17 +457,17 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int USER_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.Shopping_CartImpl <em>Shopping Cart</em>}' class.
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.CartImpl <em>Cart</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.Shopping_CartImpl
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShopping_Cart()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.CartImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getCart()
 	 * @generated
 	 */
-	int SHOPPING_CART = 6;
+	int CART = 6;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -548,16 +476,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__NAME = NAMED__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Cart id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHOPPING_CART__CART_ID = NAMED_FEATURE_COUNT + 0;
+	int CART__NAME = NAMED__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Date added</b></em>' attribute.
@@ -566,16 +485,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__DATE_ADDED = NAMED_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHOPPING_CART__ACTIVE = NAMED_FEATURE_COUNT + 2;
+	int CART__DATE_ADDED = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Cart have items</b></em>' containment reference list.
@@ -584,44 +494,44 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__CART_HAVE_ITEMS = NAMED_FEATURE_COUNT + 3;
+	int CART__CART_HAVE_ITEMS = NAMED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Cart have sale</b></em>' containment reference.
+	 * The feature id for the '<em><b>Cart have order</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__CART_HAVE_SALE = NAMED_FEATURE_COUNT + 4;
+	int CART__CART_HAVE_ORDER = NAMED_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Shopping Cart</em>' class.
+	 * The number of structural features of the '<em>Cart</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
+	int CART_FEATURE_COUNT = NAMED_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of operations of the '<em>Shopping Cart</em>' class.
+	 * The number of operations of the '<em>Cart</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.Item_Shopping_CartImpl <em>Item Shopping Cart</em>}' class.
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ItemCartImpl <em>Item Cart</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.Item_Shopping_CartImpl
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getItem_Shopping_Cart()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ItemCartImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getItemCart()
 	 * @generated
 	 */
-	int ITEM_SHOPPING_CART = 7;
+	int ITEM_CART = 7;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -630,61 +540,43 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_SHOPPING_CART__NAME = NAMED__NAME;
+	int ITEM_CART__NAME = NAMED__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Item cart id</b></em>' attribute.
+	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_SHOPPING_CART__ITEM_CART_ID = NAMED_FEATURE_COUNT + 0;
+	int ITEM_CART__QUANTITY = NAMED_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Units</b></em>' attribute.
+	 * The feature id for the '<em><b>Item cart have product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_SHOPPING_CART__UNITS = NAMED_FEATURE_COUNT + 1;
+	int ITEM_CART__ITEM_CART_HAVE_PRODUCT = NAMED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Price</b></em>' attribute.
+	 * The number of structural features of the '<em>Item Cart</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_SHOPPING_CART__PRICE = NAMED_FEATURE_COUNT + 2;
+	int ITEM_CART_FEATURE_COUNT = NAMED_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Item cart have product</b></em>' containment reference.
+	 * The number of operations of the '<em>Item Cart</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_SHOPPING_CART__ITEM_CART_HAVE_PRODUCT = NAMED_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Item Shopping Cart</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ITEM_SHOPPING_CART_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
-
-	/**
-	 * The number of operations of the '<em>Item Shopping Cart</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ITEM_SHOPPING_CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int ITEM_CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl <em>Address</em>}' class.
@@ -697,13 +589,13 @@ public interface ModelPackage extends EPackage {
 	int ADDRESS = 8;
 
 	/**
-	 * The feature id for the '<em><b>Address id</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__ADDRESS_ID = 0;
+	int ADDRESS__NAME = NAMED__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Country</b></em>' attribute.
@@ -712,7 +604,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__COUNTRY = 1;
+	int ADDRESS__COUNTRY = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -721,7 +613,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__STATE = 2;
+	int ADDRESS__STATE = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -730,7 +622,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__CITY = 3;
+	int ADDRESS__CITY = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Post code</b></em>' attribute.
@@ -739,7 +631,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__POST_CODE = 4;
+	int ADDRESS__POST_CODE = NAMED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Phone</b></em>' attribute.
@@ -748,7 +640,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__PHONE = 5;
+	int ADDRESS__PHONE = NAMED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Active</b></em>' attribute.
@@ -757,7 +649,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS__ACTIVE = 6;
+	int ADDRESS__ACTIVE = NAMED_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Address</em>' class.
@@ -766,7 +658,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_FEATURE_COUNT = 7;
+	int ADDRESS_FEATURE_COUNT = NAMED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>Address</em>' class.
@@ -775,26 +667,17 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_OPERATION_COUNT = 0;
+	int ADDRESS_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.SaleImpl <em>Sale</em>}' class.
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.OrderImpl <em>Order</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.SaleImpl
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getSale()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.OrderImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getOrder()
 	 * @generated
 	 */
-	int SALE = 9;
-
-	/**
-	 * The feature id for the '<em><b>Sale id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SALE__SALE_ID = 0;
+	int ORDER = 9;
 
 	/**
 	 * The feature id for the '<em><b>Reference number</b></em>' attribute.
@@ -803,7 +686,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALE__REFERENCE_NUMBER = 1;
+	int ORDER__REFERENCE_NUMBER = 0;
 
 	/**
 	 * The feature id for the '<em><b>Total price</b></em>' attribute.
@@ -812,7 +695,89 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALE__TOTAL_PRICE = 2;
+	int ORDER__TOTAL_PRICE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Date created</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER__DATE_CREATED = 2;
+
+	/**
+	 * The feature id for the '<em><b>Order state</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER__ORDER_STATE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Order has invoice</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER__ORDER_HAS_INVOICE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Order have shipment</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER__ORDER_HAVE_SHIPMENT = 5;
+
+	/**
+	 * The number of structural features of the '<em>Order</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Order</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ShipmentImpl <em>Shipment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ShipmentImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShipment()
+	 * @generated
+	 */
+	int SHIPMENT = 10;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHIPMENT__NAME = NAMED__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Shipment status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHIPMENT__SHIPMENT_STATUS = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Date</b></em>' attribute.
@@ -821,43 +786,43 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALE__DATE = 3;
+	int SHIPMENT__DATE = NAMED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>State</b></em>' attribute.
+	 * The feature id for the '<em><b>Shipment no</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALE__STATE = 4;
+	int SHIPMENT__SHIPMENT_NO = NAMED_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Sale has invoice</b></em>' containment reference.
+	 * The feature id for the '<em><b>Shipment has address</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALE__SALE_HAS_INVOICE = 5;
+	int SHIPMENT__SHIPMENT_HAS_ADDRESS = NAMED_FEATURE_COUNT + 3;
 
 	/**
-	 * The number of structural features of the '<em>Sale</em>' class.
+	 * The number of structural features of the '<em>Shipment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALE_FEATURE_COUNT = 6;
+	int SHIPMENT_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
 
 	/**
-	 * The number of operations of the '<em>Sale</em>' class.
+	 * The number of operations of the '<em>Shipment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALE_OPERATION_COUNT = 0;
+	int SHIPMENT_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl <em>Invoice</em>}' class.
@@ -867,7 +832,16 @@ public interface ModelPackage extends EPackage {
 	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getInvoice()
 	 * @generated
 	 */
-	int INVOICE = 10;
+	int INVOICE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE__NAME = NAMED__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Invoice id</b></em>' attribute.
@@ -876,34 +850,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_ID = 0;
+	int INVOICE__INVOICE_ID = NAMED_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * The feature id for the '<em><b>Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__DESCRIPTION = 1;
-
-	/**
-	 * The feature id for the '<em><b>Products list</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOICE__PRODUCTS_LIST = 2;
-
-	/**
-	 * The feature id for the '<em><b>Rates</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INVOICE__RATES = 3;
+	int INVOICE__DATE = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Invoice</em>' class.
@@ -912,7 +868,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_FEATURE_COUNT = 4;
+	int INVOICE_FEATURE_COUNT = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Invoice</em>' class.
@@ -921,7 +877,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_OPERATION_COUNT = 0;
+	int INVOICE_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AdministratorImpl <em>Administrator</em>}' class.
@@ -931,25 +887,16 @@ public interface ModelPackage extends EPackage {
 	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getAdministrator()
 	 * @generated
 	 */
-	int ADMINISTRATOR = 11;
+	int ADMINISTRATOR = 12;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Surname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADMINISTRATOR__NAME = USER__NAME;
-
-	/**
-	 * The feature id for the '<em><b>User id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADMINISTRATOR__USER_ID = USER__USER_ID;
+	int ADMINISTRATOR__SURNAME = USER__SURNAME;
 
 	/**
 	 * The feature id for the '<em><b>Username</b></em>' attribute.
@@ -988,15 +935,6 @@ public interface ModelPackage extends EPackage {
 	int ADMINISTRATOR__EMAIL = USER__EMAIL;
 
 	/**
-	 * The feature id for the '<em><b>Have addresses</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADMINISTRATOR__HAVE_ADDRESSES = USER__HAVE_ADDRESSES;
-
-	/**
 	 * The number of structural features of the '<em>Administrator</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1015,32 +953,23 @@ public interface ModelPackage extends EPackage {
 	int ADMINISTRATOR_OPERATION_COUNT = USER_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ClientImpl <em>Client</em>}' class.
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.CustomerImpl <em>Customer</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ClientImpl
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getClient()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.CustomerImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getCustomer()
 	 * @generated
 	 */
-	int CLIENT = 12;
+	int CUSTOMER = 13;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Surname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__NAME = USER__NAME;
-
-	/**
-	 * The feature id for the '<em><b>User id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLIENT__USER_ID = USER__USER_ID;
+	int CUSTOMER__SURNAME = USER__SURNAME;
 
 	/**
 	 * The feature id for the '<em><b>Username</b></em>' attribute.
@@ -1049,7 +978,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__USERNAME = USER__USERNAME;
+	int CUSTOMER__USERNAME = USER__USERNAME;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -1058,7 +987,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__PASSWORD = USER__PASSWORD;
+	int CUSTOMER__PASSWORD = USER__PASSWORD;
 
 	/**
 	 * The feature id for the '<em><b>Active</b></em>' attribute.
@@ -1067,7 +996,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__ACTIVE = USER__ACTIVE;
+	int CUSTOMER__ACTIVE = USER__ACTIVE;
 
 	/**
 	 * The feature id for the '<em><b>Email</b></em>' attribute.
@@ -1076,44 +1005,100 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__EMAIL = USER__EMAIL;
+	int CUSTOMER__EMAIL = USER__EMAIL;
 
 	/**
-	 * The feature id for the '<em><b>Have addresses</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Customer have address</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT__HAVE_ADDRESSES = USER__HAVE_ADDRESSES;
+	int CUSTOMER__CUSTOMER_HAVE_ADDRESS = USER_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Client</em>' class.
+	 * The feature id for the '<em><b>Customer have cart</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT_FEATURE_COUNT = USER_FEATURE_COUNT + 0;
+	int CUSTOMER__CUSTOMER_HAVE_CART = USER_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Client</em>' class.
+	 * The number of structural features of the '<em>Customer</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLIENT_OPERATION_COUNT = USER_OPERATION_COUNT + 0;
+	int CUSTOMER_FEATURE_COUNT = USER_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.State <em>State</em>}' enum.
+	 * The number of operations of the '<em>Customer</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.State
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getState()
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER_OPERATION_COUNT = USER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ProductImageImpl <em>Product Image</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ProductImageImpl
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getProductImage()
 	 * @generated
 	 */
-	int STATE = 13;
+	int PRODUCT_IMAGE = 14;
+
+	/**
+	 * The feature id for the '<em><b>Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_IMAGE__REF = 0;
+
+	/**
+	 * The number of structural features of the '<em>Product Image</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_IMAGE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Product Image</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_IMAGE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.OrderState <em>Order State</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.OrderState
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getOrderState()
+	 * @generated
+	 */
+	int ORDER_STATE = 15;
+
+	/**
+	 * The meta object id for the '{@link it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus <em>Shipment Status</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShipmentStatus()
+	 * @generated
+	 */
+	int SHIPMENT_STATUS = 16;
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.application <em>application</em>}'.
@@ -1137,69 +1122,47 @@ public interface ModelPackage extends EPackage {
 	EReference getapplication_App_have_shops();
 
 	/**
-	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop <em>Shop</em>}'.
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem <em>Ecommerce System</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Shop</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop
+	 * @return the meta object for class '<em>Ecommerce System</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem
 	 * @generated
 	 */
-	EClass getShop();
+	EClass getEcommerceSystem();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_id <em>Shop id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Shop id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_id()
-	 * @see #getShop()
-	 * @generated
-	 */
-	EAttribute getShop_Shop_id();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_has_users <em>Shop has users</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Shop has users</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_has_users()
-	 * @see #getShop()
-	 * @generated
-	 */
-	EReference getShop_Shop_has_users();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_categories <em>Shop have categories</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getShop_have_categories <em>Shop have categories</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Shop have categories</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_categories()
-	 * @see #getShop()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getShop_have_categories()
+	 * @see #getEcommerceSystem()
 	 * @generated
 	 */
-	EReference getShop_Shop_have_categories();
+	EReference getEcommerceSystem_Shop_have_categories();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_products <em>Shop have products</em>}'.
+	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getHave_clients <em>Have clients</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Shop have products</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_products()
-	 * @see #getShop()
+	 * @return the meta object for the containment reference '<em>Have clients</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getHave_clients()
+	 * @see #getEcommerceSystem()
 	 * @generated
 	 */
-	EReference getShop_Shop_have_products();
+	EReference getEcommerceSystem_Have_clients();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_carts <em>Shop have carts</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getShop_have_administrators <em>Shop have administrators</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Shop have carts</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shop#getShop_have_carts()
-	 * @see #getShop()
+	 * @return the meta object for the containment reference list '<em>Shop have administrators</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem#getShop_have_administrators()
+	 * @see #getEcommerceSystem()
 	 * @generated
 	 */
-	EReference getShop_Shop_have_carts();
+	EReference getEcommerceSystem_Shop_have_administrators();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Named <em>Named</em>}'.
@@ -1233,17 +1196,6 @@ public interface ModelPackage extends EPackage {
 	EClass getCategory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getCat_id <em>Cat id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Cat id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Category#getCat_id()
-	 * @see #getCategory()
-	 * @generated
-	 */
-	EAttribute getCategory_Cat_id();
-
-	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#isActive <em>Active</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1253,28 +1205,6 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCategory_Active();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_added <em>Date added</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Date added</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_added()
-	 * @see #getCategory()
-	 * @generated
-	 */
-	EAttribute getCategory_Date_added();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_updated <em>Date updated</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Date updated</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Category#getDate_updated()
-	 * @see #getCategory()
-	 * @generated
-	 */
-	EAttribute getCategory_Date_updated();
 
 	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getDepth <em>Depth</em>}'.
@@ -1310,6 +1240,17 @@ public interface ModelPackage extends EPackage {
 	EReference getCategory_Have_sub_categories();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Category#getHave_products <em>Have products</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Have products</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Category#getHave_products()
+	 * @see #getCategory()
+	 * @generated
+	 */
+	EReference getCategory_Have_products();
+
+	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Product <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1320,26 +1261,15 @@ public interface ModelPackage extends EPackage {
 	EClass getProduct();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getProd_id <em>Prod id</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isAvailable <em>Available</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Prod id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#getProd_id()
+	 * @return the meta object for the attribute '<em>Available</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#isAvailable()
 	 * @see #getProduct()
 	 * @generated
 	 */
-	EAttribute getProduct_Prod_id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isActive <em>Active</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Active</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#isActive()
-	 * @see #getProduct()
-	 * @generated
-	 */
-	EAttribute getProduct_Active();
+	EAttribute getProduct_Available();
 
 	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getStock <em>Stock</em>}'.
@@ -1397,26 +1327,15 @@ public interface ModelPackage extends EPackage {
 	EAttribute getProduct_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getLong_description <em>Long description</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getProduct_have_images <em>Product have images</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Long description</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#getLong_description()
+	 * @return the meta object for the containment reference list '<em>Product have images</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#getProduct_have_images()
 	 * @see #getProduct()
 	 * @generated
 	 */
-	EAttribute getProduct_Long_description();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getHave_category <em>Have category</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Have category</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Product#getHave_category()
-	 * @see #getProduct()
-	 * @generated
-	 */
-	EReference getProduct_Have_category();
+	EReference getProduct_Product_have_images();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.User <em>User</em>}'.
@@ -1429,15 +1348,15 @@ public interface ModelPackage extends EPackage {
 	EClass getUser();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getUser_id <em>User id</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getSurname <em>Surname</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>User id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.User#getUser_id()
+	 * @return the meta object for the attribute '<em>Surname</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.User#getSurname()
 	 * @see #getUser()
 	 * @generated
 	 */
-	EAttribute getUser_User_id();
+	EAttribute getUser_Surname();
 
 	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getUsername <em>Username</em>}'.
@@ -1484,134 +1403,79 @@ public interface ModelPackage extends EPackage {
 	EAttribute getUser_Email();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getHave_addresses <em>Have addresses</em>}'.
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Cart <em>Cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Have addresses</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.User#getHave_addresses()
-	 * @see #getUser()
+	 * @return the meta object for class '<em>Cart</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Cart
 	 * @generated
 	 */
-	EReference getUser_Have_addresses();
+	EClass getCart();
 
 	/**
-	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart <em>Shopping Cart</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Shopping Cart</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart
-	 * @generated
-	 */
-	EClass getShopping_Cart();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_id <em>Cart id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Cart id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_id()
-	 * @see #getShopping_Cart()
-	 * @generated
-	 */
-	EAttribute getShopping_Cart_Cart_id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getDate_added <em>Date added</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Cart#getDate_added <em>Date added</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Date added</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getDate_added()
-	 * @see #getShopping_Cart()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Cart#getDate_added()
+	 * @see #getCart()
 	 * @generated
 	 */
-	EAttribute getShopping_Cart_Date_added();
+	EAttribute getCart_Date_added();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#isActive <em>Active</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Active</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#isActive()
-	 * @see #getShopping_Cart()
-	 * @generated
-	 */
-	EAttribute getShopping_Cart_Active();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_have_items <em>Cart have items</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Cart#getCart_have_items <em>Cart have items</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Cart have items</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_have_items()
-	 * @see #getShopping_Cart()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Cart#getCart_have_items()
+	 * @see #getCart()
 	 * @generated
 	 */
-	EReference getShopping_Cart_Cart_have_items();
+	EReference getCart_Cart_have_items();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_have_sale <em>Cart have sale</em>}'.
+	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Cart#getCart_have_order <em>Cart have order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Cart have sale</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart#getCart_have_sale()
-	 * @see #getShopping_Cart()
+	 * @return the meta object for the containment reference '<em>Cart have order</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Cart#getCart_have_order()
+	 * @see #getCart()
 	 * @generated
 	 */
-	EReference getShopping_Cart_Cart_have_sale();
+	EReference getCart_Cart_have_order();
 
 	/**
-	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart <em>Item Shopping Cart</em>}'.
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart <em>Item Cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Item Shopping Cart</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart
+	 * @return the meta object for class '<em>Item Cart</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ItemCart
 	 * @generated
 	 */
-	EClass getItem_Shopping_Cart();
+	EClass getItemCart();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getItem_cart_id <em>Item cart id</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart#getQuantity <em>Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Item cart id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getItem_cart_id()
-	 * @see #getItem_Shopping_Cart()
+	 * @return the meta object for the attribute '<em>Quantity</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ItemCart#getQuantity()
+	 * @see #getItemCart()
 	 * @generated
 	 */
-	EAttribute getItem_Shopping_Cart_Item_cart_id();
+	EAttribute getItemCart_Quantity();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getUnits <em>Units</em>}'.
+	 * Returns the meta object for the reference '{@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart#getItem_cart_have_product <em>Item cart have product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Units</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getUnits()
-	 * @see #getItem_Shopping_Cart()
+	 * @return the meta object for the reference '<em>Item cart have product</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ItemCart#getItem_cart_have_product()
+	 * @see #getItemCart()
 	 * @generated
 	 */
-	EAttribute getItem_Shopping_Cart_Units();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getPrice <em>Price</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Price</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getPrice()
-	 * @see #getItem_Shopping_Cart()
-	 * @generated
-	 */
-	EAttribute getItem_Shopping_Cart_Price();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getItem_cart_have_product <em>Item cart have product</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Item cart have product</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart#getItem_cart_have_product()
-	 * @see #getItem_Shopping_Cart()
-	 * @generated
-	 */
-	EReference getItem_Shopping_Cart_Item_cart_have_product();
+	EReference getItemCart_Item_cart_have_product();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Address <em>Address</em>}'.
@@ -1622,17 +1486,6 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAddress();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getAddress_id <em>Address id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Address id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Address#getAddress_id()
-	 * @see #getAddress()
-	 * @generated
-	 */
-	EAttribute getAddress_Address_id();
 
 	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Address#getCountry <em>Country</em>}'.
@@ -1701,80 +1554,134 @@ public interface ModelPackage extends EPackage {
 	EAttribute getAddress_Active();
 
 	/**
-	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale <em>Sale</em>}'.
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Order <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Sale</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale
+	 * @return the meta object for class '<em>Order</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order
 	 * @generated
 	 */
-	EClass getSale();
+	EClass getOrder();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getSale_id <em>Sale id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Sale id</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getSale_id()
-	 * @see #getSale()
-	 * @generated
-	 */
-	EAttribute getSale_Sale_id();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getReference_number <em>Reference number</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getReference_number <em>Reference number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Reference number</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getReference_number()
-	 * @see #getSale()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getReference_number()
+	 * @see #getOrder()
 	 * @generated
 	 */
-	EAttribute getSale_Reference_number();
+	EAttribute getOrder_Reference_number();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getTotal_price <em>Total price</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getTotal_price <em>Total price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Total price</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getTotal_price()
-	 * @see #getSale()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getTotal_price()
+	 * @see #getOrder()
 	 * @generated
 	 */
-	EAttribute getSale_Total_price();
+	EAttribute getOrder_Total_price();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getDate <em>Date</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getDate_created <em>Date created</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Date created</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getDate_created()
+	 * @see #getOrder()
+	 * @generated
+	 */
+	EAttribute getOrder_Date_created();
+
+	/**
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_state <em>Order state</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Order state</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_state()
+	 * @see #getOrder()
+	 * @generated
+	 */
+	EAttribute getOrder_Order_state();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_has_invoice <em>Order has invoice</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Order has invoice</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_has_invoice()
+	 * @see #getOrder()
+	 * @generated
+	 */
+	EReference getOrder_Order_has_invoice();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_have_shipment <em>Order have shipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Order have shipment</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Order#getOrder_have_shipment()
+	 * @see #getOrder()
+	 * @generated
+	 */
+	EReference getOrder_Order_have_shipment();
+
+	/**
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment <em>Shipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Shipment</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment
+	 * @generated
+	 */
+	EClass getShipment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_status <em>Shipment status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Shipment status</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_status()
+	 * @see #getShipment()
+	 * @generated
+	 */
+	EAttribute getShipment_Shipment_status();
+
+	/**
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment#getDate <em>Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Date</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getDate()
-	 * @see #getSale()
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment#getDate()
+	 * @see #getShipment()
 	 * @generated
 	 */
-	EAttribute getSale_Date();
+	EAttribute getShipment_Date();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getState <em>State</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_no <em>Shipment no</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>State</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getState()
-	 * @see #getSale()
+	 * @return the meta object for the attribute '<em>Shipment no</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_no()
+	 * @see #getShipment()
 	 * @generated
 	 */
-	EAttribute getSale_State();
+	EAttribute getShipment_Shipment_no();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Sale#getSale_has_invoice <em>Sale has invoice</em>}'.
+	 * Returns the meta object for the reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_has_address <em>Shipment has address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Sale has invoice</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Sale#getSale_has_invoice()
-	 * @see #getSale()
+	 * @return the meta object for the reference '<em>Shipment has address</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Shipment#getShipment_has_address()
+	 * @see #getShipment()
 	 * @generated
 	 */
-	EReference getSale_Sale_has_invoice();
+	EReference getShipment_Shipment_has_address();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice <em>Invoice</em>}'.
@@ -1798,37 +1705,15 @@ public interface ModelPackage extends EPackage {
 	EAttribute getInvoice_Invoice_id();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDate <em>Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDescription()
+	 * @return the meta object for the attribute '<em>Date</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDate()
 	 * @see #getInvoice()
 	 * @generated
 	 */
-	EAttribute getInvoice_Description();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getProducts_list <em>Products list</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Products list</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Invoice#getProducts_list()
-	 * @see #getInvoice()
-	 * @generated
-	 */
-	EAttribute getInvoice_Products_list();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getRates <em>Rates</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Rates</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Invoice#getRates()
-	 * @see #getInvoice()
-	 * @generated
-	 */
-	EAttribute getInvoice_Rates();
+	EAttribute getInvoice_Date();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Administrator <em>Administrator</em>}'.
@@ -1841,24 +1726,77 @@ public interface ModelPackage extends EPackage {
 	EClass getAdministrator();
 
 	/**
-	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Client <em>Client</em>}'.
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.Customer <em>Customer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Client</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.Client
+	 * @return the meta object for class '<em>Customer</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Customer
 	 * @generated
 	 */
-	EClass getClient();
+	EClass getCustomer();
 
 	/**
-	 * Returns the meta object for enum '{@link it.disim.univaq.ecommerce.ecommerce_application.State <em>State</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.ecommerce_application.Customer#getCustomer_have_address <em>Customer have address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>State</em>'.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.State
+	 * @return the meta object for the containment reference list '<em>Customer have address</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Customer#getCustomer_have_address()
+	 * @see #getCustomer()
 	 * @generated
 	 */
-	EEnum getState();
+	EReference getCustomer_Customer_have_address();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.ecommerce_application.Customer#getCustomer_have_cart <em>Customer have cart</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Customer have cart</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.Customer#getCustomer_have_cart()
+	 * @see #getCustomer()
+	 * @generated
+	 */
+	EReference getCustomer_Customer_have_cart();
+
+	/**
+	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage <em>Product Image</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Product Image</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ProductImage
+	 * @generated
+	 */
+	EClass getProductImage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage#getRef <em>Ref</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ref</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ProductImage#getRef()
+	 * @see #getProductImage()
+	 * @generated
+	 */
+	EAttribute getProductImage_Ref();
+
+	/**
+	 * Returns the meta object for enum '{@link it.disim.univaq.ecommerce.ecommerce_application.OrderState <em>Order State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Order State</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.OrderState
+	 * @generated
+	 */
+	EEnum getOrderState();
+
+	/**
+	 * Returns the meta object for enum '{@link it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus <em>Shipment Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Shipment Status</em>'.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus
+	 * @generated
+	 */
+	EEnum getShipmentStatus();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1902,30 +1840,14 @@ public interface ModelPackage extends EPackage {
 		EReference APPLICATION__APP_HAVE_SHOPS = eINSTANCE.getapplication_App_have_shops();
 
 		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ShopImpl <em>Shop</em>}' class.
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.EcommerceSystemImpl <em>Ecommerce System</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ShopImpl
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShop()
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.EcommerceSystemImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getEcommerceSystem()
 		 * @generated
 		 */
-		EClass SHOP = eINSTANCE.getShop();
-
-		/**
-		 * The meta object literal for the '<em><b>Shop id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SHOP__SHOP_ID = eINSTANCE.getShop_Shop_id();
-
-		/**
-		 * The meta object literal for the '<em><b>Shop has users</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SHOP__SHOP_HAS_USERS = eINSTANCE.getShop_Shop_has_users();
+		EClass ECOMMERCE_SYSTEM = eINSTANCE.getEcommerceSystem();
 
 		/**
 		 * The meta object literal for the '<em><b>Shop have categories</b></em>' containment reference list feature.
@@ -1933,23 +1855,23 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOP__SHOP_HAVE_CATEGORIES = eINSTANCE.getShop_Shop_have_categories();
+		EReference ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES = eINSTANCE.getEcommerceSystem_Shop_have_categories();
 
 		/**
-		 * The meta object literal for the '<em><b>Shop have products</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Have clients</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOP__SHOP_HAVE_PRODUCTS = eINSTANCE.getShop_Shop_have_products();
+		EReference ECOMMERCE_SYSTEM__HAVE_CLIENTS = eINSTANCE.getEcommerceSystem_Have_clients();
 
 		/**
-		 * The meta object literal for the '<em><b>Shop have carts</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Shop have administrators</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOP__SHOP_HAVE_CARTS = eINSTANCE.getShop_Shop_have_carts();
+		EReference ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS = eINSTANCE.getEcommerceSystem_Shop_have_administrators();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.NamedImpl <em>Named</em>}' class.
@@ -1980,36 +1902,12 @@ public interface ModelPackage extends EPackage {
 		EClass CATEGORY = eINSTANCE.getCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Cat id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CATEGORY__CAT_ID = eINSTANCE.getCategory_Cat_id();
-
-		/**
 		 * The meta object literal for the '<em><b>Active</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute CATEGORY__ACTIVE = eINSTANCE.getCategory_Active();
-
-		/**
-		 * The meta object literal for the '<em><b>Date added</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CATEGORY__DATE_ADDED = eINSTANCE.getCategory_Date_added();
-
-		/**
-		 * The meta object literal for the '<em><b>Date updated</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CATEGORY__DATE_UPDATED = eINSTANCE.getCategory_Date_updated();
 
 		/**
 		 * The meta object literal for the '<em><b>Depth</b></em>' attribute feature.
@@ -2036,6 +1934,14 @@ public interface ModelPackage extends EPackage {
 		EReference CATEGORY__HAVE_SUB_CATEGORIES = eINSTANCE.getCategory_Have_sub_categories();
 
 		/**
+		 * The meta object literal for the '<em><b>Have products</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CATEGORY__HAVE_PRODUCTS = eINSTANCE.getCategory_Have_products();
+
+		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ProductImpl <em>Product</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2046,20 +1952,12 @@ public interface ModelPackage extends EPackage {
 		EClass PRODUCT = eINSTANCE.getProduct();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod id</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Available</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PRODUCT__PROD_ID = eINSTANCE.getProduct_Prod_id();
-
-		/**
-		 * The meta object literal for the '<em><b>Active</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PRODUCT__ACTIVE = eINSTANCE.getProduct_Active();
+		EAttribute PRODUCT__AVAILABLE = eINSTANCE.getProduct_Available();
 
 		/**
 		 * The meta object literal for the '<em><b>Stock</b></em>' attribute feature.
@@ -2102,20 +2000,12 @@ public interface ModelPackage extends EPackage {
 		EAttribute PRODUCT__DESCRIPTION = eINSTANCE.getProduct_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Long description</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Product have images</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PRODUCT__LONG_DESCRIPTION = eINSTANCE.getProduct_Long_description();
-
-		/**
-		 * The meta object literal for the '<em><b>Have category</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT__HAVE_CATEGORY = eINSTANCE.getProduct_Have_category();
+		EReference PRODUCT__PRODUCT_HAVE_IMAGES = eINSTANCE.getProduct_Product_have_images();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl <em>User</em>}' class.
@@ -2128,12 +2018,12 @@ public interface ModelPackage extends EPackage {
 		EClass USER = eINSTANCE.getUser();
 
 		/**
-		 * The meta object literal for the '<em><b>User id</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Surname</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute USER__USER_ID = eINSTANCE.getUser_User_id();
+		EAttribute USER__SURNAME = eINSTANCE.getUser_Surname();
 
 		/**
 		 * The meta object literal for the '<em><b>Username</b></em>' attribute feature.
@@ -2168,30 +2058,14 @@ public interface ModelPackage extends EPackage {
 		EAttribute USER__EMAIL = eINSTANCE.getUser_Email();
 
 		/**
-		 * The meta object literal for the '<em><b>Have addresses</b></em>' containment reference list feature.
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.CartImpl <em>Cart</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.CartImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getCart()
 		 * @generated
 		 */
-		EReference USER__HAVE_ADDRESSES = eINSTANCE.getUser_Have_addresses();
-
-		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.Shopping_CartImpl <em>Shopping Cart</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.Shopping_CartImpl
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShopping_Cart()
-		 * @generated
-		 */
-		EClass SHOPPING_CART = eINSTANCE.getShopping_Cart();
-
-		/**
-		 * The meta object literal for the '<em><b>Cart id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SHOPPING_CART__CART_ID = eINSTANCE.getShopping_Cart_Cart_id();
+		EClass CART = eINSTANCE.getCart();
 
 		/**
 		 * The meta object literal for the '<em><b>Date added</b></em>' attribute feature.
@@ -2199,15 +2073,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SHOPPING_CART__DATE_ADDED = eINSTANCE.getShopping_Cart_Date_added();
-
-		/**
-		 * The meta object literal for the '<em><b>Active</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SHOPPING_CART__ACTIVE = eINSTANCE.getShopping_Cart_Active();
+		EAttribute CART__DATE_ADDED = eINSTANCE.getCart_Date_added();
 
 		/**
 		 * The meta object literal for the '<em><b>Cart have items</b></em>' containment reference list feature.
@@ -2215,58 +2081,41 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_CART__CART_HAVE_ITEMS = eINSTANCE.getShopping_Cart_Cart_have_items();
+		EReference CART__CART_HAVE_ITEMS = eINSTANCE.getCart_Cart_have_items();
 
 		/**
-		 * The meta object literal for the '<em><b>Cart have sale</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Cart have order</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_CART__CART_HAVE_SALE = eINSTANCE.getShopping_Cart_Cart_have_sale();
+		EReference CART__CART_HAVE_ORDER = eINSTANCE.getCart_Cart_have_order();
 
 		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.Item_Shopping_CartImpl <em>Item Shopping Cart</em>}' class.
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ItemCartImpl <em>Item Cart</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.Item_Shopping_CartImpl
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getItem_Shopping_Cart()
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ItemCartImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getItemCart()
 		 * @generated
 		 */
-		EClass ITEM_SHOPPING_CART = eINSTANCE.getItem_Shopping_Cart();
+		EClass ITEM_CART = eINSTANCE.getItemCart();
 
 		/**
-		 * The meta object literal for the '<em><b>Item cart id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ITEM_SHOPPING_CART__ITEM_CART_ID = eINSTANCE.getItem_Shopping_Cart_Item_cart_id();
-
-		/**
-		 * The meta object literal for the '<em><b>Units</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ITEM_SHOPPING_CART__UNITS = eINSTANCE.getItem_Shopping_Cart_Units();
+		EAttribute ITEM_CART__QUANTITY = eINSTANCE.getItemCart_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Price</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Item cart have product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ITEM_SHOPPING_CART__PRICE = eINSTANCE.getItem_Shopping_Cart_Price();
-
-		/**
-		 * The meta object literal for the '<em><b>Item cart have product</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ITEM_SHOPPING_CART__ITEM_CART_HAVE_PRODUCT = eINSTANCE
-				.getItem_Shopping_Cart_Item_cart_have_product();
+		EReference ITEM_CART__ITEM_CART_HAVE_PRODUCT = eINSTANCE.getItemCart_Item_cart_have_product();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl <em>Address</em>}' class.
@@ -2277,14 +2126,6 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADDRESS = eINSTANCE.getAddress();
-
-		/**
-		 * The meta object literal for the '<em><b>Address id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADDRESS__ADDRESS_ID = eINSTANCE.getAddress_Address_id();
 
 		/**
 		 * The meta object literal for the '<em><b>Country</b></em>' attribute feature.
@@ -2335,22 +2176,14 @@ public interface ModelPackage extends EPackage {
 		EAttribute ADDRESS__ACTIVE = eINSTANCE.getAddress_Active();
 
 		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.SaleImpl <em>Sale</em>}' class.
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.OrderImpl <em>Order</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.SaleImpl
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getSale()
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.OrderImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getOrder()
 		 * @generated
 		 */
-		EClass SALE = eINSTANCE.getSale();
-
-		/**
-		 * The meta object literal for the '<em><b>Sale id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SALE__SALE_ID = eINSTANCE.getSale_Sale_id();
+		EClass ORDER = eINSTANCE.getOrder();
 
 		/**
 		 * The meta object literal for the '<em><b>Reference number</b></em>' attribute feature.
@@ -2358,7 +2191,7 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALE__REFERENCE_NUMBER = eINSTANCE.getSale_Reference_number();
+		EAttribute ORDER__REFERENCE_NUMBER = eINSTANCE.getOrder_Reference_number();
 
 		/**
 		 * The meta object literal for the '<em><b>Total price</b></em>' attribute feature.
@@ -2366,7 +2199,57 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALE__TOTAL_PRICE = eINSTANCE.getSale_Total_price();
+		EAttribute ORDER__TOTAL_PRICE = eINSTANCE.getOrder_Total_price();
+
+		/**
+		 * The meta object literal for the '<em><b>Date created</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORDER__DATE_CREATED = eINSTANCE.getOrder_Date_created();
+
+		/**
+		 * The meta object literal for the '<em><b>Order state</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORDER__ORDER_STATE = eINSTANCE.getOrder_Order_state();
+
+		/**
+		 * The meta object literal for the '<em><b>Order has invoice</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER__ORDER_HAS_INVOICE = eINSTANCE.getOrder_Order_has_invoice();
+
+		/**
+		 * The meta object literal for the '<em><b>Order have shipment</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER__ORDER_HAVE_SHIPMENT = eINSTANCE.getOrder_Order_have_shipment();
+
+		/**
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ShipmentImpl <em>Shipment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ShipmentImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShipment()
+		 * @generated
+		 */
+		EClass SHIPMENT = eINSTANCE.getShipment();
+
+		/**
+		 * The meta object literal for the '<em><b>Shipment status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SHIPMENT__SHIPMENT_STATUS = eINSTANCE.getShipment_Shipment_status();
 
 		/**
 		 * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
@@ -2374,23 +2257,23 @@ public interface ModelPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALE__DATE = eINSTANCE.getSale_Date();
+		EAttribute SHIPMENT__DATE = eINSTANCE.getShipment_Date();
 
 		/**
-		 * The meta object literal for the '<em><b>State</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Shipment no</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SALE__STATE = eINSTANCE.getSale_State();
+		EAttribute SHIPMENT__SHIPMENT_NO = eINSTANCE.getShipment_Shipment_no();
 
 		/**
-		 * The meta object literal for the '<em><b>Sale has invoice</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Shipment has address</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALE__SALE_HAS_INVOICE = eINSTANCE.getSale_Sale_has_invoice();
+		EReference SHIPMENT__SHIPMENT_HAS_ADDRESS = eINSTANCE.getShipment_Shipment_has_address();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.InvoiceImpl <em>Invoice</em>}' class.
@@ -2411,28 +2294,12 @@ public interface ModelPackage extends EPackage {
 		EAttribute INVOICE__INVOICE_ID = eINSTANCE.getInvoice_Invoice_id();
 
 		/**
-		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INVOICE__DESCRIPTION = eINSTANCE.getInvoice_Description();
-
-		/**
-		 * The meta object literal for the '<em><b>Products list</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INVOICE__PRODUCTS_LIST = eINSTANCE.getInvoice_Products_list();
-
-		/**
-		 * The meta object literal for the '<em><b>Rates</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INVOICE__RATES = eINSTANCE.getInvoice_Rates();
+		EAttribute INVOICE__DATE = eINSTANCE.getInvoice_Date();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AdministratorImpl <em>Administrator</em>}' class.
@@ -2445,24 +2312,68 @@ public interface ModelPackage extends EPackage {
 		EClass ADMINISTRATOR = eINSTANCE.getAdministrator();
 
 		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ClientImpl <em>Client</em>}' class.
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.CustomerImpl <em>Customer</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ClientImpl
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getClient()
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.CustomerImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getCustomer()
 		 * @generated
 		 */
-		EClass CLIENT = eINSTANCE.getClient();
+		EClass CUSTOMER = eINSTANCE.getCustomer();
 
 		/**
-		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.State <em>State</em>}' enum.
+		 * The meta object literal for the '<em><b>Customer have address</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.State
-		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getState()
 		 * @generated
 		 */
-		EEnum STATE = eINSTANCE.getState();
+		EReference CUSTOMER__CUSTOMER_HAVE_ADDRESS = eINSTANCE.getCustomer_Customer_have_address();
+
+		/**
+		 * The meta object literal for the '<em><b>Customer have cart</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER__CUSTOMER_HAVE_CART = eINSTANCE.getCustomer_Customer_have_cart();
+
+		/**
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.impl.ProductImageImpl <em>Product Image</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ProductImageImpl
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getProductImage()
+		 * @generated
+		 */
+		EClass PRODUCT_IMAGE = eINSTANCE.getProductImage();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_IMAGE__REF = eINSTANCE.getProductImage_Ref();
+
+		/**
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.OrderState <em>Order State</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.OrderState
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getOrderState()
+		 * @generated
+		 */
+		EEnum ORDER_STATE = eINSTANCE.getOrderState();
+
+		/**
+		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus <em>Shipment Status</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.ShipmentStatus
+		 * @see it.disim.univaq.ecommerce.ecommerce_application.impl.ModelPackageImpl#getShipmentStatus()
+		 * @generated
+		 */
+		EEnum SHIPMENT_STATUS = eINSTANCE.getShipmentStatus();
 
 	}
 

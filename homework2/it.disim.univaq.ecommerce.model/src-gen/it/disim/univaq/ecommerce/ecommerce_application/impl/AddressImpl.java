@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +19,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl#getAddress_id <em>Address id</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl#getCountry <em>Country</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl#getState <em>State</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.AddressImpl#getCity <em>City</em>}</li>
@@ -31,27 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AddressImpl extends MinimalEObjectImpl.Container implements Address {
-	/**
-	 * The default value of the '{@link #getAddress_id() <em>Address id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAddress_id()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int ADDRESS_ID_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getAddress_id() <em>Address id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAddress_id()
-	 * @generated
-	 * @ordered
-	 */
-	protected int address_id = ADDRESS_ID_EDEFAULT;
-
+public class AddressImpl extends NamedImpl implements Address {
 	/**
 	 * The default value of the '{@link #getCountry() <em>Country</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -196,28 +174,6 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getAddress_id() {
-		return address_id;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setAddress_id(int newAddress_id) {
-		int oldAddress_id = address_id;
-		address_id = newAddress_id;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.ADDRESS__ADDRESS_ID, oldAddress_id,
-					address_id));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getCountry() {
 		return country;
 	}
@@ -348,8 +304,6 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case ModelPackage.ADDRESS__ADDRESS_ID:
-			return getAddress_id();
 		case ModelPackage.ADDRESS__COUNTRY:
 			return getCountry();
 		case ModelPackage.ADDRESS__STATE:
@@ -374,9 +328,6 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case ModelPackage.ADDRESS__ADDRESS_ID:
-			setAddress_id((Integer) newValue);
-			return;
 		case ModelPackage.ADDRESS__COUNTRY:
 			setCountry((String) newValue);
 			return;
@@ -407,9 +358,6 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case ModelPackage.ADDRESS__ADDRESS_ID:
-			setAddress_id(ADDRESS_ID_EDEFAULT);
-			return;
 		case ModelPackage.ADDRESS__COUNTRY:
 			setCountry(COUNTRY_EDEFAULT);
 			return;
@@ -440,8 +388,6 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case ModelPackage.ADDRESS__ADDRESS_ID:
-			return address_id != ADDRESS_ID_EDEFAULT;
 		case ModelPackage.ADDRESS__COUNTRY:
 			return COUNTRY_EDEFAULT == null ? country != null : !COUNTRY_EDEFAULT.equals(country);
 		case ModelPackage.ADDRESS__STATE:
@@ -469,9 +415,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (address_id: ");
-		result.append(address_id);
-		result.append(", country: ");
+		result.append(" (country: ");
 		result.append(country);
 		result.append(", state: ");
 		result.append(state);

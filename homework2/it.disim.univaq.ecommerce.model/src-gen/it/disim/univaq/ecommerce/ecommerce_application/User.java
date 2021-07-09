@@ -2,7 +2,7 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application;
 
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,40 +13,39 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getUser_id <em>User id</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getSurname <em>Surname</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getUsername <em>Username</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getPassword <em>Password</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#isActive <em>Active</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getEmail <em>Email</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.User#getHave_addresses <em>Have addresses</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getUser()
  * @model
  * @generated
  */
-public interface User extends Named {
+public interface User extends EObject {
 	/**
-	 * Returns the value of the '<em><b>User id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Surname</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User id</em>' attribute.
-	 * @see #setUser_id(int)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getUser_User_id()
-	 * @model id="true"
+	 * @return the value of the '<em>Surname</em>' attribute.
+	 * @see #setSurname(String)
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getUser_Surname()
+	 * @model
 	 * @generated
 	 */
-	int getUser_id();
+	String getSurname();
 
 	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getUser_id <em>User id</em>}' attribute.
+	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.User#getSurname <em>Surname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User id</em>' attribute.
-	 * @see #getUser_id()
+	 * @param value the new value of the '<em>Surname</em>' attribute.
+	 * @see #getSurname()
 	 * @generated
 	 */
-	void setUser_id(int value);
+	void setSurname(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Username</b></em>' attribute.
@@ -135,17 +134,5 @@ public interface User extends Named {
 	 * @generated
 	 */
 	void setEmail(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Have addresses</b></em>' containment reference list.
-	 * The list contents are of type {@link it.disim.univaq.ecommerce.ecommerce_application.Address}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Have addresses</em>' containment reference list.
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getUser_Have_addresses()
-	 * @model containment="true" required="true"
-	 * @generated
-	 */
-	EList<Address> getHave_addresses();
 
 } // User

@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
 public interface application extends Named {
 	/**
 	 * Returns the value of the '<em><b>App have shops</b></em>' containment reference list.
-	 * The list contents are of type {@link it.disim.univaq.ecommerce.ecommerce_application.Shop}.
+	 * The list contents are of type {@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>App have shops</em>' containment reference list.
@@ -31,6 +31,6 @@ public interface application extends Named {
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Shop> getApp_have_shops();
+	EList<EcommerceSystem> getApp_have_shops();
 
 } // application

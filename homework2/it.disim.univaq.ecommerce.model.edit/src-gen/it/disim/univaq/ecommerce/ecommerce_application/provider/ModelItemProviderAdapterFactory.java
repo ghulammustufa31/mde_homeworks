@@ -96,26 +96,26 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Shop} instances.
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ShopItemProvider shopItemProvider;
+	protected EcommerceSystemItemProvider ecommerceSystemItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Shop}.
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.EcommerceSystem}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createShopAdapter() {
-		if (shopItemProvider == null) {
-			shopItemProvider = new ShopItemProvider(this);
+	public Adapter createEcommerceSystemAdapter() {
+		if (ecommerceSystemItemProvider == null) {
+			ecommerceSystemItemProvider = new EcommerceSystemItemProvider(this);
 		}
 
-		return shopItemProvider;
+		return ecommerceSystemItemProvider;
 	}
 
 	/**
@@ -211,49 +211,49 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart} instances.
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Cart} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Shopping_CartItemProvider shopping_CartItemProvider;
+	protected CartItemProvider cartItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Shopping_Cart}.
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Cart}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createShopping_CartAdapter() {
-		if (shopping_CartItemProvider == null) {
-			shopping_CartItemProvider = new Shopping_CartItemProvider(this);
+	public Adapter createCartAdapter() {
+		if (cartItemProvider == null) {
+			cartItemProvider = new CartItemProvider(this);
 		}
 
-		return shopping_CartItemProvider;
+		return cartItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart} instances.
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Item_Shopping_CartItemProvider item_Shopping_CartItemProvider;
+	protected ItemCartItemProvider itemCartItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Item_Shopping_Cart}.
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.ItemCart}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createItem_Shopping_CartAdapter() {
-		if (item_Shopping_CartItemProvider == null) {
-			item_Shopping_CartItemProvider = new Item_Shopping_CartItemProvider(this);
+	public Adapter createItemCartAdapter() {
+		if (itemCartItemProvider == null) {
+			itemCartItemProvider = new ItemCartItemProvider(this);
 		}
 
-		return item_Shopping_CartItemProvider;
+		return itemCartItemProvider;
 	}
 
 	/**
@@ -280,26 +280,49 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Sale} instances.
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Order} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SaleItemProvider saleItemProvider;
+	protected OrderItemProvider orderItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Sale}.
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Order}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createSaleAdapter() {
-		if (saleItemProvider == null) {
-			saleItemProvider = new SaleItemProvider(this);
+	public Adapter createOrderAdapter() {
+		if (orderItemProvider == null) {
+			orderItemProvider = new OrderItemProvider(this);
 		}
 
-		return saleItemProvider;
+		return orderItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Shipment} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ShipmentItemProvider shipmentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Shipment}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createShipmentAdapter() {
+		if (shipmentItemProvider == null) {
+			shipmentItemProvider = new ShipmentItemProvider(this);
+		}
+
+		return shipmentItemProvider;
 	}
 
 	/**
@@ -349,26 +372,49 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Client} instances.
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.Customer} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ClientItemProvider clientItemProvider;
+	protected CustomerItemProvider customerItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Client}.
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.Customer}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createClientAdapter() {
-		if (clientItemProvider == null) {
-			clientItemProvider = new ClientItemProvider(this);
+	public Adapter createCustomerAdapter() {
+		if (customerItemProvider == null) {
+			customerItemProvider = new CustomerItemProvider(this);
 		}
 
-		return clientItemProvider;
+		return customerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ProductImageItemProvider productImageItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createProductImageAdapter() {
+		if (productImageItemProvider == null) {
+			productImageItemProvider = new ProductImageItemProvider(this);
+		}
+
+		return productImageItemProvider;
 	}
 
 	/**
@@ -472,8 +518,8 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 	public void dispose() {
 		if (applicationItemProvider != null)
 			applicationItemProvider.dispose();
-		if (shopItemProvider != null)
-			shopItemProvider.dispose();
+		if (ecommerceSystemItemProvider != null)
+			ecommerceSystemItemProvider.dispose();
 		if (namedItemProvider != null)
 			namedItemProvider.dispose();
 		if (categoryItemProvider != null)
@@ -482,20 +528,24 @@ public class ModelItemProviderAdapterFactory extends ModelAdapterFactory
 			productItemProvider.dispose();
 		if (userItemProvider != null)
 			userItemProvider.dispose();
-		if (shopping_CartItemProvider != null)
-			shopping_CartItemProvider.dispose();
-		if (item_Shopping_CartItemProvider != null)
-			item_Shopping_CartItemProvider.dispose();
+		if (cartItemProvider != null)
+			cartItemProvider.dispose();
+		if (itemCartItemProvider != null)
+			itemCartItemProvider.dispose();
 		if (addressItemProvider != null)
 			addressItemProvider.dispose();
-		if (saleItemProvider != null)
-			saleItemProvider.dispose();
+		if (orderItemProvider != null)
+			orderItemProvider.dispose();
+		if (shipmentItemProvider != null)
+			shipmentItemProvider.dispose();
 		if (invoiceItemProvider != null)
 			invoiceItemProvider.dispose();
 		if (administratorItemProvider != null)
 			administratorItemProvider.dispose();
-		if (clientItemProvider != null)
-			clientItemProvider.dispose();
+		if (customerItemProvider != null)
+			customerItemProvider.dispose();
+		if (productImageItemProvider != null)
+			productImageItemProvider.dispose();
 	}
 
 }

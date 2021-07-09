@@ -144,7 +144,7 @@ public class applicationItemProvider extends NamedItemProvider {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
 		newChildDescriptors.add(createChildParameter(ModelPackage.Literals.APPLICATION__APP_HAVE_SHOPS,
-				ModelFactory.eINSTANCE.createShop()));
+				ModelFactory.eINSTANCE.createEcommerceSystem()));
 	}
 
 }

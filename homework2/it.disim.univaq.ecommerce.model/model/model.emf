@@ -2,69 +2,57 @@
 package ecommerce_application;
 
 class application extends Named {
-	val Shop[+] app_have_shops;
+	val EcommerceSystem[+] app_have_shops;
 }
 
-class Shop extends Named {
-	id attr int shop_id;
-	val User[*] shop_has_users;
+class EcommerceSystem extends Named {
 	val Category[*] shop_have_categories;
-	val Product[*] shop_have_products;
-	val Shopping_Cart[*] shop_have_carts;
+	val Customer have_clients;
+	val Administrator[+] shop_have_administrators;
 }
 
 class Named {
-	attr String name;
+	attr String[1] name;
 }
 
 class Category extends Named {
-	id attr int cat_id;
 	attr boolean active;
-	attr EDate date_added;
-	attr EDate date_updated;
 	attr int depth;
 	attr boolean root_cat;
 	val Category[*] have_sub_categories;
+	val Product[*] have_products;
 }
 
 class Product extends Named {
-	id attr int prod_id;
-	attr boolean active;
+	attr boolean available;
 	attr int stock;
 	attr float height;
 	attr float weight;
 	attr float price;
 	attr String description;
-	attr String long_description;
-	val Category have_category;
+	val ProductImage[*] product_have_images;
 }
 
-class User extends Named {
-	id attr int user_id;
+class User {
+	attr String surname;
 	attr String username;
 	attr String password;
 	attr boolean active;
 	attr String email;
-	val Address[+] have_addresses;
 }
 
-class Shopping_Cart extends Named {
-	id attr int cart_id;
+class Cart extends Named {
 	attr EDate date_added;
-	attr boolean active;
-	val Item_Shopping_Cart[*] cart_have_items;
-	val Sale cart_have_sale;
+	val ItemCart[*] cart_have_items;
+	val Order cart_have_order;
 }
 
-class Item_Shopping_Cart extends Named {
-	id attr int item_cart_id;
-	attr int units;
-	attr float price;
-	val Product[1] item_cart_have_product;
+class ItemCart extends Named {
+	attr int quantity;
+	ref Product[1] item_cart_have_product;
 }
 
-class Address {
-	id attr int address_id;
+class Address extends Named {
 	attr String country;
 	attr String state;
 	attr String city;
@@ -73,31 +61,48 @@ class Address {
 	attr boolean active;
 }
 
-class Sale {
-	id attr int sale_id;
+class Order {
 	attr String reference_number;
 	attr float total_price;
+	attr EDate date_created;
+	attr OrderState order_state;
+	val Invoice order_has_invoice;
+	val Shipment[*] order_have_shipment;
+}
+
+class Shipment extends Named {
+	attr ShipmentStatus shipment_status;
 	attr EDate date;
-	attr State state;
-	val Invoice[1] sale_has_invoice;
+	attr String shipment_no;
+	ref Address[1] shipment_has_address;
 }
 
-enum State {
-	Paid = 0;
-	Envoy = 0;
-	Committed = 0;
+enum OrderState {
+	PAID = 0;
+	COMMITED = 1;
+	UNPAID = 2;
 }
 
-class Invoice {
-	id attr int invoice_id;
-	attr String description;
-	attr String products_list;
-	attr float rates;
+class Invoice extends Named {
+	attr int invoice_id;
+	attr EDate date;
 }
 
 class Administrator extends User {
 }
 
-class Client extends User {
+class Customer extends User {
+	val Address[+] customer_have_address;
+	val Cart customer_have_cart;
+}
+
+enum ShipmentStatus {
+	PENDING = 0;
+	TRAVELING = 1;
+	DELIVERED = 2;
+}
+
+class ProductImage {
+	attr String ~ref;
 }
 

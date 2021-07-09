@@ -10,67 +10,60 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Model" basePackage="it.disim.univaq.ecommerce" disposableProviderFactory="true"
       ecorePackage="model.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="model.ecore#//State">
-      <genEnumLiterals ecoreEnumLiteral="model.ecore#//State/Paid"/>
-      <genEnumLiterals ecoreEnumLiteral="model.ecore#//State/Envoy"/>
-      <genEnumLiterals ecoreEnumLiteral="model.ecore#//State/Committed"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="model.ecore#//OrderState">
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//OrderState/PAID"/>
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//OrderState/COMMITED"/>
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//OrderState/UNPAID"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="model.ecore#//ShipmentStatus">
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//ShipmentStatus/PENDING"/>
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//ShipmentStatus/TRAVELING"/>
+      <genEnumLiterals ecoreEnumLiteral="model.ecore#//ShipmentStatus/DELIVERED"/>
     </genEnums>
     <genClasses ecoreClass="model.ecore#//application">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//application/app_have_shops"/>
     </genClasses>
-    <genClasses ecoreClass="model.ecore#//Shop">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shop/shop_id"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shop/shop_has_users"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shop/shop_have_categories"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shop/shop_have_products"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shop/shop_have_carts"/>
+    <genClasses ecoreClass="model.ecore#//EcommerceSystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//EcommerceSystem/shop_have_categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//EcommerceSystem/have_clients"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//EcommerceSystem/shop_have_administrators"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Named">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Named/name"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Category">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/cat_id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/active"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/date_added"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/date_updated"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/depth"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Category/root_cat"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Category/have_sub_categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Category/have_products"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Product">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/prod_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/active"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/available"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/stock"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/height"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/weight"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/price"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/long_description"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Product/have_category"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Product/product_have_images"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//User">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/user_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/surname"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/username"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/password"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/active"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/email"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//User/have_addresses"/>
     </genClasses>
-    <genClasses ecoreClass="model.ecore#//Shopping_Cart">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shopping_Cart/cart_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shopping_Cart/date_added"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shopping_Cart/active"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shopping_Cart/cart_have_items"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Shopping_Cart/cart_have_sale"/>
+    <genClasses ecoreClass="model.ecore#//Cart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Cart/date_added"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_items"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_order"/>
     </genClasses>
-    <genClasses ecoreClass="model.ecore#//Item_Shopping_Cart">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Item_Shopping_Cart/item_cart_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Item_Shopping_Cart/units"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Item_Shopping_Cart/price"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Item_Shopping_Cart/item_cart_have_product"/>
+    <genClasses ecoreClass="model.ecore#//ItemCart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ItemCart/quantity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ItemCart/item_cart_have_product"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Address">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/address_id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/country"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/state"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/city"/>
@@ -78,21 +71,31 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/phone"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/active"/>
     </genClasses>
-    <genClasses ecoreClass="model.ecore#//Sale">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Sale/sale_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Sale/reference_number"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Sale/total_price"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Sale/date"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Sale/state"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Sale/sale_has_invoice"/>
+    <genClasses ecoreClass="model.ecore#//Order">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Order/reference_number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Order/total_price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Order/date_created"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Order/order_state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Order/order_has_invoice"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Order/order_have_shipment"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//Shipment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shipment/shipment_status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shipment/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Shipment/shipment_no"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Shipment/shipment_has_address"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Invoice">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/invoice_id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/products_list"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/rates"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/date"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Administrator"/>
-    <genClasses ecoreClass="model.ecore#//Client"/>
+    <genClasses ecoreClass="model.ecore#//Customer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Customer/customer_have_address"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Customer/customer_have_cart"/>
+    </genClasses>
+    <genClasses ecoreClass="model.ecore#//ProductImage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ProductImage/ref"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

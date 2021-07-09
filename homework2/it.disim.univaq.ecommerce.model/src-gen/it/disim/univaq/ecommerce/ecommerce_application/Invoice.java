@@ -2,7 +2,7 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application;
 
-import org.eclipse.emf.ecore.EObject;
+import java.util.Date;
 
 /**
  * <!-- begin-user-doc -->
@@ -14,16 +14,14 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getInvoice_id <em>Invoice id</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDescription <em>Description</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getProducts_list <em>Products list</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getRates <em>Rates</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDate <em>Date</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice()
  * @model
  * @generated
  */
-public interface Invoice extends EObject {
+public interface Invoice extends Named {
 	/**
 	 * Returns the value of the '<em><b>Invoice id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -31,7 +29,7 @@ public interface Invoice extends EObject {
 	 * @return the value of the '<em>Invoice id</em>' attribute.
 	 * @see #setInvoice_id(int)
 	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice_Invoice_id()
-	 * @model id="true"
+	 * @model
 	 * @generated
 	 */
 	int getInvoice_id();
@@ -47,69 +45,25 @@ public interface Invoice extends EObject {
 	void setInvoice_id(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * Returns the value of the '<em><b>Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice_Description()
+	 * @return the value of the '<em>Date</em>' attribute.
+	 * @see #setDate(Date)
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice_Date()
 	 * @model
 	 * @generated
 	 */
-	String getDescription();
+	Date getDate();
 
 	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getDate <em>Date</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
+	 * @param value the new value of the '<em>Date</em>' attribute.
+	 * @see #getDate()
 	 * @generated
 	 */
-	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Products list</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Products list</em>' attribute.
-	 * @see #setProducts_list(String)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice_Products_list()
-	 * @model
-	 * @generated
-	 */
-	String getProducts_list();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getProducts_list <em>Products list</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Products list</em>' attribute.
-	 * @see #getProducts_list()
-	 * @generated
-	 */
-	void setProducts_list(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Rates</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rates</em>' attribute.
-	 * @see #setRates(float)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getInvoice_Rates()
-	 * @model
-	 * @generated
-	 */
-	float getRates();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Invoice#getRates <em>Rates</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rates</em>' attribute.
-	 * @see #getRates()
-	 * @generated
-	 */
-	void setRates(float value);
+	void setDate(Date value);
 
 } // Invoice

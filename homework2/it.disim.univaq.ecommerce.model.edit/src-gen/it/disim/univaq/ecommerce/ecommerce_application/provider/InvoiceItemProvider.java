@@ -11,17 +11,9 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
@@ -30,8 +22,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class InvoiceItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class InvoiceItemProvider extends NamedItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -54,9 +45,7 @@ public class InvoiceItemProvider extends ItemProviderAdapter implements IEditing
 			super.getPropertyDescriptors(object);
 
 			addInvoice_idPropertyDescriptor(object);
-			addDescriptionPropertyDescriptor(object);
-			addProducts_listPropertyDescriptor(object);
-			addRatesPropertyDescriptor(object);
+			addDatePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -78,51 +67,18 @@ public class InvoiceItemProvider extends ItemProviderAdapter implements IEditing
 	}
 
 	/**
-	 * This adds a property descriptor for the Description feature.
+	 * This adds a property descriptor for the Date feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDescriptionPropertyDescriptor(Object object) {
+	protected void addDatePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Invoice_description_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Invoice_description_feature",
-								"_UI_Invoice_type"),
-						ModelPackage.Literals.INVOICE__DESCRIPTION, true, false, false,
+						getResourceLocator(), getString("_UI_Invoice_date_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Invoice_date_feature", "_UI_Invoice_type"),
+						ModelPackage.Literals.INVOICE__DATE, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Products list feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addProducts_listPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Invoice_products_list_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Invoice_products_list_feature",
-								"_UI_Invoice_type"),
-						ModelPackage.Literals.INVOICE__PRODUCTS_LIST, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Rates feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addRatesPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Invoice_rates_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Invoice_rates_feature",
-								"_UI_Invoice_type"),
-						ModelPackage.Literals.INVOICE__RATES, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -154,8 +110,9 @@ public class InvoiceItemProvider extends ItemProviderAdapter implements IEditing
 	 */
 	@Override
 	public String getText(Object object) {
-		Invoice invoice = (Invoice) object;
-		return getString("_UI_Invoice_type") + " " + invoice.getInvoice_id();
+		String label = ((Invoice) object).getName();
+		return label == null || label.length() == 0 ? getString("_UI_Invoice_type")
+				: getString("_UI_Invoice_type") + " " + label;
 	}
 
 	/**
@@ -171,9 +128,7 @@ public class InvoiceItemProvider extends ItemProviderAdapter implements IEditing
 
 		switch (notification.getFeatureID(Invoice.class)) {
 		case ModelPackage.INVOICE__INVOICE_ID:
-		case ModelPackage.INVOICE__DESCRIPTION:
-		case ModelPackage.INVOICE__PRODUCTS_LIST:
-		case ModelPackage.INVOICE__RATES:
+		case ModelPackage.INVOICE__DATE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}
@@ -190,17 +145,6 @@ public class InvoiceItemProvider extends ItemProviderAdapter implements IEditing
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return ModelEditPlugin.INSTANCE;
 	}
 
 }

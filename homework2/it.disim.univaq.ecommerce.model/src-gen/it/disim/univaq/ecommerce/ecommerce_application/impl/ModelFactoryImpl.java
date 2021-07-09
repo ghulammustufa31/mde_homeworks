@@ -58,8 +58,8 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 		switch (eClass.getClassifierID()) {
 		case ModelPackage.APPLICATION:
 			return createapplication();
-		case ModelPackage.SHOP:
-			return createShop();
+		case ModelPackage.ECOMMERCE_SYSTEM:
+			return createEcommerceSystem();
 		case ModelPackage.NAMED:
 			return createNamed();
 		case ModelPackage.CATEGORY:
@@ -68,20 +68,24 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 			return createProduct();
 		case ModelPackage.USER:
 			return createUser();
-		case ModelPackage.SHOPPING_CART:
-			return createShopping_Cart();
-		case ModelPackage.ITEM_SHOPPING_CART:
-			return createItem_Shopping_Cart();
+		case ModelPackage.CART:
+			return createCart();
+		case ModelPackage.ITEM_CART:
+			return createItemCart();
 		case ModelPackage.ADDRESS:
 			return createAddress();
-		case ModelPackage.SALE:
-			return createSale();
+		case ModelPackage.ORDER:
+			return createOrder();
+		case ModelPackage.SHIPMENT:
+			return createShipment();
 		case ModelPackage.INVOICE:
 			return createInvoice();
 		case ModelPackage.ADMINISTRATOR:
 			return createAdministrator();
-		case ModelPackage.CLIENT:
-			return createClient();
+		case ModelPackage.CUSTOMER:
+			return createCustomer();
+		case ModelPackage.PRODUCT_IMAGE:
+			return createProductImage();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -95,8 +99,10 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	@Override
 	public Object createFromString(EDataType eDataType, String initialValue) {
 		switch (eDataType.getClassifierID()) {
-		case ModelPackage.STATE:
-			return createStateFromString(eDataType, initialValue);
+		case ModelPackage.ORDER_STATE:
+			return createOrderStateFromString(eDataType, initialValue);
+		case ModelPackage.SHIPMENT_STATUS:
+			return createShipmentStatusFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -110,8 +116,10 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	@Override
 	public String convertToString(EDataType eDataType, Object instanceValue) {
 		switch (eDataType.getClassifierID()) {
-		case ModelPackage.STATE:
-			return convertStateToString(eDataType, instanceValue);
+		case ModelPackage.ORDER_STATE:
+			return convertOrderStateToString(eDataType, instanceValue);
+		case ModelPackage.SHIPMENT_STATUS:
+			return convertShipmentStatusToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -132,9 +140,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Shop createShop() {
-		ShopImpl shop = new ShopImpl();
-		return shop;
+	public EcommerceSystem createEcommerceSystem() {
+		EcommerceSystemImpl ecommerceSystem = new EcommerceSystemImpl();
+		return ecommerceSystem;
 	}
 
 	/**
@@ -182,9 +190,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Shopping_Cart createShopping_Cart() {
-		Shopping_CartImpl shopping_Cart = new Shopping_CartImpl();
-		return shopping_Cart;
+	public Cart createCart() {
+		CartImpl cart = new CartImpl();
+		return cart;
 	}
 
 	/**
@@ -192,9 +200,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Item_Shopping_Cart createItem_Shopping_Cart() {
-		Item_Shopping_CartImpl item_Shopping_Cart = new Item_Shopping_CartImpl();
-		return item_Shopping_Cart;
+	public ItemCart createItemCart() {
+		ItemCartImpl itemCart = new ItemCartImpl();
+		return itemCart;
 	}
 
 	/**
@@ -212,9 +220,19 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Sale createSale() {
-		SaleImpl sale = new SaleImpl();
-		return sale;
+	public Order createOrder() {
+		OrderImpl order = new OrderImpl();
+		return order;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Shipment createShipment() {
+		ShipmentImpl shipment = new ShipmentImpl();
+		return shipment;
 	}
 
 	/**
@@ -242,9 +260,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Client createClient() {
-		ClientImpl client = new ClientImpl();
-		return client;
+	public Customer createCustomer() {
+		CustomerImpl customer = new CustomerImpl();
+		return customer;
 	}
 
 	/**
@@ -252,8 +270,18 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public State createStateFromString(EDataType eDataType, String initialValue) {
-		State result = State.get(initialValue);
+	public ProductImage createProductImage() {
+		ProductImageImpl productImage = new ProductImageImpl();
+		return productImage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OrderState createOrderStateFromString(EDataType eDataType, String initialValue) {
+		OrderState result = OrderState.get(initialValue);
 		if (result == null)
 			throw new IllegalArgumentException(
 					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -265,7 +293,29 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertStateToString(EDataType eDataType, Object instanceValue) {
+	public String convertOrderStateToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ShipmentStatus createShipmentStatusFromString(EDataType eDataType, String initialValue) {
+		ShipmentStatus result = ShipmentStatus.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertShipmentStatusToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

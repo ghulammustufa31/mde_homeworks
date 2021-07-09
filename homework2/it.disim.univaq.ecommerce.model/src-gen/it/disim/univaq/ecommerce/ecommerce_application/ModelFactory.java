@@ -31,13 +31,13 @@ public interface ModelFactory extends EFactory {
 	application createapplication();
 
 	/**
-	 * Returns a new object of class '<em>Shop</em>'.
+	 * Returns a new object of class '<em>Ecommerce System</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Shop</em>'.
+	 * @return a new object of class '<em>Ecommerce System</em>'.
 	 * @generated
 	 */
-	Shop createShop();
+	EcommerceSystem createEcommerceSystem();
 
 	/**
 	 * Returns a new object of class '<em>Named</em>'.
@@ -76,22 +76,22 @@ public interface ModelFactory extends EFactory {
 	User createUser();
 
 	/**
-	 * Returns a new object of class '<em>Shopping Cart</em>'.
+	 * Returns a new object of class '<em>Cart</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Shopping Cart</em>'.
+	 * @return a new object of class '<em>Cart</em>'.
 	 * @generated
 	 */
-	Shopping_Cart createShopping_Cart();
+	Cart createCart();
 
 	/**
-	 * Returns a new object of class '<em>Item Shopping Cart</em>'.
+	 * Returns a new object of class '<em>Item Cart</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Item Shopping Cart</em>'.
+	 * @return a new object of class '<em>Item Cart</em>'.
 	 * @generated
 	 */
-	Item_Shopping_Cart createItem_Shopping_Cart();
+	ItemCart createItemCart();
 
 	/**
 	 * Returns a new object of class '<em>Address</em>'.
@@ -103,13 +103,22 @@ public interface ModelFactory extends EFactory {
 	Address createAddress();
 
 	/**
-	 * Returns a new object of class '<em>Sale</em>'.
+	 * Returns a new object of class '<em>Order</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sale</em>'.
+	 * @return a new object of class '<em>Order</em>'.
 	 * @generated
 	 */
-	Sale createSale();
+	Order createOrder();
+
+	/**
+	 * Returns a new object of class '<em>Shipment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Shipment</em>'.
+	 * @generated
+	 */
+	Shipment createShipment();
 
 	/**
 	 * Returns a new object of class '<em>Invoice</em>'.
@@ -130,13 +139,22 @@ public interface ModelFactory extends EFactory {
 	Administrator createAdministrator();
 
 	/**
-	 * Returns a new object of class '<em>Client</em>'.
+	 * Returns a new object of class '<em>Customer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Client</em>'.
+	 * @return a new object of class '<em>Customer</em>'.
 	 * @generated
 	 */
-	Client createClient();
+	Customer createCustomer();
+
+	/**
+	 * Returns a new object of class '<em>Product Image</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Image</em>'.
+	 * @generated
+	 */
+	ProductImage createProductImage();
 
 	/**
 	 * Returns the package supported by this factory.

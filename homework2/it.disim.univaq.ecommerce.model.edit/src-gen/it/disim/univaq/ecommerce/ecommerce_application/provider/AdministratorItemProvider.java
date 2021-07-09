@@ -73,7 +73,7 @@ public class AdministratorItemProvider extends UserItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Administrator) object).getName();
+		String label = ((Administrator) object).getSurname();
 		return label == null || label.length() == 0 ? getString("_UI_Administrator_type")
 				: getString("_UI_Administrator_type") + " " + label;
 	}

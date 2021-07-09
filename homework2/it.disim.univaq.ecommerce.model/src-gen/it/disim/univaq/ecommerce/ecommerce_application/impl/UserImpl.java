@@ -2,24 +2,15 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application.impl;
 
-import it.disim.univaq.ecommerce.ecommerce_application.Address;
 import it.disim.univaq.ecommerce.ecommerce_application.ModelPackage;
 import it.disim.univaq.ecommerce.ecommerce_application.User;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,36 +20,35 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getUser_id <em>User id</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getSurname <em>Surname</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getUsername <em>Username</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getPassword <em>Password</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#isActive <em>Active</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getEmail <em>Email</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.impl.UserImpl#getHave_addresses <em>Have addresses</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class UserImpl extends NamedImpl implements User {
+public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	/**
-	 * The default value of the '{@link #getUser_id() <em>User id</em>}' attribute.
+	 * The default value of the '{@link #getSurname() <em>Surname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUser_id()
+	 * @see #getSurname()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int USER_ID_EDEFAULT = 0;
+	protected static final String SURNAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getUser_id() <em>User id</em>}' attribute.
+	 * The cached value of the '{@link #getSurname() <em>Surname</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUser_id()
+	 * @see #getSurname()
 	 * @generated
 	 * @ordered
 	 */
-	protected int user_id = USER_ID_EDEFAULT;
+	protected String surname = SURNAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getUsername() <em>Username</em>}' attribute.
@@ -141,16 +131,6 @@ public class UserImpl extends NamedImpl implements User {
 	protected String email = EMAIL_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getHave_addresses() <em>Have addresses</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getHave_addresses()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Address> have_addresses;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -174,8 +154,8 @@ public class UserImpl extends NamedImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getUser_id() {
-		return user_id;
+	public String getSurname() {
+		return surname;
 	}
 
 	/**
@@ -183,11 +163,11 @@ public class UserImpl extends NamedImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUser_id(int newUser_id) {
-		int oldUser_id = user_id;
-		user_id = newUser_id;
+	public void setSurname(String newSurname) {
+		String oldSurname = surname;
+		surname = newSurname;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.USER__USER_ID, oldUser_id, user_id));
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.USER__SURNAME, oldSurname, surname));
 	}
 
 	/**
@@ -279,38 +259,11 @@ public class UserImpl extends NamedImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Address> getHave_addresses() {
-		if (have_addresses == null) {
-			have_addresses = new EObjectContainmentEList<Address>(Address.class, this,
-					ModelPackage.USER__HAVE_ADDRESSES);
-		}
-		return have_addresses;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case ModelPackage.USER__HAVE_ADDRESSES:
-			return ((InternalEList<?>) getHave_addresses()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case ModelPackage.USER__USER_ID:
-			return getUser_id();
+		case ModelPackage.USER__SURNAME:
+			return getSurname();
 		case ModelPackage.USER__USERNAME:
 			return getUsername();
 		case ModelPackage.USER__PASSWORD:
@@ -319,8 +272,6 @@ public class UserImpl extends NamedImpl implements User {
 			return isActive();
 		case ModelPackage.USER__EMAIL:
 			return getEmail();
-		case ModelPackage.USER__HAVE_ADDRESSES:
-			return getHave_addresses();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -330,12 +281,11 @@ public class UserImpl extends NamedImpl implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case ModelPackage.USER__USER_ID:
-			setUser_id((Integer) newValue);
+		case ModelPackage.USER__SURNAME:
+			setSurname((String) newValue);
 			return;
 		case ModelPackage.USER__USERNAME:
 			setUsername((String) newValue);
@@ -349,10 +299,6 @@ public class UserImpl extends NamedImpl implements User {
 		case ModelPackage.USER__EMAIL:
 			setEmail((String) newValue);
 			return;
-		case ModelPackage.USER__HAVE_ADDRESSES:
-			getHave_addresses().clear();
-			getHave_addresses().addAll((Collection<? extends Address>) newValue);
-			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -365,8 +311,8 @@ public class UserImpl extends NamedImpl implements User {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case ModelPackage.USER__USER_ID:
-			setUser_id(USER_ID_EDEFAULT);
+		case ModelPackage.USER__SURNAME:
+			setSurname(SURNAME_EDEFAULT);
 			return;
 		case ModelPackage.USER__USERNAME:
 			setUsername(USERNAME_EDEFAULT);
@@ -380,9 +326,6 @@ public class UserImpl extends NamedImpl implements User {
 		case ModelPackage.USER__EMAIL:
 			setEmail(EMAIL_EDEFAULT);
 			return;
-		case ModelPackage.USER__HAVE_ADDRESSES:
-			getHave_addresses().clear();
-			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -395,8 +338,8 @@ public class UserImpl extends NamedImpl implements User {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case ModelPackage.USER__USER_ID:
-			return user_id != USER_ID_EDEFAULT;
+		case ModelPackage.USER__SURNAME:
+			return SURNAME_EDEFAULT == null ? surname != null : !SURNAME_EDEFAULT.equals(surname);
 		case ModelPackage.USER__USERNAME:
 			return USERNAME_EDEFAULT == null ? username != null : !USERNAME_EDEFAULT.equals(username);
 		case ModelPackage.USER__PASSWORD:
@@ -405,8 +348,6 @@ public class UserImpl extends NamedImpl implements User {
 			return active != ACTIVE_EDEFAULT;
 		case ModelPackage.USER__EMAIL:
 			return EMAIL_EDEFAULT == null ? email != null : !EMAIL_EDEFAULT.equals(email);
-		case ModelPackage.USER__HAVE_ADDRESSES:
-			return have_addresses != null && !have_addresses.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -422,8 +363,8 @@ public class UserImpl extends NamedImpl implements User {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (user_id: ");
-		result.append(user_id);
+		result.append(" (surname: ");
+		result.append(surname);
 		result.append(", username: ");
 		result.append(username);
 		result.append(", password: ");

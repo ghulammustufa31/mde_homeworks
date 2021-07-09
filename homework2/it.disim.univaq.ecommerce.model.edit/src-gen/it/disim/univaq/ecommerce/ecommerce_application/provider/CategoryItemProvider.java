@@ -47,30 +47,11 @@ public class CategoryItemProvider extends NamedItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addCat_idPropertyDescriptor(object);
 			addActivePropertyDescriptor(object);
-			addDate_addedPropertyDescriptor(object);
-			addDate_updatedPropertyDescriptor(object);
 			addDepthPropertyDescriptor(object);
 			addRoot_catPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Cat id feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addCat_idPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Category_cat_id_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Category_cat_id_feature",
-								"_UI_Category_type"),
-						ModelPackage.Literals.CATEGORY__CAT_ID, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -87,38 +68,6 @@ public class CategoryItemProvider extends NamedItemProvider {
 								"_UI_Category_type"),
 						ModelPackage.Literals.CATEGORY__ACTIVE, true, false, false,
 						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Date added feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addDate_addedPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Category_date_added_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Category_date_added_feature",
-								"_UI_Category_type"),
-						ModelPackage.Literals.CATEGORY__DATE_ADDED, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Date updated feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addDate_updatedPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_Category_date_updated_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_Category_date_updated_feature",
-								"_UI_Category_type"),
-						ModelPackage.Literals.CATEGORY__DATE_UPDATED, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -166,6 +115,7 @@ public class CategoryItemProvider extends NamedItemProvider {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ModelPackage.Literals.CATEGORY__HAVE_SUB_CATEGORIES);
+			childrenFeatures.add(ModelPackage.Literals.CATEGORY__HAVE_PRODUCTS);
 		}
 		return childrenFeatures;
 	}
@@ -229,15 +179,13 @@ public class CategoryItemProvider extends NamedItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Category.class)) {
-		case ModelPackage.CATEGORY__CAT_ID:
 		case ModelPackage.CATEGORY__ACTIVE:
-		case ModelPackage.CATEGORY__DATE_ADDED:
-		case ModelPackage.CATEGORY__DATE_UPDATED:
 		case ModelPackage.CATEGORY__DEPTH:
 		case ModelPackage.CATEGORY__ROOT_CAT:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case ModelPackage.CATEGORY__HAVE_SUB_CATEGORIES:
+		case ModelPackage.CATEGORY__HAVE_PRODUCTS:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -257,6 +205,9 @@ public class CategoryItemProvider extends NamedItemProvider {
 
 		newChildDescriptors.add(createChildParameter(ModelPackage.Literals.CATEGORY__HAVE_SUB_CATEGORIES,
 				ModelFactory.eINSTANCE.createCategory()));
+
+		newChildDescriptors.add(createChildParameter(ModelPackage.Literals.CATEGORY__HAVE_PRODUCTS,
+				ModelFactory.eINSTANCE.createProduct()));
 	}
 
 }

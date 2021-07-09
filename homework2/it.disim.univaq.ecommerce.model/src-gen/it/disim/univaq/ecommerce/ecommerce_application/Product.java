@@ -2,6 +2,8 @@
  */
 package it.disim.univaq.ecommerce.ecommerce_application;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Product</b></em>'.
@@ -11,15 +13,13 @@ package it.disim.univaq.ecommerce.ecommerce_application;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getProd_id <em>Prod id</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isActive <em>Active</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isAvailable <em>Available</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getStock <em>Stock</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getHeight <em>Height</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getWeight <em>Weight</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getPrice <em>Price</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getDescription <em>Description</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getLong_description <em>Long description</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getHave_category <em>Have category</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getProduct_have_images <em>Product have images</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct()
@@ -28,48 +28,26 @@ package it.disim.univaq.ecommerce.ecommerce_application;
  */
 public interface Product extends Named {
 	/**
-	 * Returns the value of the '<em><b>Prod id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Available</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prod id</em>' attribute.
-	 * @see #setProd_id(int)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Prod_id()
-	 * @model id="true"
-	 * @generated
-	 */
-	int getProd_id();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getProd_id <em>Prod id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prod id</em>' attribute.
-	 * @see #getProd_id()
-	 * @generated
-	 */
-	void setProd_id(int value);
-
-	/**
-	 * Returns the value of the '<em><b>Active</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Active</em>' attribute.
-	 * @see #setActive(boolean)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Active()
+	 * @return the value of the '<em>Available</em>' attribute.
+	 * @see #setAvailable(boolean)
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Available()
 	 * @model
 	 * @generated
 	 */
-	boolean isActive();
+	boolean isAvailable();
 
 	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isActive <em>Active</em>}' attribute.
+	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#isAvailable <em>Available</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Active</em>' attribute.
-	 * @see #isActive()
+	 * @param value the new value of the '<em>Available</em>' attribute.
+	 * @see #isAvailable()
 	 * @generated
 	 */
-	void setActive(boolean value);
+	void setAvailable(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Stock</b></em>' attribute.
@@ -182,47 +160,15 @@ public interface Product extends Named {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Long description</b></em>' attribute.
+	 * Returns the value of the '<em><b>Product have images</b></em>' containment reference list.
+	 * The list contents are of type {@link it.disim.univaq.ecommerce.ecommerce_application.ProductImage}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Long description</em>' attribute.
-	 * @see #setLong_description(String)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Long_description()
-	 * @model
-	 * @generated
-	 */
-	String getLong_description();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getLong_description <em>Long description</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Long description</em>' attribute.
-	 * @see #getLong_description()
-	 * @generated
-	 */
-	void setLong_description(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Have category</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Have category</em>' containment reference.
-	 * @see #setHave_category(Category)
-	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Have_category()
+	 * @return the value of the '<em>Product have images</em>' containment reference list.
+	 * @see it.disim.univaq.ecommerce.ecommerce_application.ModelPackage#getProduct_Product_have_images()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Category getHave_category();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.ecommerce_application.Product#getHave_category <em>Have category</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Have category</em>' containment reference.
-	 * @see #getHave_category()
-	 * @generated
-	 */
-	void setHave_category(Category value);
+	EList<ProductImage> getProduct_have_images();
 
 } // Product
