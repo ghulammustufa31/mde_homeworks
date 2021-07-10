@@ -1,0 +1,14 @@
+-- @path MM=/it.disim.univaq.ecommerce.model/model/model.ecore
+-- @path MM1=/it.disim.univaq.ecommerce_shop.model/model/model.ecore
+
+module Old2New;
+create OUT : MM1 from IN : MM;
+
+rule ecommerce2shop {
+	from
+		s : IN!EcommerceSystem
+	to
+		t : OUT!Shop (
+			name<-s.name	
+		)
+}

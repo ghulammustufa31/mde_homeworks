@@ -58,6 +58,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Cart/date_added"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_items"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_order"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Cart/total_price"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//ItemCart">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ItemCart/quantity"/>

@@ -40,12 +40,6 @@
         <details key="derivation" value="if Category.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->notEmpty() then&#xA;&#x9;&#x9;Category.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->asSequence()->first()&#xA;&#x9;&#x9;else self endif"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="depth" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
-        volatile="true" derived="true">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-        <details key="derivation" value="if self.root_cat = true then 1 else self.parent_category.depth + 1 endif"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Product" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="available" lowerBound="1"
@@ -119,8 +113,6 @@
       <details key="validOrderStatusUnpaid" value="self.order_state = OrderState::UNPAID implies self.order_have_shipment.shipment_status = ShipmentStatus::PENDING"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reference_number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="total_price" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="date_created" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="order_state" eType="#//OrderState"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="order_has_invoice" eType="#//Invoice"
