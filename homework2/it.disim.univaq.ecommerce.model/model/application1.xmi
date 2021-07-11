@@ -11,12 +11,10 @@
     <shop_have_categories
         name="Instruments"
         active="true"
-        depth="1"
         root_cat="true">
       <have_sub_categories
           name="Piano"
-          active="true"
-          depth="2">
+          active="true">
         <have_products
             name="Yamaha B1 PE"
             available="true"
@@ -31,8 +29,7 @@
       </have_sub_categories>
       <have_sub_categories
           name="Guitar"
-          active="true"
-          depth="2">
+          active="true">
         <have_products
             name="Fender Player Series Strat MN BCR"
             available="true"
@@ -51,7 +48,8 @@
       </have_sub_categories>
     </shop_have_categories>
     <have_clients
-        surname="Lea Brown"
+        name="Lea"
+        surname="Brown"
         username="LeBra"
         password="Pass!"
         active="true"
@@ -59,11 +57,12 @@
       <customer_have_address
           name="HOME"
           country="America"
-          state="4455 Landing Lange Birmingham"
-          city="Alabama"
+          state="Alabama"
+          city="Birmingham"
           post_code="234234"
           phone="+01 234 234 2564"
-          active="true"/>
+          active="true"
+          street_address="4455 Landing Lange"/>
       <customer_have_cart
           name="cart_1"
           date_added="2021-07-08T01:00:00.000+0200">
@@ -77,7 +76,6 @@
             item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
         <cart_have_order
             reference_number="abcd"
-            total_price="10.0"
             date_created="2021-07-08T00:00:00.000+0200"
             order_state="COMMITED"
             order_for_cart="//@app_have_shops.0/@have_clients/@customer_have_cart">

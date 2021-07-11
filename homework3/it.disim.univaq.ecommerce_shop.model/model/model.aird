@@ -4,6 +4,7 @@
     <semanticResources>model.ecore</semanticResources>
     <semanticResources>model.genmodel</semanticResources>
     <semanticResources>Old2New.atl</semanticResources>
+    <semanticResources>Shop.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_eIK2UOGOEeuH3Mcrz6vpuQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_eJN_MOGOEeuH3Mcrz6vpuQ" name="model" repPath="#_eJH4kOGOEeuH3Mcrz6vpuQ" changeId="af5e7287-1116-48d1-b0c7-7d1b03957e3c">

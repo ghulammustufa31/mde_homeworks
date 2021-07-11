@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecommerce_shop_application:Shop
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecommerce_shop_application="it.disim.univaq.ecommerce_shop.model"
+    xsi:schemaLocation="it.disim.univaq.ecommerce_shop.model model.ecore"
+    name="MusicShop"/>

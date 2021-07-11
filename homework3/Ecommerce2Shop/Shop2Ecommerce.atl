@@ -1,0 +1,11 @@
+module Shop2Ecommerce;
+create OUT : MM1 from IN : MM;
+
+rule shop2ecommerce {
+	from
+		s : MM!Shop
+	to
+		t : MM1!EcommerceSystem (
+			name<-s.name	
+		)
+}

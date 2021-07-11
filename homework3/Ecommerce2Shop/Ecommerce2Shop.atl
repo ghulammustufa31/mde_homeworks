@@ -1,14 +1,100 @@
--- @path MM=/it.disim.univaq.ecommerce.model/model/model.ecore
--- @path MM1=/it.disim.univaq.ecommerce_shop.model/model/model.ecore
+-- @path MM=/Ecommerce2Shop/ecommerce.ecore
+-- @path MM1=/it.disim.univaq.ecommerce.model/model/model.ecore
 
 module Ecommerce2Shop;
 create OUT : MM1 from IN : MM;
 
-rule ecommerce2shop {
+--- Returns all the categories in the system
+helper context MM!EcommerceSystem def : getAllCategories() : Sequence(MM!Category) = MM!Category.allInstances()->asSequence();
+
+--- Returns the stringified collection of images of the product
+helper context MM!Product def : getImages : String = self.product_have_images->collect(i | i.ref)->toString();
+ 
+helper context MM!Customer def : getAllOrdersOfCustomer() : Sequence(MM!Order) = Sequence{self.customer_have_cart.cart_have_order};
+
+rule Ecommerce2Shop {
 	from
 		s : MM!EcommerceSystem
 	to
 		t : MM1!Shop (
-			name<-s.name	
+			name <- s.name,
+			product_types <- s.getAllCategories(),
+			customers <- s.have_clients,
+			admins <- s.shop_have_administrators
 		)
+}
+
+-- Users section
+rule Administrator2ShopAdmin {
+	from
+		s : MM!Administrator
+	to
+		t : MM1!ShopAdmin (
+			username <- s.username,
+			email <- s.email,
+			password <- s.password
+		)
+}
+
+rule Customer2ShopCustomer {
+	from
+		s : MM!Customer
+	to
+		t : MM1!ShopCustomer (
+			-- Attrs
+			name <- s.name,
+			surname <- s.surname,
+			username <- s.username,
+			password <- s.password,
+			active <- s.active,
+			email <- s.email,
+			-- Refs
+			orders <- s.getAllOrdersOfCustomer(),
+			addresses <- s.customer_have_address
+		)
+}
+
+rule Address2ShopAddress {
+	from
+		s : MM!Address
+	to
+		t : MM1!Address (
+			name <- s.name,
+			country <- s.country,
+			state <- s.state,
+			city <- s.city,
+			post_code <- s.post_code,
+			phone <- s.phone,
+			street_address <- s.street_address
+		)
+}
+
+-- Shop section
+rule Category2ProductTypes {
+	from 
+		s : MM!Category
+	to
+		t : MM1!ProductType (
+			name <- s.name,
+			available <- s.active,
+			products <- s.have_products
+		)
+}
+
+rule Product2ShopProduct {
+	from
+		s : MM!Product
+	to
+		t : MM1!ShopProduct (
+			name <- s.name,
+			available_items <- s.stock,
+			weight <- s.weight,
+			size <- s.height,
+			price <- s.price,
+			images <- s.getImages
+		)
+}
+
+rule Order2ShopOrder {
+	
 }
