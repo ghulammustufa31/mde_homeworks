@@ -96,7 +96,7 @@ rule Category2ProductTypes {
 		t : MM1!ProductType (
 			name <- s.name,
 			available <- s.active,
-			creation_date <- s.getCurrentDate,
+			-- creation_date <- s.getCurrentDate,
 			products <- s.have_products
 		)
 }

@@ -10,7 +10,7 @@
       <!-- @generated model -->
       <package
             uri="http://it.disim.univaq.ecommerce/model"
-            class="it.disim.univaq.ecommerce.ecommerce_application.ModelPackage"
+            class="it.disim.univaq.ecommerce.model.ModelPackage"
             genModel="model/model.genmodel"/>
    </extension>
 
