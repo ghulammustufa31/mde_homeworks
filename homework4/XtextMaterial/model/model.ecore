@@ -16,8 +16,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="EcommerceSystem" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EReference" name="shop_have_categories" upperBound="-1"
         eType="#//Category" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="have_clients" eType="#//Customer"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="have_clients" upperBound="-1"
+        eType="#//Customer" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="shop_have_administrators"
         lowerBound="1" upperBound="-1" eType="#//Administrator" containment="true"/>
   </eClassifiers>
