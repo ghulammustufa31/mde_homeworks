@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: it.disim.univaq.ecommerce.xtext
+Bundle-ManifestVersion: 2
+Bundle-Name: it.disim.univaq.ecommerce.xtext
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: it.disim.univaq.ecommerce.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: XtextMaterial,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
