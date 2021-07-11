@@ -58,6 +58,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OrderItem">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
+        eType="#//ShopProduct"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Bill">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reference_no" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

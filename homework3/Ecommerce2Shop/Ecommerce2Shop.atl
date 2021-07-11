@@ -10,7 +10,25 @@ helper context MM!EcommerceSystem def : getAllCategories() : Sequence(MM!Categor
 --- Returns the stringified collection of images of the product
 helper context MM!Product def : getImages : String = self.product_have_images->collect(i | i.ref)->toString();
  
+--- Returns all the orders of the customer
 helper context MM!Customer def : getAllOrdersOfCustomer() : Sequence(MM!Order) = Sequence{self.customer_have_cart.cart_have_order};
+
+--- Returns the order of the shipment
+helper context MM!Shipment def : getShipmentOrder() : MM!Order = MM!Order.allInstances()->select(o | o.order_have_shipment.includes(self));
+
+--- Returns all the invoices of the system
+helper context MM!EcommerceSystem def : getAllInvoices() : Sequence(MM!Invoice) = MM!Invoice.allInstances()->asSequence();
+
+--- Returns a random UUID for the given object. 
+--- To Edit when launch the ATL file
+helper context OclAny def : getCurrentDate : String = '2021-07-11';
+
+
+
+-- ---------------- --
+-- RULES DEFINITION --
+-- ---------------- --
+
 
 rule Ecommerce2Shop {
 	from
@@ -20,7 +38,8 @@ rule Ecommerce2Shop {
 			name <- s.name,
 			product_types <- s.getAllCategories(),
 			customers <- s.have_clients,
-			admins <- s.shop_have_administrators
+			admins <- s.shop_have_administrators,
+			bills <- s.getAllInvoices()
 		)
 }
 
@@ -77,6 +96,7 @@ rule Category2ProductTypes {
 		t : MM1!ProductType (
 			name <- s.name,
 			available <- s.active,
+			creation_date <- s.getCurrentDate,
 			products <- s.have_products
 		)
 }
@@ -96,5 +116,53 @@ rule Product2ShopProduct {
 }
 
 rule Order2ShopOrder {
-	
+	from
+		s : MM!Order
+	to
+		t : MM1!Order (
+			-- Attrs
+			reference_number <- s.reference_number,
+			date_created <- s.date_created,
+			status <- s.order_state,
+			-- Refs
+			bill <- s.order_has_invoice,
+			items <- s.order_for_cart.cart_have_items,
+			shipments <- s.order_have_shipment
+		)
+}
+
+rule Invoice2Bill {
+	from
+		s : MM!Invoice
+	to
+		t : MM1!Bill (
+			reference_no <- s.invoice_id.toString(),
+			date <- s.date,
+			order <- s.invoice_for_order
+		)
+}
+
+rule CartItem2OrderItem {
+	from
+		s : MM!ItemCart
+	to
+		t : MM1!OrderItem (
+			quantity <- s.quantity,
+			product <- s.item_cart_have_product
+		)
+}
+
+rule Shipment2ShipmentShop {
+	from
+		s : MM!Shipment
+	to
+		t : MM1!Shipment (
+			-- Attrs
+			date <- s.date,
+			shipment_no <- s.shipment_no,
+			status <- s.shipment_status,
+			-- Refs
+			address <- s.shipment_has_address,
+			order <- s.getShipmentOrder()
+		)
 }
