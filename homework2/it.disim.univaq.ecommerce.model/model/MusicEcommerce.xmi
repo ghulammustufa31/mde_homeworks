@@ -23,7 +23,6 @@
             name="Piano">
           <have_products
               name="Fender Piano"
-              available="true"
               stock="50"
               height="50.0"
               weight="50.0"
@@ -31,7 +30,6 @@
               description="The Rhodes piano (also known as the Fender Rhodes piano) is an electric piano invented by Harold Rhodes, which became popular in the 1970s. Like a conventional piano, the Rhodes generates sound with keys and hammers, but instead of strings, the hammers strike thin metal tines, which vibrate between an electromagnetic pickup. The signal is then sent through a cable to an external keyboard amplifier and speaker."/>
           <have_products
               name="Classic Piano"
-              available="true"
               stock="40"
               height="40.0"
               weight="40.0"
@@ -42,7 +40,6 @@
             name="Guitar">
           <have_products
               name="Strato"
-              available="true"
               stock="30"
               weight="5.0"
               price="699.0"
@@ -54,7 +51,6 @@
           </have_products>
           <have_products
               name="Les Paul"
-              available="true"
               stock="4"
               height="30.0"
               weight="7.0"
@@ -84,6 +80,10 @@
         <cart_have_items
             name="FenderPianoItem"
             quantity="2"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_sub_categories.1/@have_products.0"/>
+        <cart_have_items
+            name="It32424"
+            quantity="4"
             item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_sub_categories.1/@have_products.0"/>
         <cart_have_order
             reference_number="123123123"
@@ -122,7 +122,7 @@
         name="Eka"
         surname="Vitaliy"
         username="rfgcerc"
-        password="df34r4d"
+        password="223232323123"
         email="mgreen@icloud.com">
       <customer_have_address
           name="HOME"
@@ -137,7 +137,7 @@
         name="Scarlet"
         surname="opersc"
         username="ADMIN_SC3"
-        password="d34d2xd"
+        password="rerwerwerwerwer"
         email="scarlet@msn.com"/>
   </app_have_shops>
   <app_have_shops
@@ -150,7 +150,7 @@
         name="Scarlet"
         surname="opersc"
         username="ADMIN_SC2"
-        password="d34d2xd"
+        password="rwerwerwerwerwe"
         email="scarlet@msn.com"/>
   </app_have_shops>
   <app_have_shops
@@ -167,7 +167,7 @@
         name="Scarlet"
         surname="opersc"
         username="ADMIN1"
-        password="d34d2xd"
+        password="rwerwerwerwer"
         email="scarlet@msn.com"/>
   </app_have_shops>
 </model:application>

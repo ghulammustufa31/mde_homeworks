@@ -101,7 +101,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1npxiKIW9XL" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275633" />
-      <property role="TrG5h" value="fullname" />
+      <property role="TrG5h" value="surname" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="1npxiKIW9XO" role="1TKVEl">
@@ -302,11 +302,6 @@
       <property role="TrG5h" value="phone" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="1npxiKIWa0i" role="1TKVEl">
-      <property role="IQ2nx" value="1574435969555275794" />
-      <property role="TrG5h" value="active" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1npxiKIWa0q">
     <property role="EcuMT" value="1574435969555275802" />
@@ -325,7 +320,7 @@
     <node concept="1TJgyi" id="1npxiKIWa0y" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275810" />
       <property role="TrG5h" value="total_price" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4K0tozXMVAv" resolve="float" />
     </node>
     <node concept="1TJgyi" id="1npxiKIWa0A" role="1TKVEl">
       <property role="IQ2nx" value="1574435969555275814" />
@@ -489,7 +484,7 @@
   <node concept="Az7Fb" id="4K0tozXMVAv">
     <property role="3F6X1D" value="5476506378116512159" />
     <property role="TrG5h" value="float" />
-    <property role="FLfZY" value="^[-+][0-9]+\\.[0-9]+$" />
+    <property role="FLfZY" value="^[0-9]+\\.[0-9]+$" />
     <property role="3GE5qa" value="DataTypes" />
   </node>
 </model>

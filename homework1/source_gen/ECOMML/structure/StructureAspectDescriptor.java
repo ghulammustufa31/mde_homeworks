@@ -34,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationOrderStatus = new EnumerationDescriptor_OrderStatus();
   /*package*/ final EnumerationDescriptor myEnumerationShipmentStatus = new EnumerationDescriptor_ShipmentStatus();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a070L, "date", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275888", "/^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/");
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypefloat = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL, "float", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116512159", "^[-+][0-9]+\\.[0-9]+$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypefloat = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL, "float", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116512159", "^[0-9]+\\.[0-9]+$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -108,7 +108,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("post_code", 0x15d9852c2ef0a005L).type(PrimitiveTypeId.STRING).origin("1574435969555275781").done();
     b.property("street_address", 0x32e5ed3f3bd4990fL).type(PrimitiveTypeId.STRING).origin("3667598327405648143").done();
     b.property("phone", 0x15d9852c2ef0a00bL).type(PrimitiveTypeId.STRING).origin("1574435969555275787").done();
-    b.property("active", 0x15d9852c2ef0a012L).type(PrimitiveTypeId.BOOLEAN).origin("1574435969555275794").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAdministrator() {
@@ -194,7 +193,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275802");
     b.version(2);
     b.property("reference_number", 0x15d9852c2ef0a01fL).type(PrimitiveTypeId.STRING).origin("1574435969555275807").done();
-    b.property("total_price", 0x15d9852c2ef0a022L).type(PrimitiveTypeId.INTEGER).origin("1574435969555275810").done();
+    b.property("total_price", 0x15d9852c2ef0a022L).type(MetaIdFactory.dataTypeId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL)).origin("1574435969555275810").done();
     b.property("order_status", 0x15d9852c2ef0a026L).type(MetaIdFactory.dataTypeId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a066L)).origin("1574435969555275814").done();
     b.property("date_created", 0x15d9852c2ef0a02bL).type(MetaIdFactory.dataTypeId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a070L)).origin("1574435969555275819").done();
     b.aggregate("invoice", 0x15d9852c2ef0a062L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a038L).optional(true).ordered(true).multiple(false).origin("1574435969555275874").done();
@@ -242,7 +241,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275586");
     b.version(2);
-    b.property("fullname", 0x15d9852c2ef09f71L).type(PrimitiveTypeId.STRING).origin("1574435969555275633").done();
+    b.property("surname", 0x15d9852c2ef09f71L).type(PrimitiveTypeId.STRING).origin("1574435969555275633").done();
     b.property("username", 0x15d9852c2ef09f74L).type(PrimitiveTypeId.STRING).origin("1574435969555275636").done();
     b.property("password", 0x15d9852c2ef09f78L).type(PrimitiveTypeId.STRING).origin("1574435969555275640").done();
     b.property("active", 0x15d9852c2ef09f7dL).type(PrimitiveTypeId.BOOLEAN).origin("1574435969555275645").done();

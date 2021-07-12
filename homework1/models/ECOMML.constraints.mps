@@ -227,7 +227,7 @@
               <node concept="liA8E" id="3b_VjWVONl8" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="3b_VjWVONBq" role="37wK5m">
-                  <property role="Xl_RC" value="^[+][0-9]+\\.[0-9]+$" />
+                  <property role="Xl_RC" value="^[0-9]+\\.[0-9]+$" />
                 </node>
               </node>
             </node>

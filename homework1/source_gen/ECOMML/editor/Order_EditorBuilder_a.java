@@ -93,10 +93,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_16());
     editorCell.addEditorCell(createConstant_17());
-    editorCell.addEditorCell(createConstant_18());
     editorCell.addEditorCell(createRefNodeList_0());
     editorCell.addEditorCell(createConstant_19());
-    editorCell.addEditorCell(createConstant_20());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -431,34 +429,26 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_17() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "shipment");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "shipments");
     editorCell.setCellId("Constant_yh3zz3_x0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_18() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "(");
-    editorCell.setCellId("Constant_yh3zz3_y0");
     Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.MATCHING_LABEL, "paren-shipment");
-    style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new shipmentListHandler_yh3zz3_z0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new shipmentListHandler_yh3zz3_y0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_shipment");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class shipmentListHandler_yh3zz3_z0 extends RefNodeListHandler {
+  private static class shipmentListHandler_yh3zz3_y0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public shipmentListHandler_yh3zz3_z0(SNode ownerNode, EditorContext context) {
+    public shipmentListHandler_yh3zz3_y0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -481,10 +471,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(shipmentListHandler_yh3zz3_z0.this.getNode(), LINKS.shipment$7rpY));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(shipmentListHandler_yh3zz3_y0.this.getNode(), LINKS.shipment$7rpY));
       try {
         EditorCell emptyCell = null;
-        emptyCell = super.createEmptyCell();
+        emptyCell = createConstant_18();
         installElementCellActions(null, emptyCell, true);
         setCellContext(emptyCell);
         return emptyCell;
@@ -520,20 +510,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
         }
       }
     }
+    private EditorCell createConstant_18() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "No Shipments for this order");
+      editorCell.setCellId("Constant_yh3zz3_a42a");
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
   }
   private EditorCell createConstant_19() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
-    editorCell.setCellId("Constant_yh3zz3_ab0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.MATCHING_LABEL, "paren-shipment");
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_20() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
-    editorCell.setCellId("Constant_yh3zz3_bb0");
+    editorCell.setCellId("Constant_yh3zz3_z0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.MATCHING_LABEL, "body-paren");

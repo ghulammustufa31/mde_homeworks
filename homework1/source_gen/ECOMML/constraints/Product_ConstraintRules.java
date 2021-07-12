@@ -42,7 +42,7 @@ public final class Product_ConstraintRules extends BaseRulesConstraintsDescripto
 
     @Override
     public boolean check(@NotNull ContainmentContext context) {
-      return SPropertyOperations.getString(context.getChildNode(), PROPS.price$IwTd).matches("^[+][0-9]+\\.[0-9]+$");
+      return SPropertyOperations.getString(context.getChildNode(), PROPS.price$IwTd).matches("^[0-9]+\\.[0-9]+$");
     }
 
     @Override
