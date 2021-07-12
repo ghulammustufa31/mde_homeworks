@@ -381,15 +381,16 @@
 				<table class="table table-bordered table-striped">
 				  <thead>
 				    <tr>
-				      <th scope="col">Product</th>
-				      <th scope="col">Quantity</th>
-				      <th scope="col">Total Price</th>
+				      <th scope="col">Shipment Date</th>
+				      <th scope="col">Name</th>
+				      <th scope="col">Status</th>
+						<th scope="col">Address</th>
 				    </tr>
 				  </thead>
 				<tbody>
 				[for (ship : Shipment | order.order_have_shipment)]
 					<tr>
-				    <td scope="col">[ship.date/]/td>
+				    <td scope="col">[ship.date/]</td>
 					<td scope="col">[ship.name/]</td>
 					<td scope="col">[ship.shipment_status/]</td>
 					<td scope="col"><a href="[user.username/].html">[ship.shipment_has_address.name/]</a></td>
