@@ -2,6 +2,7 @@
  */
 package it.disim.univaq.ecommerce.model;
 
+import java.math.BigInteger;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -115,5 +116,23 @@ public interface Category extends Named {
 	 * @generated
 	 */
 	void setParent_category(Category value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.have_sub_categories-&gt;isEmpty()'"
+	 * @generated
+	 */
+	Boolean isLeaf();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.have_sub_categories-&gt;size()'"
+	 * @generated
+	 */
+	BigInteger getSubcategoriesNumber();
 
 } // Category

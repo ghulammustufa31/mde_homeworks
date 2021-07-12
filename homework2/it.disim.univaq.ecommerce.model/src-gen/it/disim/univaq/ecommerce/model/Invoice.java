@@ -16,7 +16,7 @@ import java.util.Date;
  *   <li>{@link it.disim.univaq.ecommerce.model.Invoice#getInvoice_id <em>Invoice id</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.Invoice#getDate <em>Date</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.Invoice#getInvoice_for_order <em>Invoice for order</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price <em>Total price</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price_invoice <em>Total price invoice</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.model.ModelPackage#getInvoice()
@@ -91,26 +91,26 @@ public interface Invoice extends Named {
 	void setInvoice_for_order(Order value);
 
 	/**
-	 * Returns the value of the '<em><b>Total price</b></em>' attribute.
+	 * Returns the value of the '<em><b>Total price invoice</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Total price</em>' attribute.
-	 * @see #setTotal_price(float)
-	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getInvoice_Total_price()
+	 * @return the value of the '<em>Total price invoice</em>' attribute.
+	 * @see #setTotal_price_invoice(float)
+	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getInvoice_Total_price_invoice()
 	 * @model required="true" volatile="true" derived="true"
 	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='self.invoice_for_order.total_price_order'"
 	 * @generated
 	 */
-	float getTotal_price();
+	float getTotal_price_invoice();
 
 	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price <em>Total price</em>}' attribute.
+	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price_invoice <em>Total price invoice</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Total price</em>' attribute.
-	 * @see #getTotal_price()
+	 * @param value the new value of the '<em>Total price invoice</em>' attribute.
+	 * @see #getTotal_price_invoice()
 	 * @generated
 	 */
-	void setTotal_price(float value);
+	void setTotal_price_invoice(float value);
 
 } // Invoice

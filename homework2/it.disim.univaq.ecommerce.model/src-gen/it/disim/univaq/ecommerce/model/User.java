@@ -19,7 +19,8 @@ package it.disim.univaq.ecommerce.model;
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.model.ModelPackage#getUser()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validPassword'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot validPassword='self.password.size() &gt;= 8'"
  * @generated
  */
 public interface User extends Named {

@@ -37,15 +37,17 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Category/have_sub_categories"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Category/have_products"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Category/parent_category"/>
+      <genOperations ecoreOperation="model.ecore#//Category/isLeaf"/>
+      <genOperations ecoreOperation="model.ecore#//Category/getSubcategoriesNumber"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Product">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/available"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/stock"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/height"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/weight"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/price"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Product/description"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Product/product_have_images"/>
+      <genOperations ecoreOperation="model.ecore#//Product/isProductAvaiable"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//User">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//User/surname"/>
@@ -59,11 +61,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_items"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference model.ecore#//Cart/cart_have_order"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Cart/total_price"/>
+      <genOperations ecoreOperation="model.ecore#//Cart/totalProducts"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//ItemCart">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ItemCart/quantity"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//ItemCart/item_cart_have_product"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ItemCart/total_price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//ItemCart/total_price_item_cart"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Address">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Address/country"/>
@@ -93,7 +96,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/invoice_id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/date"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference model.ecore#//Invoice/invoice_for_order"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/total_price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute model.ecore#//Invoice/total_price_invoice"/>
     </genClasses>
     <genClasses ecoreClass="model.ecore#//Administrator"/>
     <genClasses ecoreClass="model.ecore#//Customer">

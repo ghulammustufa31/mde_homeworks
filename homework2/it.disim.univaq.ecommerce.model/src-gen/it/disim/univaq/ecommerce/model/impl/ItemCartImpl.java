@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl#getItem_cart_have_product <em>Item cart have product</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl#getTotal_price <em>Total price</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl#getTotal_price_item_cart <em>Total price item cart</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,14 +61,14 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 	protected Product item_cart_have_product;
 
 	/**
-	 * The cached setting delegate for the '{@link #getTotal_price() <em>Total price</em>}' attribute.
+	 * The cached setting delegate for the '{@link #getTotal_price_item_cart() <em>Total price item cart</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTotal_price()
+	 * @see #getTotal_price_item_cart()
 	 * @generated
 	 * @ordered
 	 */
-	protected EStructuralFeature.Internal.SettingDelegate TOTAL_PRICE__ESETTING_DELEGATE = ((EStructuralFeature.Internal) ModelPackage.Literals.ITEM_CART__TOTAL_PRICE)
+	protected EStructuralFeature.Internal.SettingDelegate TOTAL_PRICE_ITEM_CART__ESETTING_DELEGATE = ((EStructuralFeature.Internal) ModelPackage.Literals.ITEM_CART__TOTAL_PRICE_ITEM_CART)
 			.getSettingDelegate();
 
 	/**
@@ -158,8 +158,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public float getTotal_price() {
-		return (Float) TOTAL_PRICE__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
+	public float getTotal_price_item_cart() {
+		return (Float) TOTAL_PRICE_ITEM_CART__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
 	}
 
 	/**
@@ -167,8 +167,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTotal_price(float newTotal_price) {
-		TOTAL_PRICE__ESETTING_DELEGATE.dynamicSet(this, null, 0, newTotal_price);
+	public void setTotal_price_item_cart(float newTotal_price_item_cart) {
+		TOTAL_PRICE_ITEM_CART__ESETTING_DELEGATE.dynamicSet(this, null, 0, newTotal_price_item_cart);
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 			if (resolve)
 				return getItem_cart_have_product();
 			return basicGetItem_cart_have_product();
-		case ModelPackage.ITEM_CART__TOTAL_PRICE:
-			return getTotal_price();
+		case ModelPackage.ITEM_CART__TOTAL_PRICE_ITEM_CART:
+			return getTotal_price_item_cart();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -205,8 +205,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 		case ModelPackage.ITEM_CART__ITEM_CART_HAVE_PRODUCT:
 			setItem_cart_have_product((Product) newValue);
 			return;
-		case ModelPackage.ITEM_CART__TOTAL_PRICE:
-			setTotal_price((Float) newValue);
+		case ModelPackage.ITEM_CART__TOTAL_PRICE_ITEM_CART:
+			setTotal_price_item_cart((Float) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -226,8 +226,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 		case ModelPackage.ITEM_CART__ITEM_CART_HAVE_PRODUCT:
 			setItem_cart_have_product((Product) null);
 			return;
-		case ModelPackage.ITEM_CART__TOTAL_PRICE:
-			TOTAL_PRICE__ESETTING_DELEGATE.dynamicUnset(this, null, 0);
+		case ModelPackage.ITEM_CART__TOTAL_PRICE_ITEM_CART:
+			TOTAL_PRICE_ITEM_CART__ESETTING_DELEGATE.dynamicUnset(this, null, 0);
 			return;
 		}
 		super.eUnset(featureID);
@@ -245,8 +245,8 @@ public class ItemCartImpl extends NamedImpl implements ItemCart {
 			return quantity != QUANTITY_EDEFAULT;
 		case ModelPackage.ITEM_CART__ITEM_CART_HAVE_PRODUCT:
 			return item_cart_have_product != null;
-		case ModelPackage.ITEM_CART__TOTAL_PRICE:
-			return TOTAL_PRICE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
+		case ModelPackage.ITEM_CART__TOTAL_PRICE_ITEM_CART:
+			return TOTAL_PRICE_ITEM_CART__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
 	}

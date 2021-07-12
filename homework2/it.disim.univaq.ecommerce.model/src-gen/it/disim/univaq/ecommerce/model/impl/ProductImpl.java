@@ -6,6 +6,7 @@ import it.disim.univaq.ecommerce.model.ModelPackage;
 import it.disim.univaq.ecommerce.model.Product;
 import it.disim.univaq.ecommerce.model.ProductImage;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -13,7 +14,9 @@ import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -29,7 +32,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.model.impl.ProductImpl#isAvailable <em>Available</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.ProductImpl#getStock <em>Stock</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.ProductImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.ProductImpl#getWeight <em>Weight</em>}</li>
@@ -41,26 +43,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * @generated
  */
 public class ProductImpl extends NamedImpl implements Product {
-	/**
-	 * The default value of the '{@link #isAvailable() <em>Available</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isAvailable()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean AVAILABLE_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isAvailable() <em>Available</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isAvailable()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean available = AVAILABLE_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getStock() <em>Stock</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -195,28 +177,6 @@ public class ProductImpl extends NamedImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isAvailable() {
-		return available;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setAvailable(boolean newAvailable) {
-		boolean oldAvailable = available;
-		available = newAvailable;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.PRODUCT__AVAILABLE, oldAvailable,
-					available));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public int getStock() {
 		return stock;
 	}
@@ -332,6 +292,30 @@ public class ProductImpl extends NamedImpl implements Product {
 	}
 
 	/**
+	 * The cached invocation delegate for the '{@link #isProductAvaiable() <em>Is Product Avaiable</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isProductAvaiable()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final EOperation.Internal.InvocationDelegate IS_PRODUCT_AVAIABLE__EINVOCATION_DELEGATE = ((EOperation.Internal) ModelPackage.Literals.PRODUCT___IS_PRODUCT_AVAIABLE)
+			.getInvocationDelegate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean isProductAvaiable() {
+		try {
+			return (Boolean) IS_PRODUCT_AVAIABLE__EINVOCATION_DELEGATE.dynamicInvoke(this, null);
+		} catch (InvocationTargetException ite) {
+			throw new WrappedException(ite);
+		}
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -353,8 +337,6 @@ public class ProductImpl extends NamedImpl implements Product {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case ModelPackage.PRODUCT__AVAILABLE:
-			return isAvailable();
 		case ModelPackage.PRODUCT__STOCK:
 			return getStock();
 		case ModelPackage.PRODUCT__HEIGHT:
@@ -380,9 +362,6 @@ public class ProductImpl extends NamedImpl implements Product {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case ModelPackage.PRODUCT__AVAILABLE:
-			setAvailable((Boolean) newValue);
-			return;
 		case ModelPackage.PRODUCT__STOCK:
 			setStock((Integer) newValue);
 			return;
@@ -414,9 +393,6 @@ public class ProductImpl extends NamedImpl implements Product {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case ModelPackage.PRODUCT__AVAILABLE:
-			setAvailable(AVAILABLE_EDEFAULT);
-			return;
 		case ModelPackage.PRODUCT__STOCK:
 			setStock(STOCK_EDEFAULT);
 			return;
@@ -447,8 +423,6 @@ public class ProductImpl extends NamedImpl implements Product {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case ModelPackage.PRODUCT__AVAILABLE:
-			return available != AVAILABLE_EDEFAULT;
 		case ModelPackage.PRODUCT__STOCK:
 			return stock != STOCK_EDEFAULT;
 		case ModelPackage.PRODUCT__HEIGHT:
@@ -471,14 +445,26 @@ public class ProductImpl extends NamedImpl implements Product {
 	 * @generated
 	 */
 	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+		case ModelPackage.PRODUCT___IS_PRODUCT_AVAIABLE:
+			return isProductAvaiable();
+		}
+		return super.eInvoke(operationID, arguments);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String toString() {
 		if (eIsProxy())
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (available: ");
-		result.append(available);
-		result.append(", stock: ");
+		result.append(" (stock: ");
 		result.append(stock);
 		result.append(", height: ");
 		result.append(height);

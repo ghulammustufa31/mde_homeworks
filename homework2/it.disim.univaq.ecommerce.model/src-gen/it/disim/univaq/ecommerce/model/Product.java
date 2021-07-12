@@ -13,7 +13,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link it.disim.univaq.ecommerce.model.Product#isAvailable <em>Available</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.Product#getStock <em>Stock</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.Product#getHeight <em>Height</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.Product#getWeight <em>Weight</em>}</li>
@@ -27,28 +26,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface Product extends Named {
-	/**
-	 * Returns the value of the '<em><b>Available</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Available</em>' attribute.
-	 * @see #setAvailable(boolean)
-	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getProduct_Available()
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean isAvailable();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.Product#isAvailable <em>Available</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Available</em>' attribute.
-	 * @see #isAvailable()
-	 * @generated
-	 */
-	void setAvailable(boolean value);
-
 	/**
 	 * Returns the value of the '<em><b>Stock</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -170,5 +147,14 @@ public interface Product extends Named {
 	 * @generated
 	 */
 	EList<ProductImage> getProduct_have_images();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.stock &gt; 0'"
+	 * @generated
+	 */
+	Boolean isProductAvaiable();
 
 } // Product

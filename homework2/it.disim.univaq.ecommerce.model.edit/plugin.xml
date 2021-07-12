@@ -10,7 +10,7 @@
       <!-- @generated model -->
       <factory
             uri="http://it.disim.univaq.ecommerce/model"
-            class="it.disim.univaq.ecommerce.ecommerce_application.provider.ModelItemProviderAdapterFactory"
+            class="it.disim.univaq.ecommerce.model.provider.ModelItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

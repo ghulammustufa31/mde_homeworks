@@ -7,6 +7,8 @@ import it.disim.univaq.ecommerce.model.ItemCart;
 import it.disim.univaq.ecommerce.model.ModelPackage;
 import it.disim.univaq.ecommerce.model.Order;
 
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigInteger;
 import java.util.Collection;
 import java.util.Date;
 
@@ -15,7 +17,9 @@ import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -215,6 +219,30 @@ public class CartImpl extends NamedImpl implements Cart {
 	}
 
 	/**
+	 * The cached invocation delegate for the '{@link #totalProducts() <em>Total Products</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #totalProducts()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final EOperation.Internal.InvocationDelegate TOTAL_PRODUCTS__EINVOCATION_DELEGATE = ((EOperation.Internal) ModelPackage.Literals.CART___TOTAL_PRODUCTS)
+			.getInvocationDelegate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BigInteger totalProducts() {
+		try {
+			return (BigInteger) TOTAL_PRODUCTS__EINVOCATION_DELEGATE.dynamicInvoke(this, null);
+		} catch (InvocationTargetException ite) {
+			throw new WrappedException(ite);
+		}
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -318,6 +346,20 @@ public class CartImpl extends NamedImpl implements Cart {
 			return TOTAL_PRICE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+		case ModelPackage.CART___TOTAL_PRODUCTS:
+			return totalProducts();
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

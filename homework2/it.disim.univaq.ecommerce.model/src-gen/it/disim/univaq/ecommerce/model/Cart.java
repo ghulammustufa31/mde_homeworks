@@ -2,6 +2,7 @@
  */
 package it.disim.univaq.ecommerce.model;
 
+import java.math.BigInteger;
 import java.util.Date;
 
 import org.eclipse.emf.common.util.EList;
@@ -90,7 +91,7 @@ public interface Cart extends Named {
 	 * @see #setTotal_price(float)
 	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getCart_Total_price()
 	 * @model required="true" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='self.cart_have_items-&gt;collect(e:ItemCart | e.total_price)-&gt;sum()'"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='self.cart_have_items-&gt;collect(e:ItemCart | e.total_price_item_cart)-&gt;sum()'"
 	 * @generated
 	 */
 	float getTotal_price();
@@ -104,5 +105,13 @@ public interface Cart extends Named {
 	 * @generated
 	 */
 	void setTotal_price(float value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.cart_have_items-&gt;collect(e:ItemCart | e.quantity)-&gt;sum()'"
+	 * @generated
+	 */
+	BigInteger totalProducts();
 
 } // Cart

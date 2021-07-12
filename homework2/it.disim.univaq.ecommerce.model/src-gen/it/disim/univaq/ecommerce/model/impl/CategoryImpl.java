@@ -6,6 +6,8 @@ import it.disim.univaq.ecommerce.model.Category;
 import it.disim.univaq.ecommerce.model.ModelPackage;
 import it.disim.univaq.ecommerce.model.Product;
 
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigInteger;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -13,7 +15,9 @@ import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -227,6 +231,54 @@ public class CategoryImpl extends NamedImpl implements Category {
 	}
 
 	/**
+	 * The cached invocation delegate for the '{@link #isLeaf() <em>Is Leaf</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isLeaf()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final EOperation.Internal.InvocationDelegate IS_LEAF__EINVOCATION_DELEGATE = ((EOperation.Internal) ModelPackage.Literals.CATEGORY___IS_LEAF)
+			.getInvocationDelegate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean isLeaf() {
+		try {
+			return (Boolean) IS_LEAF__EINVOCATION_DELEGATE.dynamicInvoke(this, null);
+		} catch (InvocationTargetException ite) {
+			throw new WrappedException(ite);
+		}
+	}
+
+	/**
+	 * The cached invocation delegate for the '{@link #getSubcategoriesNumber() <em>Get Subcategories Number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubcategoriesNumber()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final EOperation.Internal.InvocationDelegate GET_SUBCATEGORIES_NUMBER__EINVOCATION_DELEGATE = ((EOperation.Internal) ModelPackage.Literals.CATEGORY___GET_SUBCATEGORIES_NUMBER)
+			.getInvocationDelegate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BigInteger getSubcategoriesNumber() {
+		try {
+			return (BigInteger) GET_SUBCATEGORIES_NUMBER__EINVOCATION_DELEGATE.dynamicInvoke(this, null);
+		} catch (InvocationTargetException ite) {
+			throw new WrappedException(ite);
+		}
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -343,6 +395,22 @@ public class CategoryImpl extends NamedImpl implements Category {
 			return PARENT_CATEGORY__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+		case ModelPackage.CATEGORY___IS_LEAF:
+			return isLeaf();
+		case ModelPackage.CATEGORY___GET_SUBCATEGORIES_NUMBER:
+			return getSubcategoriesNumber();
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

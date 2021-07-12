@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.InvoiceImpl#getInvoice_id <em>Invoice id</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.InvoiceImpl#getDate <em>Date</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.impl.InvoiceImpl#getInvoice_for_order <em>Invoice for order</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.model.impl.InvoiceImpl#getTotal_price <em>Total price</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.model.impl.InvoiceImpl#getTotal_price_invoice <em>Total price invoice</em>}</li>
  * </ul>
  *
  * @generated
@@ -84,14 +84,14 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 	protected Order invoice_for_order;
 
 	/**
-	 * The cached setting delegate for the '{@link #getTotal_price() <em>Total price</em>}' attribute.
+	 * The cached setting delegate for the '{@link #getTotal_price_invoice() <em>Total price invoice</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTotal_price()
+	 * @see #getTotal_price_invoice()
 	 * @generated
 	 * @ordered
 	 */
-	protected EStructuralFeature.Internal.SettingDelegate TOTAL_PRICE__ESETTING_DELEGATE = ((EStructuralFeature.Internal) ModelPackage.Literals.INVOICE__TOTAL_PRICE)
+	protected EStructuralFeature.Internal.SettingDelegate TOTAL_PRICE_INVOICE__ESETTING_DELEGATE = ((EStructuralFeature.Internal) ModelPackage.Literals.INVOICE__TOTAL_PRICE_INVOICE)
 			.getSettingDelegate();
 
 	/**
@@ -201,8 +201,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public float getTotal_price() {
-		return (Float) TOTAL_PRICE__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
+	public float getTotal_price_invoice() {
+		return (Float) TOTAL_PRICE_INVOICE__ESETTING_DELEGATE.dynamicGet(this, null, 0, true, false);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setTotal_price(float newTotal_price) {
-		TOTAL_PRICE__ESETTING_DELEGATE.dynamicSet(this, null, 0, newTotal_price);
+	public void setTotal_price_invoice(float newTotal_price_invoice) {
+		TOTAL_PRICE_INVOICE__ESETTING_DELEGATE.dynamicSet(this, null, 0, newTotal_price_invoice);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 			if (resolve)
 				return getInvoice_for_order();
 			return basicGetInvoice_for_order();
-		case ModelPackage.INVOICE__TOTAL_PRICE:
-			return getTotal_price();
+		case ModelPackage.INVOICE__TOTAL_PRICE_INVOICE:
+			return getTotal_price_invoice();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -253,8 +253,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 		case ModelPackage.INVOICE__INVOICE_FOR_ORDER:
 			setInvoice_for_order((Order) newValue);
 			return;
-		case ModelPackage.INVOICE__TOTAL_PRICE:
-			setTotal_price((Float) newValue);
+		case ModelPackage.INVOICE__TOTAL_PRICE_INVOICE:
+			setTotal_price_invoice((Float) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -277,8 +277,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 		case ModelPackage.INVOICE__INVOICE_FOR_ORDER:
 			setInvoice_for_order((Order) null);
 			return;
-		case ModelPackage.INVOICE__TOTAL_PRICE:
-			TOTAL_PRICE__ESETTING_DELEGATE.dynamicUnset(this, null, 0);
+		case ModelPackage.INVOICE__TOTAL_PRICE_INVOICE:
+			TOTAL_PRICE_INVOICE__ESETTING_DELEGATE.dynamicUnset(this, null, 0);
 			return;
 		}
 		super.eUnset(featureID);
@@ -298,8 +298,8 @@ public class InvoiceImpl extends NamedImpl implements Invoice {
 			return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
 		case ModelPackage.INVOICE__INVOICE_FOR_ORDER:
 			return invoice_for_order != null;
-		case ModelPackage.INVOICE__TOTAL_PRICE:
-			return TOTAL_PRICE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
+		case ModelPackage.INVOICE__TOTAL_PRICE_INVOICE:
+			return TOTAL_PRICE_INVOICE__ESETTING_DELEGATE.dynamicIsSet(this, null, 0);
 		}
 		return super.eIsSet(featureID);
 	}

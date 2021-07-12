@@ -27,6 +27,7 @@ import it.disim.univaq.ecommerce.model.util.ModelValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EValidator;
@@ -361,6 +362,24 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getCategory__IsLeaf() {
+		return categoryEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getCategory__GetSubcategoriesNumber() {
+		return categoryEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProduct() {
 		return productEClass;
 	}
@@ -370,7 +389,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Available() {
+	public EAttribute getProduct_Stock() {
 		return (EAttribute) productEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -379,7 +398,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Stock() {
+	public EAttribute getProduct_Height() {
 		return (EAttribute) productEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -388,7 +407,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Height() {
+	public EAttribute getProduct_Weight() {
 		return (EAttribute) productEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -397,7 +416,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Weight() {
+	public EAttribute getProduct_Price() {
 		return (EAttribute) productEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -406,7 +425,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Price() {
+	public EAttribute getProduct_Description() {
 		return (EAttribute) productEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -415,8 +434,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getProduct_Description() {
-		return (EAttribute) productEClass.getEStructuralFeatures().get(5);
+	public EReference getProduct_Product_have_images() {
+		return (EReference) productEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -424,8 +443,8 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getProduct_Product_have_images() {
-		return (EReference) productEClass.getEStructuralFeatures().get(6);
+	public EOperation getProduct__IsProductAvaiable() {
+		return productEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -532,6 +551,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getCart__TotalProducts() {
+		return cartEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getItemCart() {
 		return itemCartEClass;
 	}
@@ -559,7 +587,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getItemCart_Total_price() {
+	public EAttribute getItemCart_Total_price_item_cart() {
 		return (EAttribute) itemCartEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -793,7 +821,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInvoice_Total_price() {
+	public EAttribute getInvoice_Total_price_invoice() {
 		return (EAttribute) invoiceEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -915,15 +943,17 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEReference(categoryEClass, CATEGORY__HAVE_SUB_CATEGORIES);
 		createEReference(categoryEClass, CATEGORY__HAVE_PRODUCTS);
 		createEReference(categoryEClass, CATEGORY__PARENT_CATEGORY);
+		createEOperation(categoryEClass, CATEGORY___IS_LEAF);
+		createEOperation(categoryEClass, CATEGORY___GET_SUBCATEGORIES_NUMBER);
 
 		productEClass = createEClass(PRODUCT);
-		createEAttribute(productEClass, PRODUCT__AVAILABLE);
 		createEAttribute(productEClass, PRODUCT__STOCK);
 		createEAttribute(productEClass, PRODUCT__HEIGHT);
 		createEAttribute(productEClass, PRODUCT__WEIGHT);
 		createEAttribute(productEClass, PRODUCT__PRICE);
 		createEAttribute(productEClass, PRODUCT__DESCRIPTION);
 		createEReference(productEClass, PRODUCT__PRODUCT_HAVE_IMAGES);
+		createEOperation(productEClass, PRODUCT___IS_PRODUCT_AVAIABLE);
 
 		userEClass = createEClass(USER);
 		createEAttribute(userEClass, USER__SURNAME);
@@ -937,11 +967,12 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEReference(cartEClass, CART__CART_HAVE_ITEMS);
 		createEReference(cartEClass, CART__CART_HAVE_ORDER);
 		createEAttribute(cartEClass, CART__TOTAL_PRICE);
+		createEOperation(cartEClass, CART___TOTAL_PRODUCTS);
 
 		itemCartEClass = createEClass(ITEM_CART);
 		createEAttribute(itemCartEClass, ITEM_CART__QUANTITY);
 		createEReference(itemCartEClass, ITEM_CART__ITEM_CART_HAVE_PRODUCT);
-		createEAttribute(itemCartEClass, ITEM_CART__TOTAL_PRICE);
+		createEAttribute(itemCartEClass, ITEM_CART__TOTAL_PRICE_ITEM_CART);
 
 		addressEClass = createEClass(ADDRESS);
 		createEAttribute(addressEClass, ADDRESS__COUNTRY);
@@ -971,7 +1002,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(invoiceEClass, INVOICE__INVOICE_ID);
 		createEAttribute(invoiceEClass, INVOICE__DATE);
 		createEReference(invoiceEClass, INVOICE__INVOICE_FOR_ORDER);
-		createEAttribute(invoiceEClass, INVOICE__TOTAL_PRICE);
+		createEAttribute(invoiceEClass, INVOICE__TOTAL_PRICE_INVOICE);
 
 		administratorEClass = createEClass(ADMINISTRATOR);
 
@@ -1068,9 +1099,12 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 				Category.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
+		initEOperation(getCategory__IsLeaf(), ecorePackage.getEBooleanObject(), "isLeaf", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEOperation(getCategory__GetSubcategoriesNumber(), ecorePackage.getEBigInteger(), "getSubcategoriesNumber",
+				0, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(productEClass, Product.class, "Product", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getProduct_Available(), ecorePackage.getEBoolean(), "available", null, 1, 1, Product.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProduct_Stock(), ecorePackage.getEInt(), "stock", null, 1, 1, Product.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProduct_Height(), ecorePackage.getEFloat(), "height", null, 1, 1, Product.class,
@@ -1084,6 +1118,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEReference(getProduct_Product_have_images(), this.getProductImage(), null, "product_have_images", null, 0,
 				-1, Product.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEOperation(getProduct__IsProductAvaiable(), ecorePackage.getEBooleanObject(), "isProductAvaiable", 0, 1,
+				IS_UNIQUE, IS_ORDERED);
 
 		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getUser_Surname(), ecorePackage.getEString(), "surname", null, 0, 1, User.class, !IS_TRANSIENT,
@@ -1109,6 +1146,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getCart_Total_price(), ecorePackage.getEFloat(), "total_price", null, 1, 1, Cart.class,
 				!IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
+		initEOperation(getCart__TotalProducts(), ecorePackage.getEBigInteger(), "totalProducts", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+
 		initEClass(itemCartEClass, ItemCart.class, "ItemCart", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getItemCart_Quantity(), ecorePackage.getEInt(), "quantity", null, 1, 1, ItemCart.class,
@@ -1116,8 +1156,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEReference(getItemCart_Item_cart_have_product(), this.getProduct(), null, "item_cart_have_product", null, 1,
 				1, ItemCart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getItemCart_Total_price(), ecorePackage.getEFloat(), "total_price", null, 1, 1, ItemCart.class,
-				!IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getItemCart_Total_price_item_cart(), ecorePackage.getEFloat(), "total_price_item_cart", null, 1,
+				1, ItemCart.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				IS_DERIVED, IS_ORDERED);
 
 		initEClass(addressEClass, Address.class, "Address", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAddress_Country(), ecorePackage.getEString(), "country", null, 0, 1, Address.class,
@@ -1178,8 +1219,9 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEReference(getInvoice_Invoice_for_order(), this.getOrder(), null, "invoice_for_order", null, 1, 1,
 				Invoice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getInvoice_Total_price(), ecorePackage.getEFloat(), "total_price", null, 1, 1, Invoice.class,
-				!IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInvoice_Total_price_invoice(), ecorePackage.getEFloat(), "total_price_invoice", null, 1, 1,
+				Invoice.class, !IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(administratorEClass, Administrator.class, "Administrator", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1244,6 +1286,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 				new String[] { "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
 						"settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", "validationDelegates",
 						"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot" });
+		addAnnotation(userEClass, source, new String[] { "constraints", "validPassword" });
 		addAnnotation(itemCartEClass, source, new String[] { "constraints", "validStock" });
 		addAnnotation(orderEClass, source,
 				new String[] { "constraints", "validOrderStatusPaid validOrderStatusUnpaid" });
@@ -1257,21 +1300,28 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 */
 	protected void createPivotAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";
+		addAnnotation(getCategory__IsLeaf(), source, new String[] { "body", "self.have_sub_categories->isEmpty()" });
+		addAnnotation(getCategory__GetSubcategoriesNumber(), source,
+				new String[] { "body", "self.have_sub_categories->size()" });
 		addAnnotation(getCategory_Parent_category(), source, new String[] { "derivation",
 				"if Category.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->notEmpty() then\n\t\tCategory.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->asSequence()->first()\n\t\telse self endif" });
-		addAnnotation(getCart_Total_price(), source,
-				new String[] { "derivation", "self.cart_have_items->collect(e:ItemCart | e.total_price)->sum()" });
+		addAnnotation(getProduct__IsProductAvaiable(), source, new String[] { "body", "self.stock > 0" });
+		addAnnotation(userEClass, source, new String[] { "validPassword", "self.password.size() >= 8" });
+		addAnnotation(getCart__TotalProducts(), source,
+				new String[] { "body", "self.cart_have_items->collect(e:ItemCart | e.quantity)->sum()" });
+		addAnnotation(getCart_Total_price(), source, new String[] { "derivation",
+				"self.cart_have_items->collect(e:ItemCart | e.total_price_item_cart)->sum()" });
 		addAnnotation(itemCartEClass, source,
 				new String[] { "validStock", "self.item_cart_have_product.stock >= self.quantity" });
-		addAnnotation(getItemCart_Total_price(), source, new String[] { "derivation",
-				"self.item_cart_have_product->collect(p:Product | p.price)->sum() * self.quantity" });
+		addAnnotation(getItemCart_Total_price_item_cart(), source,
+				new String[] { "derivation", "self.item_cart_have_product.price * self.quantity" });
 		addAnnotation(orderEClass, source, new String[] { "validOrderStatusPaid",
 				"self.order_state = OrderState::PAID implies self.order_have_shipment.shipment_status = ShipmentStatus::PENDING",
 				"validOrderStatusUnpaid",
 				"self.order_state = OrderState::UNPAID implies self.order_have_shipment.shipment_status = ShipmentStatus::PENDING" });
 		addAnnotation(getOrder_Total_price_order(), source,
 				new String[] { "derivation", "self.order_for_cart.total_price" });
-		addAnnotation(getInvoice_Total_price(), source,
+		addAnnotation(getInvoice_Total_price_invoice(), source,
 				new String[] { "derivation", "self.invoice_for_order.total_price_order" });
 	}
 

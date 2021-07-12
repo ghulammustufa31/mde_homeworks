@@ -1,5 +1,7 @@
-@namespace(uri="http://it.disim.univaq.ecommerce/model", prefix="ecommerce_application")
-package ecommerce_application;
+@"http://www.eclipse.org/OCL/Import"(ecore="http://www.eclipse.org/emf/2002/Ecore")
+@Ecore(invocationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", settingDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", validationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot")
+@namespace(uri="http://it.disim.univaq.ecommerce/model", prefix="model")
+package model;
 
 class application extends Named {
 	val EcommerceSystem[+] app_have_shops;
@@ -7,7 +9,7 @@ class application extends Named {
 
 class EcommerceSystem extends Named {
 	val Category[*] shop_have_categories;
-	val Customer have_clients;
+	val Customer[*] have_clients;
 	val Administrator[+] shop_have_administrators;
 }
 
@@ -16,40 +18,65 @@ class Named {
 }
 
 class Category extends Named {
-	attr boolean active;
-	attr int depth;
-	attr boolean root_cat;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(body="self.have_sub_categories->isEmpty()")
+	op Boolean isLeaf();
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(body="self.have_sub_categories->size()")
+	op EBigInteger getSubcategoriesNumber();
+	attr boolean[1] active;
+	attr boolean[1] root_cat;
 	val Category[*] have_sub_categories;
 	val Product[*] have_products;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(derivation="if Category.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->notEmpty() then
+		Category.allInstances()->select(e:Category | e.have_sub_categories->includes(self))->asSequence()->first()
+		else self endif")
+	volatile derived ref Category[1] parent_category;
 }
 
 class Product extends Named {
-	attr boolean available;
-	attr int stock;
-	attr float height;
-	attr float weight;
-	attr float price;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(body="self.stock > 0")
+	op Boolean isProductAvaiable();
+	attr int[1] stock;
+	attr float[1] height;
+	attr float[1] weight;
+	attr float[1] price;
 	attr String description;
 	val ProductImage[*] product_have_images;
 }
 
-class User {
+@Ecore(constraints="validPassword")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(validPassword="self.password.size() >= 8")
+class User extends Named {
 	attr String surname;
 	attr String username;
 	attr String password;
-	attr boolean active;
+	attr boolean[1] active;
 	attr String email;
 }
 
 class Cart extends Named {
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(body="self.cart_have_items->collect(e:ItemCart | e.quantity)->sum()")
+	op EBigInteger totalProducts();
 	attr EDate date_added;
 	val ItemCart[*] cart_have_items;
 	val Order cart_have_order;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(derivation="self.cart_have_items->collect(e:ItemCart | e.total_price_item_cart)->sum()")
+	volatile derived attr float[1] total_price;
 }
 
+@Ecore(constraints="validStock")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(validStock="self.item_cart_have_product.stock >= self.quantity")
 class ItemCart extends Named {
-	attr int quantity;
+	attr int[1] quantity;
 	ref Product[1] item_cart_have_product;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(derivation="self.item_cart_have_product.price * self.quantity")
+	volatile derived attr float[1] total_price_item_cart;
 }
 
 class Address extends Named {
@@ -58,16 +85,22 @@ class Address extends Named {
 	attr String city;
 	attr String post_code;
 	attr String phone;
-	attr boolean active;
+	attr boolean[1] active;
+	attr String street_address;
 }
 
+@Ecore(constraints="validOrderStatusPaid validOrderStatusUnpaid")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(validOrderStatusPaid="self.order_state = OrderState::PAID implies self.order_have_shipment.shipment_status = ShipmentStatus::PENDING", validOrderStatusUnpaid="self.order_state = OrderState::UNPAID implies self.order_have_shipment.shipment_status = ShipmentStatus::PENDING")
 class Order {
 	attr String reference_number;
-	attr float total_price;
 	attr EDate date_created;
 	attr OrderState order_state;
 	val Invoice order_has_invoice;
 	val Shipment[*] order_have_shipment;
+	ref Cart[1] order_for_cart;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(derivation="self.order_for_cart.total_price")
+	volatile derived attr float[1] total_price_order;
 }
 
 class Shipment extends Named {
@@ -79,13 +112,17 @@ class Shipment extends Named {
 
 enum OrderState {
 	PAID = 0;
-	COMMITED = 1;
+	COMMITTED = 1;
 	UNPAID = 2;
 }
 
 class Invoice extends Named {
-	attr int invoice_id;
+	attr int[1] invoice_id;
 	attr EDate date;
+	ref Order[1] invoice_for_order;
+
+	@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(derivation="self.invoice_for_order.total_price_order")
+	volatile derived attr float[1] total_price_invoice;
 }
 
 class Administrator extends User {

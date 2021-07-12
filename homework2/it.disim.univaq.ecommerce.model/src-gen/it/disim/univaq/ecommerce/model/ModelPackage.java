@@ -5,6 +5,7 @@ package it.disim.univaq.ecommerce.model;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -280,13 +281,31 @@ public interface ModelPackage extends EPackage {
 	int CATEGORY_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
 
 	/**
+	 * The operation id for the '<em>Is Leaf</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CATEGORY___IS_LEAF = NAMED_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Subcategories Number</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CATEGORY___GET_SUBCATEGORIES_NUMBER = NAMED_OPERATION_COUNT + 1;
+
+	/**
 	 * The number of operations of the '<em>Category</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CATEGORY_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int CATEGORY_OPERATION_COUNT = NAMED_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.model.impl.ProductImpl <em>Product</em>}' class.
@@ -308,22 +327,13 @@ public interface ModelPackage extends EPackage {
 	int PRODUCT__NAME = NAMED__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Available</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT__AVAILABLE = NAMED_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Stock</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__STOCK = NAMED_FEATURE_COUNT + 1;
+	int PRODUCT__STOCK = NAMED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -332,7 +342,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__HEIGHT = NAMED_FEATURE_COUNT + 2;
+	int PRODUCT__HEIGHT = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Weight</b></em>' attribute.
@@ -341,7 +351,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__WEIGHT = NAMED_FEATURE_COUNT + 3;
+	int PRODUCT__WEIGHT = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Price</b></em>' attribute.
@@ -350,7 +360,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRICE = NAMED_FEATURE_COUNT + 4;
+	int PRODUCT__PRICE = NAMED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -359,7 +369,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__DESCRIPTION = NAMED_FEATURE_COUNT + 5;
+	int PRODUCT__DESCRIPTION = NAMED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product have images</b></em>' containment reference list.
@@ -368,7 +378,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_HAVE_IMAGES = NAMED_FEATURE_COUNT + 6;
+	int PRODUCT__PRODUCT_HAVE_IMAGES = NAMED_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Product</em>' class.
@@ -377,7 +387,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_COUNT = NAMED_FEATURE_COUNT + 7;
+	int PRODUCT_FEATURE_COUNT = NAMED_FEATURE_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Is Product Avaiable</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT___IS_PRODUCT_AVAIABLE = NAMED_OPERATION_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Product</em>' class.
@@ -386,7 +405,7 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int PRODUCT_OPERATION_COUNT = NAMED_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.model.impl.UserImpl <em>User</em>}' class.
@@ -535,13 +554,22 @@ public interface ModelPackage extends EPackage {
 	int CART_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Total Products</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CART___TOTAL_PRODUCTS = NAMED_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Cart</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int CART_OPERATION_COUNT = NAMED_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl <em>Item Cart</em>}' class.
@@ -581,13 +609,13 @@ public interface ModelPackage extends EPackage {
 	int ITEM_CART__ITEM_CART_HAVE_PRODUCT = NAMED_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Total price</b></em>' attribute.
+	 * The feature id for the '<em><b>Total price item cart</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_CART__TOTAL_PRICE = NAMED_FEATURE_COUNT + 2;
+	int ITEM_CART__TOTAL_PRICE_ITEM_CART = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Item Cart</em>' class.
@@ -918,13 +946,13 @@ public interface ModelPackage extends EPackage {
 	int INVOICE__INVOICE_FOR_ORDER = NAMED_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Total price</b></em>' attribute.
+	 * The feature id for the '<em><b>Total price invoice</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__TOTAL_PRICE = NAMED_FEATURE_COUNT + 3;
+	int INVOICE__TOTAL_PRICE_INVOICE = NAMED_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Invoice</em>' class.
@@ -1334,6 +1362,26 @@ public interface ModelPackage extends EPackage {
 	EReference getCategory_Parent_category();
 
 	/**
+	 * Returns the meta object for the '{@link it.disim.univaq.ecommerce.model.Category#isLeaf() <em>Is Leaf</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Leaf</em>' operation.
+	 * @see it.disim.univaq.ecommerce.model.Category#isLeaf()
+	 * @generated
+	 */
+	EOperation getCategory__IsLeaf();
+
+	/**
+	 * Returns the meta object for the '{@link it.disim.univaq.ecommerce.model.Category#getSubcategoriesNumber() <em>Get Subcategories Number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Subcategories Number</em>' operation.
+	 * @see it.disim.univaq.ecommerce.model.Category#getSubcategoriesNumber()
+	 * @generated
+	 */
+	EOperation getCategory__GetSubcategoriesNumber();
+
+	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.model.Product <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1342,17 +1390,6 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getProduct();
-
-	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.Product#isAvailable <em>Available</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Available</em>'.
-	 * @see it.disim.univaq.ecommerce.model.Product#isAvailable()
-	 * @see #getProduct()
-	 * @generated
-	 */
-	EAttribute getProduct_Available();
 
 	/**
 	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.Product#getStock <em>Stock</em>}'.
@@ -1419,6 +1456,16 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProduct_Product_have_images();
+
+	/**
+	 * Returns the meta object for the '{@link it.disim.univaq.ecommerce.model.Product#isProductAvaiable() <em>Is Product Avaiable</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Product Avaiable</em>' operation.
+	 * @see it.disim.univaq.ecommerce.model.Product#isProductAvaiable()
+	 * @generated
+	 */
+	EOperation getProduct__IsProductAvaiable();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.model.User <em>User</em>}'.
@@ -1540,6 +1587,16 @@ public interface ModelPackage extends EPackage {
 	EAttribute getCart_Total_price();
 
 	/**
+	 * Returns the meta object for the '{@link it.disim.univaq.ecommerce.model.Cart#totalProducts() <em>Total Products</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Total Products</em>' operation.
+	 * @see it.disim.univaq.ecommerce.model.Cart#totalProducts()
+	 * @generated
+	 */
+	EOperation getCart__TotalProducts();
+
+	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.model.ItemCart <em>Item Cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1572,15 +1629,15 @@ public interface ModelPackage extends EPackage {
 	EReference getItemCart_Item_cart_have_product();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price <em>Total price</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price_item_cart <em>Total price item cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Total price</em>'.
-	 * @see it.disim.univaq.ecommerce.model.ItemCart#getTotal_price()
+	 * @return the meta object for the attribute '<em>Total price item cart</em>'.
+	 * @see it.disim.univaq.ecommerce.model.ItemCart#getTotal_price_item_cart()
 	 * @see #getItemCart()
 	 * @generated
 	 */
-	EAttribute getItemCart_Total_price();
+	EAttribute getItemCart_Total_price_item_cart();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.model.Address <em>Address</em>}'.
@@ -1854,15 +1911,15 @@ public interface ModelPackage extends EPackage {
 	EReference getInvoice_Invoice_for_order();
 
 	/**
-	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price <em>Total price</em>}'.
+	 * Returns the meta object for the attribute '{@link it.disim.univaq.ecommerce.model.Invoice#getTotal_price_invoice <em>Total price invoice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Total price</em>'.
-	 * @see it.disim.univaq.ecommerce.model.Invoice#getTotal_price()
+	 * @return the meta object for the attribute '<em>Total price invoice</em>'.
+	 * @see it.disim.univaq.ecommerce.model.Invoice#getTotal_price_invoice()
 	 * @see #getInvoice()
 	 * @generated
 	 */
-	EAttribute getInvoice_Total_price();
+	EAttribute getInvoice_Total_price_invoice();
 
 	/**
 	 * Returns the meta object for class '{@link it.disim.univaq.ecommerce.model.Administrator <em>Administrator</em>}'.
@@ -2091,6 +2148,22 @@ public interface ModelPackage extends EPackage {
 		EReference CATEGORY__PARENT_CATEGORY = eINSTANCE.getCategory_Parent_category();
 
 		/**
+		 * The meta object literal for the '<em><b>Is Leaf</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CATEGORY___IS_LEAF = eINSTANCE.getCategory__IsLeaf();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Subcategories Number</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CATEGORY___GET_SUBCATEGORIES_NUMBER = eINSTANCE.getCategory__GetSubcategoriesNumber();
+
+		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.model.impl.ProductImpl <em>Product</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2099,14 +2172,6 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PRODUCT = eINSTANCE.getProduct();
-
-		/**
-		 * The meta object literal for the '<em><b>Available</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PRODUCT__AVAILABLE = eINSTANCE.getProduct_Available();
 
 		/**
 		 * The meta object literal for the '<em><b>Stock</b></em>' attribute feature.
@@ -2155,6 +2220,14 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PRODUCT__PRODUCT_HAVE_IMAGES = eINSTANCE.getProduct_Product_have_images();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Product Avaiable</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PRODUCT___IS_PRODUCT_AVAIABLE = eINSTANCE.getProduct__IsProductAvaiable();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.model.impl.UserImpl <em>User</em>}' class.
@@ -2249,6 +2322,14 @@ public interface ModelPackage extends EPackage {
 		EAttribute CART__TOTAL_PRICE = eINSTANCE.getCart_Total_price();
 
 		/**
+		 * The meta object literal for the '<em><b>Total Products</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CART___TOTAL_PRODUCTS = eINSTANCE.getCart__TotalProducts();
+
+		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.model.impl.ItemCartImpl <em>Item Cart</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2275,12 +2356,12 @@ public interface ModelPackage extends EPackage {
 		EReference ITEM_CART__ITEM_CART_HAVE_PRODUCT = eINSTANCE.getItemCart_Item_cart_have_product();
 
 		/**
-		 * The meta object literal for the '<em><b>Total price</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Total price item cart</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ITEM_CART__TOTAL_PRICE = eINSTANCE.getItemCart_Total_price();
+		EAttribute ITEM_CART__TOTAL_PRICE_ITEM_CART = eINSTANCE.getItemCart_Total_price_item_cart();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.model.impl.AddressImpl <em>Address</em>}' class.
@@ -2491,12 +2572,12 @@ public interface ModelPackage extends EPackage {
 		EReference INVOICE__INVOICE_FOR_ORDER = eINSTANCE.getInvoice_Invoice_for_order();
 
 		/**
-		 * The meta object literal for the '<em><b>Total price</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Total price invoice</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INVOICE__TOTAL_PRICE = eINSTANCE.getInvoice_Total_price();
+		EAttribute INVOICE__TOTAL_PRICE_INVOICE = eINSTANCE.getInvoice_Total_price_invoice();
 
 		/**
 		 * The meta object literal for the '{@link it.disim.univaq.ecommerce.model.impl.AdministratorImpl <em>Administrator</em>}' class.

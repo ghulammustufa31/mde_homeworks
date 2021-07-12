@@ -12,9 +12,9 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="it.disim.univaq.ecommerce.ecommerce_application.presentation.ModelModelWizardID"
+            id="it.disim.univaq.ecommerce.model.presentation.ModelModelWizardID"
             name="%_UI_ModelModelWizard_label"
-            class="it.disim.univaq.ecommerce.ecommerce_application.presentation.ModelModelWizard"
+            class="it.disim.univaq.ecommerce.model.presentation.ModelModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
             icon="icons/full/obj16/ModelModelFile.gif">
          <description>%_UI_ModelModelWizard_description</description>
@@ -25,13 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated model -->
       <editor
-            id="it.disim.univaq.ecommerce.ecommerce_application.presentation.ModelEditorID"
+            id="it.disim.univaq.ecommerce.model.presentation.ModelEditorID"
             name="%_UI_ModelEditor_label"
             icon="icons/full/obj16/ModelModelFile.gif"
             extensions="model"
-            class="it.disim.univaq.ecommerce.ecommerce_application.presentation.ModelEditor"
-            contributorClass="it.disim.univaq.ecommerce.ecommerce_application.presentation.ModelActionBarContributor">
+            class="it.disim.univaq.ecommerce.model.presentation.ModelEditor"
+            contributorClass="it.disim.univaq.ecommerce.model.presentation.ModelActionBarContributor">
       </editor>
    </extension>
-
 </plugin>

@@ -17,7 +17,6 @@
           active="true">
         <have_products
             name="Nike Air 1"
-            available="true"
             stock="50"
             height="5.0"
             weight="2.0"
@@ -28,7 +27,6 @@
         </have_products>
         <have_products
             name="Nike Sports Wear CLUB"
-            available="true"
             stock="50"
             height="5.0"
             weight="2.0"
@@ -43,7 +41,6 @@
           active="true">
         <have_products
             name="Adidas Originals Stripes"
-            available="true"
             stock="50"
             height="5.0"
             weight="2.0"
@@ -58,7 +55,7 @@
         name="Sevani"
         surname="Adam"
         username="adam.sevani"
-        password="adam123"
+        password="adam123456"
         active="true"
         email="adam@gmail.com">
       <customer_have_address

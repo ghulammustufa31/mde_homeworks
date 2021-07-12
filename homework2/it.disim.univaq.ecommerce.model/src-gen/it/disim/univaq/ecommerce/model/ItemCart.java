@@ -13,7 +13,7 @@ package it.disim.univaq.ecommerce.model;
  * <ul>
  *   <li>{@link it.disim.univaq.ecommerce.model.ItemCart#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link it.disim.univaq.ecommerce.model.ItemCart#getItem_cart_have_product <em>Item cart have product</em>}</li>
- *   <li>{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price <em>Total price</em>}</li>
+ *   <li>{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price_item_cart <em>Total price item cart</em>}</li>
  * </ul>
  *
  * @see it.disim.univaq.ecommerce.model.ModelPackage#getItemCart()
@@ -67,26 +67,26 @@ public interface ItemCart extends Named {
 	void setItem_cart_have_product(Product value);
 
 	/**
-	 * Returns the value of the '<em><b>Total price</b></em>' attribute.
+	 * Returns the value of the '<em><b>Total price item cart</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Total price</em>' attribute.
-	 * @see #setTotal_price(float)
-	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getItemCart_Total_price()
+	 * @return the value of the '<em>Total price item cart</em>' attribute.
+	 * @see #setTotal_price_item_cart(float)
+	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getItemCart_Total_price_item_cart()
 	 * @model required="true" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='self.item_cart_have_product-&gt;collect(p:Product | p.price)-&gt;sum() * self.quantity'"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot derivation='self.item_cart_have_product.price * self.quantity'"
 	 * @generated
 	 */
-	float getTotal_price();
+	float getTotal_price_item_cart();
 
 	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price <em>Total price</em>}' attribute.
+	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.ItemCart#getTotal_price_item_cart <em>Total price item cart</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Total price</em>' attribute.
-	 * @see #getTotal_price()
+	 * @param value the new value of the '<em>Total price item cart</em>' attribute.
+	 * @see #getTotal_price_item_cart()
 	 * @generated
 	 */
-	void setTotal_price(float value);
+	void setTotal_price_item_cart(float value);
 
 } // ItemCart

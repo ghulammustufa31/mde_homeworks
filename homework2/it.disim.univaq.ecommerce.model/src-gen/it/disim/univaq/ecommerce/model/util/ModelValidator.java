@@ -179,7 +179,46 @@ public class ModelValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateUser(User user, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(user, diagnostics, context);
+		if (!validate_NoCircularContainment(user, diagnostics, context))
+			return false;
+		boolean result = validate_EveryMultiplicityConforms(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryDataValueConforms(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryReferenceIsContained(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryBidirectionalReferenceIsPaired(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryProxyResolves(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_UniqueID(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryKeyUnique(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryMapEntryUnique(user, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validateUser_validPassword(user, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * The cached validation expression for the validPassword constraint of '<em>User</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String USER__VALID_PASSWORD__EEXPRESSION = "self.password.size() >= 8";
+
+	/**
+	 * Validates the validPassword constraint of '<em>User</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUser_validPassword(User user, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate(ModelPackage.Literals.USER, user, diagnostics, context,
+				"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", "validPassword", USER__VALID_PASSWORD__EEXPRESSION,
+				Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0);
 	}
 
 	/**
@@ -346,7 +385,26 @@ public class ModelValidator extends EObjectValidator {
 	 */
 	public boolean validateAdministrator(Administrator administrator, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(administrator, diagnostics, context);
+		if (!validate_NoCircularContainment(administrator, diagnostics, context))
+			return false;
+		boolean result = validate_EveryMultiplicityConforms(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryDataValueConforms(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryReferenceIsContained(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryBidirectionalReferenceIsPaired(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryProxyResolves(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_UniqueID(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryKeyUnique(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryMapEntryUnique(administrator, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validateUser_validPassword(administrator, diagnostics, context);
+		return result;
 	}
 
 	/**
@@ -355,7 +413,26 @@ public class ModelValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCustomer(Customer customer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(customer, diagnostics, context);
+		if (!validate_NoCircularContainment(customer, diagnostics, context))
+			return false;
+		boolean result = validate_EveryMultiplicityConforms(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryDataValueConforms(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryReferenceIsContained(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryBidirectionalReferenceIsPaired(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryProxyResolves(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_UniqueID(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryKeyUnique(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validate_EveryMapEntryUnique(customer, diagnostics, context);
+		if (result || diagnostics != null)
+			result &= validateUser_validPassword(customer, diagnostics, context);
+		return result;
 	}
 
 	/**
