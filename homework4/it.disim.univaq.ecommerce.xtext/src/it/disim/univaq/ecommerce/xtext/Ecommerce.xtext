@@ -9,73 +9,62 @@ EcommerceSystem returns EcommerceSystem:
 	'EcommerceSystem'
 	name=EString
 	'{'
-		('shop_have_categories' '{' shop_have_categories+=Category ( "," shop_have_categories+=Category)* '}' )?
-		('have_clients' have_clients=Customer)?
-		'shop_have_administrators' '{' shop_have_administrators+=Administrator ( "," shop_have_administrators+=Administrator)* '}' 
+		('categories' '[' shop_have_categories+=Category ( "," shop_have_categories+=Category)* ']' )?
+		('customers' '[' have_clients+=Customer ( "," have_clients+=Customer)* ']' )?
+		('administrators' '[' shop_have_administrators+=Administrator ( "," shop_have_administrators+=Administrator)* ']' )? 
 	'}';
-
-
-
-
-
-
-
-
-
-
-
 
 EString returns ecore::EString:
 	STRING | ID;
 
 Category returns Category:
-	active?='active'
-	root_cat?='root_cat'
 	'Category'
 	name=EString
 	'{'
-		('have_sub_categories' '{' have_sub_categories+=Category ( "," have_sub_categories+=Category)* '}' )?
-		('have_products' '{' have_products+=Product ( "," have_products+=Product)* '}' )?
+		('active:' active=EBoolean)
+		('root_cat:' root_cat=EBoolean)
+		('sub_categories' '[' have_sub_categories+=Category ( "," have_sub_categories+=Category)* ']' )?
+		('products' '[' have_products+=Product ( "," have_products+=Product)* ']' )?
 	'}';
 
 Customer returns Customer:
-	active?='active'
 	'Customer'
 	name=EString
 	'{'
-		('surname' surname=EString)?
-		('username' username=EString)?
-		('password' password=EString)?
-		('email' email=EString)?
-		'customer_have_address' '{' customer_have_address+=Address ( "," customer_have_address+=Address)* '}' 
-		('customer_have_cart' customer_have_cart=Cart)?
+		('active:' active=EBoolean)
+		('surname:' surname=EString)?
+		('username:' username=EString)?
+		('password:' password=EString)?
+		('email:' email=EString)?
+		('address' '{' customer_have_address+=Address ( "," customer_have_address+=Address)* '}' )
+		('cart' '{' customer_have_cart=Cart '}')?
 	'}';
 
 Administrator returns Administrator:
-	active?='active'
 	'Administrator'
 	name=EString
 	'{'
-		('surname' surname=EString)?
-		('username' username=EString)?
-		('password' password=EString)?
-		('email' email=EString)?
+		('active:' active=EBoolean)
+		('surname:' surname=EString)?
+		('username:' username=EString)?
+		('password:' password=EString)?
+		('email:' email=EString)?
 	'}';
 
 EBoolean returns ecore::EBoolean:
 	'true' | 'false';
 
 Product returns Product:
-	available?='available'
 	'Product'
 	name=EString
 	'{'
-		'stock' stock=EInt
-		'height' height=EFloat
-		'weight' weight=EFloat
-		'price' price=EFloat
-		('description' description=EString)?
-		('product_have_images' '{' product_have_images+=ProductImage ( "," product_have_images+=ProductImage)* '}' )?
+		('available:' available=EBoolean)
+		('stock:' stock=EInt)
+		('height:' height=EFloat)
+		('weight:' weight=EFloat)
+		('price:' price=EFloat)
+		('description:' description=EString)?
+		('images' '[' product_have_images+=ProductImage ( "," product_have_images+=ProductImage)* ']' )?
 	'}';
 
 EInt returns ecore::EInt:
@@ -85,33 +74,31 @@ EFloat returns ecore::EFloat:
 	'-'? INT? '.' INT (('E'|'e') '-'? INT)?;
 
 ProductImage returns ProductImage:
-	{ProductImage}
 	'ProductImage'
 	'{'
 		('ref' ref=EString)?
 	'}';
 
 Address returns Address:
-	active?='active'
 	'Address'
 	name=EString
 	'{'
-		('country' country=EString)?
-		('state' state=EString)?
-		('city' city=EString)?
-		('post_code' post_code=EString)?
-		('phone' phone=EString)?
-		('street_address' street_address=EString)?
+		('active:' active=EBoolean)
+		('country:' country=EString)?
+		('state:' state=EString)?
+		('city:' city=EString)?
+		('post_code:' post_code=EString)?
+		('phone:' phone=EString)?
+		('street_address:' street_address=EString)?
 	'}';
 
 Cart returns Cart:
-	{Cart}
 	'Cart'
 	name=EString
 	'{'
-		('date_added' date_added=EDate)?
-		('cart_have_items' '{' cart_have_items+=ItemCart ( "," cart_have_items+=ItemCart)* '}' )?
-		('cart_have_order' cart_have_order=Order)?
+		('date_added:' date_added=EDate)?
+		('cart_items:' '{' cart_have_items+=ItemCart ( "," cart_have_items+=ItemCart)* '}' )?
+//		('cart_order:' cart_have_order=Order)?
 	'}';
 
 EDate returns ecore::EDate:
@@ -121,19 +108,19 @@ ItemCart returns ItemCart:
 	'ItemCart'
 	name=EString
 	'{'
-		'quantity' quantity=EInt
-		'item_cart_have_product' item_cart_have_product=[Product|EString]
+		('quantity' quantity=EInt)
+		('product' item_cart_have_product=[Product|EString])
 	'}';
 
 Order returns Order:
 	'Order'
 	'{'
-		('reference_number' reference_number=EString)?
-		('date_created' date_created=EDate)?
-		('order_state' order_state=OrderState)?
-		'order_for_cart' order_for_cart=[Cart|EString]
-		('order_has_invoice' order_has_invoice=Invoice)?
-		('order_have_shipment' '{' order_have_shipment+=Shipment ( "," order_have_shipment+=Shipment)* '}' )?
+		('reference_number:' reference_number=EString)?
+		('date_created:' date_created=EDate)?
+		('order_state:' order_state=OrderState)?
+//		('order_for_cart:' order_for_cart=[Cart|EString])
+		('invoice:' order_has_invoice=Invoice)?
+		('shipments:' '[' order_have_shipment+=Shipment ( "," order_have_shipment+=Shipment)* ']' )?
 	'}';
 
 enum OrderState returns OrderState:
@@ -143,19 +130,19 @@ Invoice returns Invoice:
 	'Invoice'
 	name=EString
 	'{'
-		'invoice_id' invoice_id=EInt
-		('date' date=EDate)?
-		'invoice_for_order' invoice_for_order=[Order|EString]
+		('invoice_id:' invoice_id=EInt)
+		('date:' date=EDate)?
+//		('invoice_for_order:' invoice_for_order=[Order|EString])
 	'}';
 
 Shipment returns Shipment:
 	'Shipment'
 	name=EString
 	'{'
-		('shipment_status' shipment_status=ShipmentStatus)?
-		('date' date=EDate)?
-		('shipment_no' shipment_no=EString)?
-		'shipment_has_address' shipment_has_address=[Address|EString]
+		('shipment_status:' shipment_status=ShipmentStatus)?
+		('date:' date=EDate)?
+		('shipment_no:' shipment_no=EString)?
+		('shipment_address:' shipment_has_address=[Address|EString])
 	'}';
 
 enum ShipmentStatus returns ShipmentStatus:

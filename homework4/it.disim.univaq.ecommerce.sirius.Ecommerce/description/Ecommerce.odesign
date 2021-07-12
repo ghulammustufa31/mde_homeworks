@@ -106,7 +106,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Category2CategoryCreate" precondition="aql:preTarget.differs(preSource) and preSource.oclAsType(model::Category).children->excludes(preTarget)" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategroyEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Category2CategoryCreate" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategroyEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -114,6 +114,15 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
                 <subModelOperations xsi:type="tool_1:SetValue" featureName="have_sub_categories" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ProductCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ProductNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::Product" referenceName="have_products"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>

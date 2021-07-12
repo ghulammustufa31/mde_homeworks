@@ -83,18 +83,18 @@
             reference_number="abcd"
             date_created="2021-07-08T00:00:00.000+0200"
             order_state="COMMITTED"
-            order_for_cart="//@app_have_shops.0/@have_clients/@customer_have_cart">
+            order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart">
           <order_has_invoice
               name="invoice_1"
               invoice_id="12"
               date="2021-07-08T00:00:00.000+0200"
-              invoice_for_order="//@app_have_shops.0/@have_clients/@customer_have_cart/@cart_have_order"/>
+              invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart/@cart_have_order"/>
           <order_have_shipment
               name="ship_1"
               shipment_status="TRAVELING"
               date="2021-07-08T00:00:00.000+0200"
               shipment_no="123"
-              shipment_has_address="//@app_have_shops.0/@have_clients/@customer_have_address.0"/>
+              shipment_has_address="//@app_have_shops.0/@have_clients.0/@customer_have_address.0"/>
         </cart_have_order>
       </customer_have_cart>
     </have_clients>

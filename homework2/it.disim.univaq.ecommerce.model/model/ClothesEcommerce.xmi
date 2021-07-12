@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:application
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:model="http://it.disim.univaq.ecommerce/model"
+    xsi:schemaLocation="http://it.disim.univaq.ecommerce/model model.ecore"
+    name="EcommerceApplication">
+  <app_have_shops
+      name="ClothesShop">
+    <shop_have_categories
+        name="Shirts"
+        active="true"
+        root_cat="true">
+      <have_sub_categories
+          name="Nike"
+          active="true">
+        <have_products
+            name="Nike Air 1"
+            available="true"
+            stock="50"
+            height="5.0"
+            weight="2.0"
+            price="30.0"
+            description="Air 1 shirt from Nike">
+          <product_have_images
+              ref="https://img01.ztat.net/article/spp-media-p1/c2b7477c672d36f99109ee07125a57a8/e8d0f29e59d441ec98b7ec819f8ef6de.jpg?imwidth=762&amp;filter=packshot"/>
+        </have_products>
+        <have_products
+            name="Nike Sports Wear CLUB"
+            available="true"
+            stock="50"
+            height="5.0"
+            weight="2.0"
+            price="19.99"
+            description="Sport wear shirt by Nike">
+          <product_have_images
+              ref="https://img01.ztat.net/article/spp-media-p1/d3d02e7da18c406d94f1de84083c3f9f/f9dc2f459ade42ce9a066ada3e35380c.jpg?imwidth=762"/>
+        </have_products>
+      </have_sub_categories>
+      <have_sub_categories
+          name="Adidas"
+          active="true">
+        <have_products
+            name="Adidas Originals Stripes"
+            available="true"
+            stock="50"
+            height="5.0"
+            weight="2.0"
+            price="22.9"
+            description="Original Stripes shirt by Adidas">
+          <product_have_images
+              ref="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvYj2hQTJv_2lc7BCNMXimJABY5SydlrPFQP3ifiO2cHiS5Lz5o6nY5q5ED8IKbzVhyJEfTulw&amp;usqp=CAc"/>
+        </have_products>
+      </have_sub_categories>
+    </shop_have_categories>
+    <have_clients
+        name="Sevani"
+        surname="Adam"
+        username="adam.sevani"
+        password="adam123"
+        active="true"
+        email="adam@gmail.com">
+      <customer_have_address
+          name="HOME"
+          country="USA"
+          state="New York"
+          city="New York"
+          post_code="25300"
+          phone="+24123456789"
+          active="true"
+          street_address="Street 2 4"/>
+      <customer_have_cart
+          name="Cart_1"
+          date_added="2021-07-12T00:00:00.000+0200">
+        <cart_have_items
+            name="p1"
+            quantity="2"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+        <cart_have_items
+            name="p2"
+            quantity="3"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+        <cart_have_order
+            reference_number="abcdsas"
+            date_created="2021-07-12T01:00:00.000+0200"
+            order_state="COMMITTED"
+            order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart">
+          <order_has_invoice
+              name="invoice_1"
+              invoice_id="1"
+              date="2021-07-12T00:00:00.000+0200"
+              invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart/@cart_have_order"/>
+        </cart_have_order>
+      </customer_have_cart>
+    </have_clients>
+    <shop_have_administrators
+        name="admin"
+        surname="super"
+        username="super.admin"
+        password="admin123"
+        email="admin@clothesshop.com"/>
+  </app_have_shops>
+</model:application>

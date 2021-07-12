@@ -15,8 +15,8 @@
         </have_products>
       </have_sub_categories>
     </shop_have_categories>
-    <shop_have_categories name="Accessories">
-      <have_sub_categories name="Guitar"/>
+    <shop_have_categories name="accessories">
+      <have_sub_categories name="guitar_accessories"/>
     </shop_have_categories>
     <have_clients name="Lea" surname="Brown" username="LeBra" password="Pass!" active="true" email="leabra@extemail.com">
       <customer_have_address name="HOME" country="America" state="Alabama" city="Birmingham" post_code="234234" phone="+01 234 234 2564" active="true" street_address="4455 Landing Lange"/>

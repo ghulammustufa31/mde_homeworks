@@ -1,0 +1,12 @@
+EcommerceSystem MusicShop {
+	administrators [
+		Administrator Admin {
+			active:true
+			surname:'alan'
+			username:'mark'
+			password:'avb12'
+			email:'alan@gmail.com'
+		}
+		Customer 
+	]
+}
