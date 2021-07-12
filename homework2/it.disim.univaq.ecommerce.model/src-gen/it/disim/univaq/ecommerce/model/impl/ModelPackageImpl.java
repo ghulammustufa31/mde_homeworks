@@ -1041,7 +1041,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEReference(getEcommerceSystem_Shop_have_categories(), this.getCategory(), null, "shop_have_categories",
 				null, 0, -1, EcommerceSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEcommerceSystem_Have_clients(), this.getCustomer(), null, "have_clients", null, 0, 1,
+		initEReference(getEcommerceSystem_Have_clients(), this.getCustomer(), null, "have_clients", null, 0, -1,
 				EcommerceSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEcommerceSystem_Shop_have_administrators(), this.getAdministrator(), null,

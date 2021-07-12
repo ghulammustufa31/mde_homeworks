@@ -1,238 +1,144 @@
 [comment encoding = UTF-8 /]
 [module generate('http://it.disim.univaq.ecommerce/model')]
+[import it::disim::univaq::ecommerce::model::acceleo::main::generateDetails /]
 
+[query public generateCategories(arg0 : Category) : String
+	= invoke('it.disim.univaq.ecommerce.model.acceleo.main.UtilityService', 'generateCategories(it.disim.univaq.ecommerce.model.Category)', Sequence{arg0})
+/]
+[query public getAllCategoriesShop(arg0 : EcommerceSystem) : Sequence(Category)
+	= invoke('it.disim.univaq.ecommerce.model.acceleo.main.UtilityService', 'getAllCategories(it.disim.univaq.ecommerce.model.EcommerceSystem)', Sequence{arg0})
+/]
 
 [template public generateElement(ecommerce_application : application)]
 [comment @main/]
 [file ('index.html', false, 'UTF-8')]
 
-<!DOCTYPE html>
-<html lang="en">
+	  [generateHeader(ecommerce_application.name) /]
+	  <!-- Content
+	  ============================ -->
+	  <div id="content" role="main">
+	    
+	    <!-- Docs Content
+		============================ -->
+	    <div class="idocs-content">
+	      <div class="container"> 
+	        
+	        <!-- Getting Started
+			============================ -->
+	        <section id="idocs_start">
+	        <h1>Informative Pages</h1>
+	        <h2>[ecommerce_application.name/]</h2>
+	        <p class="lead">Conforms to Ecommerce application Metamodel.</p>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6">
+					<ul class="list-unstyled">
+						<li><strong>Version:</strong> 1.0</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-6">
+					<ul class="list-unstyled">
+						<li><strong>Author:</strong> Federico Di Menna, Syed Ghulam Mustufa</li>
+					</ul>
+				</div>
+			</div>
+	        <p class="alert alert-info">All the code of the homeworks is store in <a target="_blank" href="https://github.com/ghulammustufa31/mde_homeworks">this repo</a>.</p>
+	        </section>
+	        
+			<hr class="divider">
+			
+	        <!-- Installation
+			============================ -->
+	        <section id="idocs_installation">
+	          <h2>[ecommerce_application.name/]</h2>
+	          <p class="lead">Included Shops</p>
+	          
+				[for (e_c : EcommerceSystem | ecommerce_application.app_have_shops) ]
+					
+					[for (it : Category | getAllCategoriesShop(e_c))]
+					[it.generateCategoryDetails() /]
+					[/for]
 
-  <head>
+					<div>
+						<h3 data-toggle="tooltip" data-placement="top" title="Shop name">[e_c.name/]</h3>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+						<div>
+						<p>Categories tree</p>
+						[ generateCategories(e_c.shop_have_categories->first())/]
+						</div>
 
-    <title>Sixteen Clothing HTML Template</title>
+						<div>
+						<p>Users of [e_c.name/]</p>
+						
+						[let have_customers : Boolean = e_c.have_clients->notEmpty() ]
+						[if (not have_customers)]
+						<p><strong>No customers in [e_c.name/]</strong></p>
+						[/if]
+						[if have_customers]
+						<table class="table table-bordered table-striped">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">Username</th>
+						      <th scope="col">Email</th>
+						      <th scope="col">Details</th>
+						    </tr>
+						  </thead>
+						<tbody>
+						[for (c : Customer | e_c.have_clients)]
+							[c.generateUserDetails()/]
+						    <tr>
+						      <th scope="row">x</th>
+						      <td>[c.username/]</td>
+						      <td>[c.email/]</td>
+						      <td><a href="[c.username/].html">More</a></td>
+						    </tr>
+						[/for]
+ 							</tbody>
+						</table>
+						[/if]
+						[/let]
+						</div>
+						<div>
+						<p>Administrators of [e_c.name/]</p>
+						
+						<table class="table table-bordered table-striped">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">Username</th>
+						      <th scope="col">Email</th>
+						      <th scope="col">Details</th>
+						    </tr>
+						  </thead>
+						<tbody>
+						[for (admin : Administrator| e_c.shop_have_administrators)]
+							[admin.generateAdminDetails()/]
+						    <tr>
+						      <th scope="row">x</th>
+						      <td>[admin.username/]</td>
+						      <td>[admin.email/]</td>
+						      <td><a href="[admin.username/].html">More</a></td>
+						    </tr>
+						[/for]
+ 							</tbody>
+						</table>
+						</div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--
-
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
-
-  <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Sixteen <em>E-Commerce</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Banner Ends Here -->
-
-    <div class="latest-products">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
+					</div>
+				[/for]
+	        </section>
+	        
+			<hr class="divider">
+			
+	      </div>
+	    </div>
 		
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$25.75</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span>Reviews (24)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
-              <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
-              </ul>
-              <a href="about.html" class="filled-button">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-                </div>
-                <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/accordions.js"></script>
-
-
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
-
-
-  </body>
-
-</html>
-
-
+	  </div>
+	  <!-- Content end --> 
+	  
+		[ generateFooter(ecommerce_application.name) /]
 [/file]
+
+
 [/template]

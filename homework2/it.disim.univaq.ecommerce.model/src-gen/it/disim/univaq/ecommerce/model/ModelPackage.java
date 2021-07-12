@@ -171,7 +171,7 @@ public interface ModelPackage extends EPackage {
 	int ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES = NAMED_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Have clients</b></em>' containment reference.
+	 * The feature id for the '<em><b>Have clients</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1226,10 +1226,10 @@ public interface ModelPackage extends EPackage {
 	EReference getEcommerceSystem_Shop_have_categories();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.model.EcommerceSystem#getHave_clients <em>Have clients</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.model.EcommerceSystem#getHave_clients <em>Have clients</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Have clients</em>'.
+	 * @return the meta object for the containment reference list '<em>Have clients</em>'.
 	 * @see it.disim.univaq.ecommerce.model.EcommerceSystem#getHave_clients()
 	 * @see #getEcommerceSystem()
 	 * @generated
@@ -2007,7 +2007,7 @@ public interface ModelPackage extends EPackage {
 		EReference ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES = eINSTANCE.getEcommerceSystem_Shop_have_categories();
 
 		/**
-		 * The meta object literal for the '<em><b>Have clients</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Have clients</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

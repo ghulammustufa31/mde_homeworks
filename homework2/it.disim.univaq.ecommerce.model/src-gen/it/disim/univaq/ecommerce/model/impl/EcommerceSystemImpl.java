@@ -10,15 +10,12 @@ import it.disim.univaq.ecommerce.model.ModelPackage;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -50,14 +47,14 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 	protected EList<Category> shop_have_categories;
 
 	/**
-	 * The cached value of the '{@link #getHave_clients() <em>Have clients</em>}' containment reference.
+	 * The cached value of the '{@link #getHave_clients() <em>Have clients</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getHave_clients()
 	 * @generated
 	 * @ordered
 	 */
-	protected Customer have_clients;
+	protected EList<Customer> have_clients;
 
 	/**
 	 * The cached value of the '{@link #getShop_have_administrators() <em>Shop have administrators</em>}' containment reference list.
@@ -106,49 +103,12 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Customer getHave_clients() {
-		return have_clients;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetHave_clients(Customer newHave_clients, NotificationChain msgs) {
-		Customer oldHave_clients = have_clients;
-		have_clients = newHave_clients;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS, oldHave_clients, newHave_clients);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
+	public EList<Customer> getHave_clients() {
+		if (have_clients == null) {
+			have_clients = new EObjectContainmentEList<Customer>(Customer.class, this,
+					ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS);
 		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setHave_clients(Customer newHave_clients) {
-		if (newHave_clients != have_clients) {
-			NotificationChain msgs = null;
-			if (have_clients != null)
-				msgs = ((InternalEObject) have_clients).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS, null, msgs);
-			if (newHave_clients != null)
-				msgs = ((InternalEObject) newHave_clients).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS, null, msgs);
-			msgs = basicSetHave_clients(newHave_clients, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS,
-					newHave_clients, newHave_clients));
+		return have_clients;
 	}
 
 	/**
@@ -175,7 +135,7 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES:
 			return ((InternalEList<?>) getShop_have_categories()).basicRemove(otherEnd, msgs);
 		case ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS:
-			return basicSetHave_clients(null, msgs);
+			return ((InternalEList<?>) getHave_clients()).basicRemove(otherEnd, msgs);
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS:
 			return ((InternalEList<?>) getShop_have_administrators()).basicRemove(otherEnd, msgs);
 		}
@@ -214,7 +174,8 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 			getShop_have_categories().addAll((Collection<? extends Category>) newValue);
 			return;
 		case ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS:
-			setHave_clients((Customer) newValue);
+			getHave_clients().clear();
+			getHave_clients().addAll((Collection<? extends Customer>) newValue);
 			return;
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS:
 			getShop_have_administrators().clear();
@@ -236,7 +197,7 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 			getShop_have_categories().clear();
 			return;
 		case ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS:
-			setHave_clients((Customer) null);
+			getHave_clients().clear();
 			return;
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS:
 			getShop_have_administrators().clear();
@@ -256,7 +217,7 @@ public class EcommerceSystemImpl extends NamedImpl implements EcommerceSystem {
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_CATEGORIES:
 			return shop_have_categories != null && !shop_have_categories.isEmpty();
 		case ModelPackage.ECOMMERCE_SYSTEM__HAVE_CLIENTS:
-			return have_clients != null;
+			return have_clients != null && !have_clients.isEmpty();
 		case ModelPackage.ECOMMERCE_SYSTEM__SHOP_HAVE_ADMINISTRATORS:
 			return shop_have_administrators != null && !shop_have_administrators.isEmpty();
 		}

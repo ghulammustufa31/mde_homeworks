@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecommerce_application:application
+<model:application
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecommerce_application="http://it.disim.univaq.ecommerce/model"
-    xsi:schemaLocation="http://it.disim.univaq.ecommerce/model model.ecore"
-    name="Ecommerce_Application_1">
+    xmlns:model="http://it.disim.univaq.ecommerce/model"
+    xsi:schemaLocation="http://it.disim.univaq.ecommerce/model /it.disim.univaq.ecommerce.model/model/model.ecore"
+    name="Music Ecommerce">
   <app_have_shops
-      name="music_shop">
+      name="Music Shop">
     <shop_have_categories
         name="Instruments"
         active="true"
@@ -15,6 +15,11 @@
       <have_sub_categories
           name="Piano"
           active="true">
+        <have_sub_categories
+            name="s1">
+          <have_sub_categories
+              name="s2"/>
+        </have_sub_categories>
         <have_products
             name="Yamaha B1 PE"
             available="true"
@@ -101,4 +106,4 @@
         active="true"
         email="email@musicshop.com"/>
   </app_have_shops>
-</ecommerce_application:application>
+</model:application>
