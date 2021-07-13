@@ -13,7 +13,7 @@ public abstract class AbstractEcommerceValidator extends AbstractDeclarativeVali
 	@Override
 	protected List<EPackage> getEPackages() {
 		List<EPackage> result = new ArrayList<EPackage>();
-		result.add(EPackage.Registry.INSTANCE.getEPackage("http://it.disim.univaq.ecommerce/model"));
+		result.add(EPackage.Registry.INSTANCE.getEPackage("platform:/resource/XtextMaterial/model/model.ecore"));
 		return result;
 	}
 }

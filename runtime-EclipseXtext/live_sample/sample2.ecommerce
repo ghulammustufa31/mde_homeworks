@@ -1,0 +1,21 @@
+EcommerceSystem System {
+	categories [
+		Category guitar {
+			active:true
+			root_cat:true
+			sub_categories
+		}
+	]
+	customers [
+		
+	]
+	administrators [
+		Administrator alan {
+			active:true
+			surname:""
+			username:""
+			password:""
+			email:"alan@gmail.com"	
+		} 
+	]
+}

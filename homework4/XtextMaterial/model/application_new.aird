@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:model="platform:/resource/XtextMaterial/model/model.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_MOjKkOQZEeuzTtzK2dd23Q" selectedViews="_M1bkYOQZEeuzTtzK2dd23Q" version="14.5.1.202106111100">
+    <semanticResources>application_new.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_M1bkYOQZEeuzTtzK2dd23Q">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Pe458OQZEeuzTtzK2dd23Q" name="new EcommerceDiagram" repPath="#_Pe12oOQZEeuzTtzK2dd23Q" changeId="3f1852a0-88f0-4186-83ee-ee4d279d5937">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']"/>
+        <target xmi:type="model:application" href="application_new.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_Pe12oOQZEeuzTtzK2dd23Q">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Pe8kUOQZEeuzTtzK2dd23Q" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Pe8kUeQZEeuzTtzK2dd23Q" type="Sirius" element="_Pe12oOQZEeuzTtzK2dd23Q" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_Pfy44OQZEeuzTtzK2dd23Q" visible="false" type="2001" element="_Pe9ycOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_Pfzf8OQZEeuzTtzK2dd23Q" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pfzf8eQZEeuzTtzK2dd23Q" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pf7bwOQZEeuzTtzK2dd23Q" type="3002" element="_PfDSAOQZEeuzTtzK2dd23Q">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf7bweQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf7bwuQZEeuzTtzK2dd23Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pfy44eQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pfy44uQZEeuzTtzK2dd23Q" x="36" y="35" width="144" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pf0HAOQZEeuzTtzK2dd23Q" visible="false" type="2001" element="_PfGVUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_Pf1VIOQZEeuzTtzK2dd23Q" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pf1VIeQZEeuzTtzK2dd23Q" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pf7bw-QZEeuzTtzK2dd23Q" type="3002" element="_PfG8YOQZEeuzTtzK2dd23Q">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf7bxOQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf7bxeQZEeuzTtzK2dd23Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf0HAeQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf0HAuQZEeuzTtzK2dd23Q" x="216" y="35" width="120" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pf3KUOQZEeuzTtzK2dd23Q" visible="false" type="2001" element="_PfHjcOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_Pf4_gOQZEeuzTtzK2dd23Q" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pf4_geQZEeuzTtzK2dd23Q" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PgO9wOQZEeuzTtzK2dd23Q" type="3002" element="_PfHjceQZEeuzTtzK2dd23Q">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PgO9weQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgO9wuQZEeuzTtzK2dd23Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf3KUeQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf3KUuQZEeuzTtzK2dd23Q" x="432" y="36" width="132" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pf5mkOQZEeuzTtzK2dd23Q" visible="false" type="2001" element="_PfHjc-QZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_Pf6NoOQZEeuzTtzK2dd23Q" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pf6NoeQZEeuzTtzK2dd23Q" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PgPk0OQZEeuzTtzK2dd23Q" type="3002" element="_PfHjdOQZEeuzTtzK2dd23Q">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PgPk0eQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgPk0uQZEeuzTtzK2dd23Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf5mkeQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf5mkuQZEeuzTtzK2dd23Q" x="780" y="36" width="120" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pf60sOQZEeuzTtzK2dd23Q" type="2002" element="_PfIKgOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_Pf60s-QZEeuzTtzK2dd23Q" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_Pf60tOQZEeuzTtzK2dd23Q" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_PgQL4OQZEeuzTtzK2dd23Q" type="3008" element="_PfIxkOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgQy8OQZEeuzTtzK2dd23Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_PgRaAOQZEeuzTtzK2dd23Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_svLuwOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr38GOQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svMV0OQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svMV0eQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svM84uQaEeuzTtzK2dd23Q" type="3002" element="_sr4jIOQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svM84-QaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svM85OQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svLuweQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svLuwuQaEeuzTtzK2dd23Q" x="31" y="30" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_svMV0uQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr4jIuQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svM84OQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svM84eQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svNj8OQaEeuzTtzK2dd23Q" type="3002" element="_sr5KMOQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svNj8eQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svNj8uQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svMV0-QaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svMV1OQaEeuzTtzK2dd23Q" x="91" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_PgRaAeQZEeuzTtzK2dd23Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_PgRaAuQZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgQL4eQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgQL4uQZEeuzTtzK2dd23Q" x="91" y="234" height="145"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgSoIOQZEeuzTtzK2dd23Q" type="3008" element="_PfJYoOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgT2QOQZEeuzTtzK2dd23Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_PgXgoOQZEeuzTtzK2dd23Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_svNj8-QaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr5KMuQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svNj9uQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svNj9-QaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svOLBeQaEeuzTtzK2dd23Q" type="3002" element="_sr5KM-QaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svOLBuQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svOLB-QaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svNj9OQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svNj9eQaEeuzTtzK2dd23Q" x="31" y="29" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_svOLAOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr5KNeQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svOLA-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svOLBOQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svOyEOQaEeuzTtzK2dd23Q" type="3002" element="_sr5xQOQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svOyEeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svOyEuQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svOLAeQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svOLAuQaEeuzTtzK2dd23Q" x="91" y="29" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_2FO4IOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_2CP1kOQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_2FO4I-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_2FO4JOQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_5RXc8-QaEeuzTtzK2dd23Q" type="3002" element="_5RQvRuQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5RXc9OQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5RXc9eQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_2FO4IeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2FO4IuQaEeuzTtzK2dd23Q" x="31" y="29" width="72" height="60"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_labx8OQeEeuzTtzK2dd23Q" type="3008" element="_lXgZwOQeEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_labx8-QeEeuzTtzK2dd23Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_labx9OQeEeuzTtzK2dd23Q" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_0G9QwOQeEeuzTtzK2dd23Q" type="3007" element="_0DQcgOQeEeuzTtzK2dd23Q">
+                      <children xmi:type="notation:Node" xmi:id="_0G9Qw-QeEeuzTtzK2dd23Q" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_0G9QxOQeEeuzTtzK2dd23Q" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_0HAUEOQeEeuzTtzK2dd23Q" type="3002" element="_0DQcgeQeEeuzTtzK2dd23Q">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_0HAUEeQeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HAUEuQeEeuzTtzK2dd23Q"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_0G9QweQeEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0G9QwuQeEeuzTtzK2dd23Q" width="30" height="30"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_lacZAOQeEeuzTtzK2dd23Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_lacZAeQeEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_labx8eQeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_labx8uQeEeuzTtzK2dd23Q" x="7" y="39"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_PgXgoeQZEeuzTtzK2dd23Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_PgXgouQZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgSoIeQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgSoIuQZEeuzTtzK2dd23Q" x="31" y="31" width="171" height="145"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgYuwOQZEeuzTtzK2dd23Q" type="3008" element="_PfJ_seQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgYuw-QZEeuzTtzK2dd23Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_PgZV0OQZEeuzTtzK2dd23Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_svOyE-QaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr5xQuQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svOyFuQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svOyF-QaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svPZIeQaEeuzTtzK2dd23Q" type="3002" element="_sr5xQ-QaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svPZIuQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svPZI-QaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svOyFOQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svOyFeQaEeuzTtzK2dd23Q" x="31" y="29" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_svOyGOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr5xReQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svOyG-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svPZIOQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svPZJOQaEeuzTtzK2dd23Q" type="3002" element="_sr5xRuQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svPZJeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svPZJuQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svOyGeQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svOyGuQaEeuzTtzK2dd23Q" x="91" y="29" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_2FPfMOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_2CQcoOQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_2FPfM-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_2FPfNOQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_5RYEAOQaEeuzTtzK2dd23Q" type="3002" element="_5RRWUeQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_5RYEAeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5RYEAuQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_2FPfMeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2FPfMuQaEeuzTtzK2dd23Q" x="31" y="29" width="72" height="60"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_htX8QOQcEeuzTtzK2dd23Q" visible="false" type="3007" element="_htQngOQcEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_htX8Q-QcEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_htX8ROQcEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_htX8ReQcEeuzTtzK2dd23Q" type="3002" element="_htQngeQcEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_htX8RuQcEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_htX8R-QcEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_htX8QeQcEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_htX8QuQcEeuzTtzK2dd23Q" x="151" y="29" width="72" height="60"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_lacZAuQeEeuzTtzK2dd23Q" type="3008" element="_lXhA0uQeEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_lacZBeQeEeuzTtzK2dd23Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_ladAEOQeEeuzTtzK2dd23Q" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_0HCwVeQeEeuzTtzK2dd23Q" type="3007" element="_0DS4wOQeEeuzTtzK2dd23Q">
+                      <children xmi:type="notation:Node" xmi:id="_0HDXYuQeEeuzTtzK2dd23Q" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_0HDXY-QeEeuzTtzK2dd23Q" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_0HElg-QeEeuzTtzK2dd23Q" type="3002" element="_0DS4weQeEeuzTtzK2dd23Q">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_0HElhOQeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HElheQeEeuzTtzK2dd23Q"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_0HDXYOQeEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HDXYeQeEeuzTtzK2dd23Q" width="30" height="30"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_0HDXZOQeEeuzTtzK2dd23Q" type="3007" element="_0DS4w-QeEeuzTtzK2dd23Q">
+                      <children xmi:type="notation:Node" xmi:id="_0HD-cOQeEeuzTtzK2dd23Q" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_0HD-ceQeEeuzTtzK2dd23Q" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_0HElhuQeEeuzTtzK2dd23Q" type="3002" element="_0DS4xOQeEeuzTtzK2dd23Q">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_0HElh-QeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HEliOQeEeuzTtzK2dd23Q"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_0HDXZeQeEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HDXZuQeEeuzTtzK2dd23Q" width="30" height="30"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_0HD-cuQeEeuzTtzK2dd23Q" type="3007" element="_0DTf0OQeEeuzTtzK2dd23Q">
+                      <children xmi:type="notation:Node" xmi:id="_0HD-deQeEeuzTtzK2dd23Q" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_0HD-duQeEeuzTtzK2dd23Q" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_0HFMkOQeEeuzTtzK2dd23Q" type="3002" element="_0DTf0eQeEeuzTtzK2dd23Q">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_0HFMkeQeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HFMkuQeEeuzTtzK2dd23Q"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_0HD-c-QeEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0HD-dOQeEeuzTtzK2dd23Q" width="30" height="30"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_ladAEeQeEeuzTtzK2dd23Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_ladAEuQeEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lacZA-QeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lacZBOQeEeuzTtzK2dd23Q" x="-42" y="21"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_ladAE-QeEeuzTtzK2dd23Q" type="3008" element="_lXhA0-QeEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_ladAFuQeEeuzTtzK2dd23Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_ladAF-QeEeuzTtzK2dd23Q" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_ladAGOQeEeuzTtzK2dd23Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_ladAGeQeEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_ladAFOQeEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ladAFeQeEeuzTtzK2dd23Q" x="30" y="69"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_PgZV0eQZEeuzTtzK2dd23Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_PgZV0uQZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgYuweQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgYuwuQZEeuzTtzK2dd23Q" x="223" y="31" width="267" height="145"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgZV0-QZEeuzTtzK2dd23Q" type="3008" element="_PfJ_tOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgZ84OQZEeuzTtzK2dd23Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_PgZ84eQZEeuzTtzK2dd23Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_svPZJ-QaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr5xSOQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svPZKuQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svPZK-QaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svQAMuQaEeuzTtzK2dd23Q" type="3002" element="_sr6YUOQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svQAM-QaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svQANOQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svPZKOQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svPZKeQaEeuzTtzK2dd23Q" x="31" y="30" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_svPZLOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr6YUuQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svQAMOQaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svQAMeQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svQANeQaEeuzTtzK2dd23Q" type="3002" element="_sr6YU-QaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svQANuQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svQAN-QaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svPZLeQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svPZLuQaEeuzTtzK2dd23Q" x="91" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_PgZ84uQZEeuzTtzK2dd23Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_PgZ84-QZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgZV1OQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgZV1eQZEeuzTtzK2dd23Q" x="559" y="234" width="159" height="144"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgZ85OQZEeuzTtzK2dd23Q" type="3008" element="_PfORIOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgbLAOQZEeuzTtzK2dd23Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_PgbLAeQZEeuzTtzK2dd23Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_svQAOOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr6_YOQaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svQAO-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svQAPOQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svQnReQaEeuzTtzK2dd23Q" type="3002" element="_sr6_YeQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svQnRuQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svQnR-QaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svQAOeQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svQAOuQaEeuzTtzK2dd23Q" x="26" y="29" width="30" height="30"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_svQnQOQaEeuzTtzK2dd23Q" visible="false" type="3007" element="_sr6_Y-QaEeuzTtzK2dd23Q">
+                  <children xmi:type="notation:Node" xmi:id="_svQnQ-QaEeuzTtzK2dd23Q" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_svQnROQaEeuzTtzK2dd23Q" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_svROUOQaEeuzTtzK2dd23Q" type="3002" element="_sr6_ZOQaEeuzTtzK2dd23Q">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_svROUeQaEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svROUuQaEeuzTtzK2dd23Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_svQnQeQaEeuzTtzK2dd23Q" fontColor="16777215" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svQnQuQaEeuzTtzK2dd23Q" x="86" y="29" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_PgbLAuQZEeuzTtzK2dd23Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_PgbLA-QZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgZ85eQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgZ85uQZEeuzTtzK2dd23Q" x="564" y="31" height="144"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgbLBOQZEeuzTtzK2dd23Q" type="3007" element="_PfwcoOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgbyEOQZEeuzTtzK2dd23Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_PgbyEeQZEeuzTtzK2dd23Q" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_Pge1YOQZEeuzTtzK2dd23Q" type="3004" element="_PfwcoeQZEeuzTtzK2dd23Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_Pge1YeQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pge1YuQZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgbLBeQZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgbLBuQZEeuzTtzK2dd23Q" x="847" y="42" width="120" height="131"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PgbyEuQZEeuzTtzK2dd23Q" type="3007" element="_PfxDsOQZEeuzTtzK2dd23Q">
+              <children xmi:type="notation:Node" xmi:id="_PgcZIOQZEeuzTtzK2dd23Q" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_PgcZIeQZEeuzTtzK2dd23Q" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_Pgh4sOQZEeuzTtzK2dd23Q" type="3004" element="_PfxDseQZEeuzTtzK2dd23Q">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_Pgh4seQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgh4suQZEeuzTtzK2dd23Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PgbyE-QZEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgbyFOQZEeuzTtzK2dd23Q" x="1003" y="42" width="108" height="132"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Pf60teQZEeuzTtzK2dd23Q"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Pf60tuQZEeuzTtzK2dd23Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pf60seQZEeuzTtzK2dd23Q" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pf60suQZEeuzTtzK2dd23Q" x="12" y="108" height="543"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Pe8kUuQZEeuzTtzK2dd23Q"/>
+        <edges xmi:type="notation:Edge" xmi:id="_EA-PsOQaEeuzTtzK2dd23Q" type="4001" element="_EA1s0uQaEeuzTtzK2dd23Q" source="_PgQL4OQZEeuzTtzK2dd23Q" target="_PgSoIOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_EA-2wOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EA-2weQaEeuzTtzK2dd23Q" x="13" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EA-2wuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EA_d0OQaEeuzTtzK2dd23Q" x="-11" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EA_d0eQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EA_d0uQaEeuzTtzK2dd23Q" x="-9" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_EA-PseQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_EA-PsuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EA-Ps-QaEeuzTtzK2dd23Q" points="[-21, -71, 39, 132]$[-39, -131, 21, 72]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBAE4OQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBAE4eQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_EBAE4uQaEeuzTtzK2dd23Q" type="4001" element="_EA2T5OQaEeuzTtzK2dd23Q" source="_PgQL4OQZEeuzTtzK2dd23Q" target="_PgYuwOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_EBBTAOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBBTAeQaEeuzTtzK2dd23Q" x="10" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EBBTAuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBBTA-QaEeuzTtzK2dd23Q" x="-4" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EBBTBOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBBTBeQaEeuzTtzK2dd23Q" x="-6" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_EBAE4-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_EBAE5OQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EBAE5eQaEeuzTtzK2dd23Q" points="[46, -71, -86, 132]$[85, -131, -47, 72]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBB6EOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBB6EeQaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_EBB6EuQaEeuzTtzK2dd23Q" type="4001" element="_EA269OQaEeuzTtzK2dd23Q" source="_PgZV0-QZEeuzTtzK2dd23Q" target="_PgZ85OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_EBB6FuQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBB6F-QaEeuzTtzK2dd23Q" x="12" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EBChIOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBChIeQaEeuzTtzK2dd23Q" x="-9" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EBChIuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EBChI-QaEeuzTtzK2dd23Q" x="-10" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_EBB6E-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_EBB6FOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EBB6FeQaEeuzTtzK2dd23Q" points="[0, -33, -6, 169]$[4, -168, -2, 34]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBChJOQaEeuzTtzK2dd23Q" id="(0.47047115024353686,0.23836978525780972)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EBChJeQaEeuzTtzK2dd23Q" id="(0.5,0.23831775700934577)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svR1YOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr8NgOQaEeuzTtzK2dd23Q" source="_svLuwOQaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svSccOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svScceQaEeuzTtzK2dd23Q" x="4" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svSccuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svScc-QaEeuzTtzK2dd23Q" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svScdOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svScdeQaEeuzTtzK2dd23Q" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svR1YeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svR1YuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svR1Y-QaEeuzTtzK2dd23Q" points="[-6, -15, 138, 369]$[-139, -369, 5, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTDgOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTDgeQaEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svTDguQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr80kuQaEeuzTtzK2dd23Q" source="_svMV0uQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svTDhuQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTDh-QaEeuzTtzK2dd23Q" x="10" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svTDiOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTDieQaEeuzTtzK2dd23Q" x="-6" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svTDiuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTDi-QaEeuzTtzK2dd23Q" x="-4" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svTDg-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svTDhOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svTDheQaEeuzTtzK2dd23Q" points="[-5, -15, 103, 369]$[-104, -369, 4, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTqkOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTqkeQaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svTqkuQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr80l-QaEeuzTtzK2dd23Q" source="_svMV0uQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svTqluQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTql-QaEeuzTtzK2dd23Q" x="6" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svTqmOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTqmeQaEeuzTtzK2dd23Q" x="-6" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svTqmuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svTqm-QaEeuzTtzK2dd23Q" x="-5" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svTqk-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svTqlOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svTqleQaEeuzTtzK2dd23Q" points="[-1, -15, 23, 369]$[-24, -369, 0, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTqnOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svTqneQaEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svURoOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr9bpOQaEeuzTtzK2dd23Q" source="_svMV0uQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svURpOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svURpeQaEeuzTtzK2dd23Q" x="8" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svURpuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svURp-QaEeuzTtzK2dd23Q" x="-3" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svURqOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svURqeQaEeuzTtzK2dd23Q" x="-3" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svURoeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svURouQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svURo-QaEeuzTtzK2dd23Q" points="[2, -15, -58, 369]$[57, -369, -3, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svURquQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svURq-QaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svURrOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr-CsOQaEeuzTtzK2dd23Q" source="_svNj8-QaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svU4sOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svU4seQaEeuzTtzK2dd23Q" x="4" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svU4suQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svU4s-QaEeuzTtzK2dd23Q" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svU4tOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svU4teQaEeuzTtzK2dd23Q" x="-2" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svURreQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svURruQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svURr-QaEeuzTtzK2dd23Q" points="[-7, -15, 77, 165]$[-77, -165, 7, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svU4tuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svU4t-QaEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svU4uOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr-CteQaEeuzTtzK2dd23Q" source="_svOLAOQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svU4vOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svU4veQaEeuzTtzK2dd23Q" x="12" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svU4vuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svVfwOQaEeuzTtzK2dd23Q" x="-12" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svVfweQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svVfwuQaEeuzTtzK2dd23Q" x="-10" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svU4ueQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svU4uuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svU4u-QaEeuzTtzK2dd23Q" points="[-4, -15, 44, 165]$[-44, -165, 4, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svVfw-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svVfxOQaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svVfxeQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr-pwuQaEeuzTtzK2dd23Q" source="_svOLAOQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svVfyeQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svVfyuQaEeuzTtzK2dd23Q" x="8" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svVfy-QaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svVfzOQaEeuzTtzK2dd23Q" x="-7" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svVfzeQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svVfzuQaEeuzTtzK2dd23Q" x="-7" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svVfxuQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svVfx-QaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svVfyOQaEeuzTtzK2dd23Q" points="[3, -15, -33, 165]$[33, -165, -3, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWG0OQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWG0eQaEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svWG0uQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr-px-QaEeuzTtzK2dd23Q" source="_svOLAOQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svWG1uQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWG1-QaEeuzTtzK2dd23Q" x="6" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svWG2OQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWG2eQaEeuzTtzK2dd23Q" x="-4" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svWG2uQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWG2-QaEeuzTtzK2dd23Q" x="-6" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svWG0-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svWG1OQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svWG1eQaEeuzTtzK2dd23Q" points="[10, -15, -110, 165]$[110, -165, -10, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWG3OQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWG3eQaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svWt4OQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr_Q0OQaEeuzTtzK2dd23Q" source="_svOyE-QaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svWt5OQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWt5eQaEeuzTtzK2dd23Q" x="-1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svWt5uQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWt5-QaEeuzTtzK2dd23Q" x="3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svWt6OQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svWt6eQaEeuzTtzK2dd23Q" x="4" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svWt4eQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svWt4uQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svWt4-QaEeuzTtzK2dd23Q" points="[-15, -10, 261, 170]$[-261, -171, 15, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWt6uQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svWt6-QaEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svXU8OQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr_Q1eQaEeuzTtzK2dd23Q" source="_svOyGOQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svXU9OQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svXU9eQaEeuzTtzK2dd23Q" x="3" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svXU9uQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svXU9-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svXU-OQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svXU-eQaEeuzTtzK2dd23Q" x="-4" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svXU8eQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svXU8uQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svXU8-QaEeuzTtzK2dd23Q" points="[-15, -12, 225, 168]$[-225, -169, 15, 11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svXU-uQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svXU--QaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svX8AOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr_Q2uQaEeuzTtzK2dd23Q" source="_svOyGOQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svX8BOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svX8BeQaEeuzTtzK2dd23Q" x="7" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svX8BuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svX8B-QaEeuzTtzK2dd23Q" x="-6" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svX8COQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svX8CeQaEeuzTtzK2dd23Q" x="-7" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svX8AeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svX8AuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svX8A-QaEeuzTtzK2dd23Q" points="[-13, -15, 143, 165]$[-143, -165, 13, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svX8CuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svX8C-QaEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svYjEOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr_34uQaEeuzTtzK2dd23Q" source="_svOyGOQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svYjFOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svYjFeQaEeuzTtzK2dd23Q" x="12" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svYjFuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svYjF-QaEeuzTtzK2dd23Q" x="-7" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svYjGOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svYjGeQaEeuzTtzK2dd23Q" x="-9" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svYjEeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svYjEuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svYjE-QaEeuzTtzK2dd23Q" points="[-6, -15, 66, 165]$[-66, -165, 6, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svYjGuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svYjG-QaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svYjHOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_sr_35-QaEeuzTtzK2dd23Q" source="_svPZJ-QaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svZKIOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZKIeQaEeuzTtzK2dd23Q" x="-1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svZKIuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZKI-QaEeuzTtzK2dd23Q" x="3" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svZKJOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZKJeQaEeuzTtzK2dd23Q" x="-1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svYjHeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svYjHuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svYjH-QaEeuzTtzK2dd23Q" points="[-15, -10, 597, 374]$[-597, -375, 15, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svZKJuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svZKJ-QaEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svZKKOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssAe8uQaEeuzTtzK2dd23Q" source="_svPZLOQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svZxMOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZxMeQaEeuzTtzK2dd23Q" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svZxMuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZxM-QaEeuzTtzK2dd23Q" x="1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svZxNOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZxNeQaEeuzTtzK2dd23Q" x="-2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svZKKeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svZKKuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svZKK-QaEeuzTtzK2dd23Q" points="[-15, -10, 561, 374]$[-561, -374, 15, 10]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svZxNuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svZxN-QaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svZxOOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssAe9-QaEeuzTtzK2dd23Q" source="_svPZLOQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svZxPOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svZxPeQaEeuzTtzK2dd23Q" x="1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svaYQOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svaYQeQaEeuzTtzK2dd23Q" x="3" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svaYQuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svaYQ-QaEeuzTtzK2dd23Q" x="-2" y="12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svZxOeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svZxOuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svZxO-QaEeuzTtzK2dd23Q" points="[-15, -12, 477, 372]$[-477, -373, 15, 11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svaYROQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svaYReQaEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svaYRuQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssBGBOQaEeuzTtzK2dd23Q" source="_svPZLOQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_sva_UOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sva_UeQaEeuzTtzK2dd23Q" x="4" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sva_UuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sva_U-QaEeuzTtzK2dd23Q" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sva_VOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sva_VeQaEeuzTtzK2dd23Q" x="-3" y="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svaYR-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svaYSOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svaYSeQaEeuzTtzK2dd23Q" points="[-15, -15, 393, 369]$[-393, -370, 15, 14]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sva_VuQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sva_V-QaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_sva_WOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssBtEuQaEeuzTtzK2dd23Q" source="_svQAOOQaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svbmYOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svbmYeQaEeuzTtzK2dd23Q" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svbmYuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svbmY-QaEeuzTtzK2dd23Q" x="4" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svbmZOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svbmZeQaEeuzTtzK2dd23Q" x="-1" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_sva_WeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_sva_WuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sva_W-QaEeuzTtzK2dd23Q" points="[-15, -5, 597, 175]$[-597, -176, 15, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svcNcOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svcNceQaEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svc0gOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssCUIuQaEeuzTtzK2dd23Q" source="_svQnQOQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svc0hOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svc0heQaEeuzTtzK2dd23Q" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svc0huQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svc0h-QaEeuzTtzK2dd23Q" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svc0iOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svc0ieQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svc0geQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svc0guQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svc0g-QaEeuzTtzK2dd23Q" points="[-15, -5, 561, 175]$[-561, -176, 15, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svdbkOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svdbkeQaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svdbkuQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssC7MOQaEeuzTtzK2dd23Q" source="_svQnQOQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svdbluQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svdbl-QaEeuzTtzK2dd23Q" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svdbmOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svdbmeQaEeuzTtzK2dd23Q" x="1" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svdbmuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svdbm-QaEeuzTtzK2dd23Q" x="2" y="12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svdbk-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svdblOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svdbleQaEeuzTtzK2dd23Q" points="[-15, -6, 477, 174]$[-477, -175, 15, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sveCoOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sveCoeQaEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_sveCouQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssC7NeQaEeuzTtzK2dd23Q" source="_svQnQOQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_sveCpuQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sveCp-QaEeuzTtzK2dd23Q" x="3" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sveCqOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sveCqeQaEeuzTtzK2dd23Q" x="2" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sveCquQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sveCq-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_sveCo-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_sveCpOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sveCpeQaEeuzTtzK2dd23Q" points="[-15, -7, 393, 173]$[-393, -174, 15, 6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sveCrOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sveCreQaEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svepsOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssDiQOQaEeuzTtzK2dd23Q" source="_PgSoIOQZEeuzTtzK2dd23Q" target="_svLuwOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_sveptOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svepteQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sveptuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svept-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svepuOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svepueQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svepseQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svepsuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sveps-QaEeuzTtzK2dd23Q" points="[0, 0, -75, -146]$[67, 131, -8, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svepuuQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svepu-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svepvOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssEJUuQaEeuzTtzK2dd23Q" source="_PgSoIOQZEeuzTtzK2dd23Q" target="_svNj8-QaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svfQw-QaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svfQxOQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svfQxeQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svfQxuQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svfQx-QaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svfQyOQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svfQwOQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svfQweQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svfQwuQaEeuzTtzK2dd23Q" points="[0, 0, -15, 57]$[11, -42, -4, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svf30OQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svf30eQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svf30uQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssEJV-QaEeuzTtzK2dd23Q" source="_PgSoIOQZEeuzTtzK2dd23Q" target="_svOyE-QaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svf31uQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svf31-QaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svf32OQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svf32eQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svge4OQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svge4eQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svf30-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svf31OQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svf31eQaEeuzTtzK2dd23Q" points="[0, 0, -207, 57]$[192, -53, -15, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svge4uQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svge4-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svge5OQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssEwYOQaEeuzTtzK2dd23Q" source="_PgSoIOQZEeuzTtzK2dd23Q" target="_svPZJ-QaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svhF8OQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhF8eQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svhF8uQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhF8-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svhF9OQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhF9eQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svge5eQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svge5uQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svge5-QaEeuzTtzK2dd23Q" points="[0, 0, -543, -146]$[528, 141, -15, -5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svhF9uQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svhF9-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svhF-OQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssEwZeQaEeuzTtzK2dd23Q" source="_PgSoIOQZEeuzTtzK2dd23Q" target="_svQAOOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svhtAOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhtAeQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svhtAuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhtA-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svhtBOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svhtBeQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svhF-eQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svhF-uQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svhF--QaEeuzTtzK2dd23Q" points="[0, 0, -548, 57]$[533, -56, -15, 1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svhtBuQaEeuzTtzK2dd23Q" id="(0.43700787401574803,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svhtB-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svhtCOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssEwauQaEeuzTtzK2dd23Q" source="_PgYuwOQZEeuzTtzK2dd23Q" target="_svMV0uQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_sviUEOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sviUEeQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sviUEuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sviUE-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_sviUFOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sviUFeQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svhtCeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svhtCuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svhtC-QaEeuzTtzK2dd23Q" points="[0, 0, 117, -146]$[-105, 131, 12, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sviUFuQaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svi7IOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svi7IeQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssFXcuQaEeuzTtzK2dd23Q" source="_PgYuwOQZEeuzTtzK2dd23Q" target="_svOLAOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svi7JeQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svi7JuQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svi7J-QaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svi7KOQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svi7KeQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svi7KuQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svi7IuQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svi7I-QaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svi7JOQaEeuzTtzK2dd23Q" points="[0, 0, 177, 57]$[-162, -53, 15, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svi7K-QaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svi7LOQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svjiMOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssFXd-QaEeuzTtzK2dd23Q" source="_PgYuwOQZEeuzTtzK2dd23Q" target="_svOyGOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svjiNOQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svjiNeQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svjiNuQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svjiN-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svjiOOQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svjiOeQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svjiMeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svjiMuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svjiM-QaEeuzTtzK2dd23Q" points="[0, 0, -15, 57]$[11, -42, -4, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svjiOuQaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svjiO-QaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svjiPOQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssF-gOQaEeuzTtzK2dd23Q" source="_PgYuwOQZEeuzTtzK2dd23Q" target="_svPZLOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svkJQeQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkJQuQaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svkJQ-QaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkJROQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svkJReQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkJRuQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svjiPeQaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svjiPuQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svkJQOQaEeuzTtzK2dd23Q" points="[0, 0, -351, -146]$[336, 139, -15, -7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svkwUOQaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svkwUeQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_svkwUuQaEeuzTtzK2dd23Q" visible="false" type="4001" element="_ssF-heQaEeuzTtzK2dd23Q" source="_PgYuwOQZEeuzTtzK2dd23Q" target="_svQnQOQaEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_svkwVuQaEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkwV-QaEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svkwWOQaEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkwWeQaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_svkwWuQaEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svkwW-QaEeuzTtzK2dd23Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_svkwU-QaEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_svkwVOQaEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_svkwVeQaEeuzTtzK2dd23Q" points="[0, 0, -356, 57]$[341, -55, -15, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svlXYOQaEeuzTtzK2dd23Q" id="(0.2788944723618091,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_svlXYeQaEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wuoxcOQbEeuzTtzK2dd23Q" visible="false" type="4001" element="_wsFMsOQbEeuzTtzK2dd23Q" source="_2FO4IOQaEeuzTtzK2dd23Q" target="_Pfy44OQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_wupYgOQbEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wupYgeQbEeuzTtzK2dd23Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wupYguQbEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wupYg-QbEeuzTtzK2dd23Q" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wupYhOQbEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wupYheQbEeuzTtzK2dd23Q" x="2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wuoxceQbEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wuoxcuQbEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wuoxc-QbEeuzTtzK2dd23Q" points="[-13, -30, 56, 130]$[-63, -145, 6, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wup_kOQbEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wup_keQbEeuzTtzK2dd23Q" id="(0.10368663594470044,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wup_kuQbEeuzTtzK2dd23Q" visible="false" type="4001" element="_wsFzxOQbEeuzTtzK2dd23Q" source="_2FPfMOQaEeuzTtzK2dd23Q" target="_Pf0HAOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_wup_luQbEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wup_l-QbEeuzTtzK2dd23Q" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wup_mOQbEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wup_meQbEeuzTtzK2dd23Q" x="3" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wup_muQbEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wup_m-QbEeuzTtzK2dd23Q" x="5" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wup_k-QbEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wup_lOQbEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wup_leQbEeuzTtzK2dd23Q" points="[-16, -30, 65, 130]$[-74, -145, 7, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wup_nOQbEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wup_neQbEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wup_nuQbEeuzTtzK2dd23Q" visible="false" type="4001" element="_wsGa1OQbEeuzTtzK2dd23Q" source="_2FPfMOQaEeuzTtzK2dd23Q" target="_Pf3KUOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_wuqmoOQbEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmoeQbEeuzTtzK2dd23Q" x="-8" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wuqmouQbEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmo-QbEeuzTtzK2dd23Q" x="9" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wuqmpOQbEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmpeQbEeuzTtzK2dd23Q" x="9" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wup_n-QbEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wup_oOQbEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wup_oeQbEeuzTtzK2dd23Q" points="[25, -30, -110, 129]$[122, -144, -13, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wuqmpuQbEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wuqmp-QbEeuzTtzK2dd23Q" id="(0.11306532663316582,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wuqmqOQbEeuzTtzK2dd23Q" visible="false" type="4001" element="_wsHB4uQbEeuzTtzK2dd23Q" source="_2FPfMOQaEeuzTtzK2dd23Q" target="_Pf5mkOQZEeuzTtzK2dd23Q">
+          <children xmi:type="notation:Node" xmi:id="_wuqmrOQbEeuzTtzK2dd23Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmreQbEeuzTtzK2dd23Q" x="-12" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wuqmruQbEeuzTtzK2dd23Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmr-QbEeuzTtzK2dd23Q" x="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wuqmsOQbEeuzTtzK2dd23Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wuqmseQbEeuzTtzK2dd23Q" x="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wuqmqeQbEeuzTtzK2dd23Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wuqmquQbEeuzTtzK2dd23Q" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wuqmq-QbEeuzTtzK2dd23Q" points="[36, -12, -447, 147]$[468, -155, -15, 4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wuqmsuQbEeuzTtzK2dd23Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wuqms-QbEeuzTtzK2dd23Q" id="(0.12430939226519337,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_PfxqwOQZEeuzTtzK2dd23Q" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_PfxqweQZEeuzTtzK2dd23Q"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Pe9ycOQZEeuzTtzK2dd23Q" name="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp" visible="false" incomingEdges="_sr8NgOQaEeuzTtzK2dd23Q _sr-CsOQaEeuzTtzK2dd23Q _sr_Q0OQaEeuzTtzK2dd23Q _sr_35-QaEeuzTtzK2dd23Q _ssBtEuQaEeuzTtzK2dd23Q _wsFMsOQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0/@product_have_images.0"/>
+      <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0/@product_have_images.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_PfDSAOQZEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+        <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PfGVUOQZEeuzTtzK2dd23Q" name="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp" visible="false" incomingEdges="_sr80kuQaEeuzTtzK2dd23Q _sr-CteQaEeuzTtzK2dd23Q _sr_Q1eQaEeuzTtzK2dd23Q _ssAe8uQaEeuzTtzK2dd23Q _ssCUIuQaEeuzTtzK2dd23Q _wsFzxOQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.0"/>
+      <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_PfG8YOQZEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+        <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PfHjcOQZEeuzTtzK2dd23Q" name="https://images.static-thomann.de/pics/bdb/439059/13206231_800.jpg" visible="false" incomingEdges="_sr80l-QaEeuzTtzK2dd23Q _sr-pwuQaEeuzTtzK2dd23Q _sr_Q2uQaEeuzTtzK2dd23Q _ssAe9-QaEeuzTtzK2dd23Q _ssC7MOQaEeuzTtzK2dd23Q _wsGa1OQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.1"/>
+      <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_PfHjceQZEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+        <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PfHjc-QZEeuzTtzK2dd23Q" name="https://images.static-thomann.de/pics/bdb/439059/13206241_800.jpg" visible="false" incomingEdges="_sr9bpOQaEeuzTtzK2dd23Q _sr-px-QaEeuzTtzK2dd23Q _sr_34uQaEeuzTtzK2dd23Q _ssBGBOQaEeuzTtzK2dd23Q _ssC7NeQaEeuzTtzK2dd23Q _wsHB4uQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.2"/>
+      <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Dot" uid="_PfHjdOQZEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+        <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfIKgOQZEeuzTtzK2dd23Q" name="music_shop">
+      <target xmi:type="model:EcommerceSystem" href="application_new.xmi#//@app_have_shops.0"/>
+      <semanticElements xmi:type="model:EcommerceSystem" href="application_new.xmi#//@app_have_shops.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_bi3CI-QZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfIxkOQZEeuzTtzK2dd23Q" name="Instruments" outgoingEdges="_EA1s0uQaEeuzTtzK2dd23Q _EA2T5OQaEeuzTtzK2dd23Q">
+        <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0"/>
+        <semanticElements xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_PfIxkeQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" backgroundColor="252,175,62">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr38GOQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_sr8NgOQaEeuzTtzK2dd23Q" incomingEdges="_ssDiQOQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr4jIOQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr4jIuQaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_sr80kuQaEeuzTtzK2dd23Q _sr80l-QaEeuzTtzK2dd23Q _sr9bpOQaEeuzTtzK2dd23Q" incomingEdges="_ssEwauQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr5KMOQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfJYoOQZEeuzTtzK2dd23Q" name="Piano" outgoingEdges="_ssDiQOQaEeuzTtzK2dd23Q _ssEJUuQaEeuzTtzK2dd23Q _ssEJV-QaEeuzTtzK2dd23Q _ssEwYOQaEeuzTtzK2dd23Q _ssEwZeQaEeuzTtzK2dd23Q" incomingEdges="_EA1s0uQaEeuzTtzK2dd23Q">
+        <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+        <semanticElements xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_PfJYoeQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" backgroundColor="252,175,62">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr5KMuQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_sr-CsOQaEeuzTtzK2dd23Q" incomingEdges="_ssEJUuQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr5KM-QaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr5KNeQaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_sr-CteQaEeuzTtzK2dd23Q _sr-pwuQaEeuzTtzK2dd23Q _sr-px-QaEeuzTtzK2dd23Q" incomingEdges="_ssFXcuQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr5xQOQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_2CP1kOQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_wsFMsOQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_5RQvRuQaEeuzTtzK2dd23Q" labelSize="12" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_lXgZwOQeEeuzTtzK2dd23Q" name="Yamaha B1 PE">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pmsXAOQeEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="238,201,142">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DQcgOQeEeuzTtzK2dd23Q" name="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0/@product_have_images.0"/>
+            <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0/@product_have_images.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_0DQcgeQeEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+              <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfJ_seQZEeuzTtzK2dd23Q" name="Guitar" outgoingEdges="_ssEwauQaEeuzTtzK2dd23Q _ssFXcuQaEeuzTtzK2dd23Q _ssFXd-QaEeuzTtzK2dd23Q _ssF-gOQaEeuzTtzK2dd23Q _ssF-heQaEeuzTtzK2dd23Q" incomingEdges="_EA2T5OQaEeuzTtzK2dd23Q">
+        <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+        <semanticElements xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_PfJ_suQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" backgroundColor="252,175,62">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr5xQuQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_sr_Q0OQaEeuzTtzK2dd23Q" incomingEdges="_ssEJV-QaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr5xQ-QaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr5xReQaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_sr_Q1eQaEeuzTtzK2dd23Q _sr_Q2uQaEeuzTtzK2dd23Q _sr_34uQaEeuzTtzK2dd23Q" incomingEdges="_ssFXd-QaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr5xRuQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_2CQcoOQaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_wsFzxOQbEeuzTtzK2dd23Q _wsGa1OQbEeuzTtzK2dd23Q _wsHB4uQbEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_5RRWUeQaEeuzTtzK2dd23Q" labelSize="12" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_htQngOQcEeuzTtzK2dd23Q" name="any guitar" visible="false" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.1"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:Dot" uid="_htQngeQcEeuzTtzK2dd23Q" labelSize="12" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductSubNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_lXhA0uQeEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pmsXAuQeEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="238,201,142">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DS4wOQeEeuzTtzK2dd23Q" name="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.0"/>
+            <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.0"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_0DS4weQeEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+              <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DS4w-QeEeuzTtzK2dd23Q" name="https://images.static-thomann.de/pics/bdb/439059/13206231_800.jpg" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.1"/>
+            <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.1"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_0DS4xOQeEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+              <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DTf0OQeEeuzTtzK2dd23Q" name="https://images.static-thomann.de/pics/bdb/439059/13206241_800.jpg" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.2"/>
+            <semanticElements xmi:type="model:ProductImage" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0/@product_have_images.2"/>
+            <ownedStyle xmi:type="diagram:Dot" uid="_0DTf0eQeEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" backgroundColor="255,245,181">
+              <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_lXhA0-QeEeuzTtzK2dd23Q" name="any guitar">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.1"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.1"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pmsXBOQeEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundColor="238,201,142">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfJ_tOQZEeuzTtzK2dd23Q" name="accessories" outgoingEdges="_EA269OQaEeuzTtzK2dd23Q">
+        <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.1"/>
+        <semanticElements xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_PfMb8OQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" backgroundColor="252,175,62">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr5xSOQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_sr_35-QaEeuzTtzK2dd23Q" incomingEdges="_ssEwYOQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr6YUOQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr6YUuQaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_ssAe8uQaEeuzTtzK2dd23Q _ssAe9-QaEeuzTtzK2dd23Q _ssBGBOQaEeuzTtzK2dd23Q" incomingEdges="_ssF-gOQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr6YU-QaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_PfORIOQZEeuzTtzK2dd23Q" name="guitar_accessories" incomingEdges="_EA269OQaEeuzTtzK2dd23Q">
+        <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.1/@have_sub_categories.0"/>
+        <semanticElements xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.1/@have_sub_categories.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_PfO4MOQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" backgroundColor="252,175,62">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr6_YOQaEeuzTtzK2dd23Q" name="Yamaha B1 PE" visible="false" outgoingEdges="_ssBtEuQaEeuzTtzK2dd23Q" incomingEdges="_ssEwZeQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr6_YeQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_sr6_Y-QaEeuzTtzK2dd23Q" name="Fender Player Series Strat MN BCR" visible="false" outgoingEdges="_ssCUIuQaEeuzTtzK2dd23Q _ssC7MOQaEeuzTtzK2dd23Q _ssC7NeQaEeuzTtzK2dd23Q" incomingEdges="_ssF-heQaEeuzTtzK2dd23Q" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <semanticElements xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_sr6_ZOQaEeuzTtzK2dd23Q" labelSize="12" labelColor="255,255,255" labelPosition="node" backgroundColor="209,209,209">
+            <description xmi:type="style:DotDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subNodeMappings[name='ProductNode']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_PfwcoOQZEeuzTtzK2dd23Q" name="Superadmin" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="model:Administrator" href="application_new.xmi#//@app_have_shops.0/@shop_have_administrators.0"/>
+        <semanticElements xmi:type="model:Administrator" href="application_new.xmi#//@app_have_shops.0/@shop_have_administrators.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_PfwcoeQZEeuzTtzK2dd23Q" labelSize="12" labelPosition="node" shape="triangle" color="138,226,52">
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='AdminNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='AdminNode']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_PfxDsOQZEeuzTtzK2dd23Q" name="Lea" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="model:Customer" href="application_new.xmi#//@app_have_shops.0/@have_clients.0"/>
+        <semanticElements xmi:type="model:Customer" href="application_new.xmi#//@app_have_shops.0/@have_clients.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_PfxDseQZEeuzTtzK2dd23Q" labelSize="12" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" shape="triangle" color="204,242,166">
+          <description xmi:type="style:BundledImageDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CustomerNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CustomerNode']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EA1s0uQaEeuzTtzK2dd23Q" sourceNode="_PfIxkOQZEeuzTtzK2dd23Q" targetNode="_PfJYoOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EA2T4OQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EA2T4eQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EA2T5OQaEeuzTtzK2dd23Q" sourceNode="_PfIxkOQZEeuzTtzK2dd23Q" targetNode="_PfJ_seQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EA268OQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EA268eQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EA269OQaEeuzTtzK2dd23Q" sourceNode="_PfJ_tOQZEeuzTtzK2dd23Q" targetNode="_PfORIOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EA269eQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EA269uQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategoryEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr8NgOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr38GOQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr8NgeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr8NguQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr80kuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr4jIuQaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr80k-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr80lOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr80l-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr4jIuQaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr9boOQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr9boeQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr9bpOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr4jIuQaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr9bpeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr9bpuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr-CsOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5KMuQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr-CseQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr-CsuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr-CteQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5KNeQaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr-CtuQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr-Ct-QaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr-pwuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5KNeQaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr-pw-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr-pxOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr-px-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5KNeQaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr-pyOQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr-pyeQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr_Q0OQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5xQuQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr_Q0eQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr_Q0uQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr_Q1eQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5xReQaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr_Q1uQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr_Q1-QaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr_Q2uQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5xReQaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr_Q2-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr_Q3OQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr_34uQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5xReQaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr_34-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr_35OQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sr_35-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr5xSOQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_sr_36OQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_sr_36eQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssAe8uQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6YUuQaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssAe8-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssAe9OQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssAe9-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6YUuQaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssBGAOQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssBGAeQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssBGBOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6YUuQaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssBGBeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssBGBuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssBtEuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6_YOQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssBtE-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssBtFOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssCUIuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6_Y-QaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssCUI-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssCUJOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssC7MOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6_Y-QaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssC7MeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssC7MuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssC7NeQaEeuzTtzK2dd23Q" visible="false" sourceNode="_sr6_Y-QaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssC7NuQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssC7N-QaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssDiQOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJYoOQZEeuzTtzK2dd23Q" targetNode="_sr38GOQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssDiQeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssDiQuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssEJUuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJYoOQZEeuzTtzK2dd23Q" targetNode="_sr5KMuQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssEJU-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssEJVOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssEJV-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJYoOQZEeuzTtzK2dd23Q" targetNode="_sr5xQuQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssEJWOQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssEJWeQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssEwYOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJYoOQZEeuzTtzK2dd23Q" targetNode="_sr5xSOQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssEwYeQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssEwYuQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssEwZeQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJYoOQZEeuzTtzK2dd23Q" targetNode="_sr6_YOQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssEwZuQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssEwZ-QaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssEwauQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJ_seQZEeuzTtzK2dd23Q" targetNode="_sr4jIuQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssEwa-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssEwbOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssFXcuQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJ_seQZEeuzTtzK2dd23Q" targetNode="_sr5KNeQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssFXc-QaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssFXdOQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssFXd-QaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJ_seQZEeuzTtzK2dd23Q" targetNode="_sr5xReQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssFXeOQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssFXeeQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssF-gOQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJ_seQZEeuzTtzK2dd23Q" targetNode="_sr6YUuQaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssF-geQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssF-guQaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ssF-heQaEeuzTtzK2dd23Q" visible="false" sourceNode="_PfJ_seQZEeuzTtzK2dd23Q" targetNode="_sr6_Y-QaEeuzTtzK2dd23Q">
+      <target xmi:type="model:Category" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ssF-huQaEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ssF-h-QaEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ProductEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wsFMsOQbEeuzTtzK2dd23Q" visible="false" sourceNode="_2CP1kOQaEeuzTtzK2dd23Q" targetNode="_Pe9ycOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wsFzwOQbEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wsFzweQbEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wsFzxOQbEeuzTtzK2dd23Q" visible="false" sourceNode="_2CQcoOQaEeuzTtzK2dd23Q" targetNode="_PfGVUOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wsGa0OQbEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wsGa0eQbEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wsGa1OQbEeuzTtzK2dd23Q" visible="false" sourceNode="_2CQcoOQaEeuzTtzK2dd23Q" targetNode="_PfHjcOQZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wsGa1eQbEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wsGa1uQbEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wsHB4uQbEeuzTtzK2dd23Q" visible="false" sourceNode="_2CQcoOQaEeuzTtzK2dd23Q" targetNode="_PfHjc-QZEeuzTtzK2dd23Q">
+      <target xmi:type="model:Product" href="application_new.xmi#//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wsHB4-QbEeuzTtzK2dd23Q" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wsHB5OQbEeuzTtzK2dd23Q" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='ImageEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Pe2dsOQZEeuzTtzK2dd23Q"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/it.disim.univaq.ecommerce.sirius.Ecommerce/description/Ecommerce.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer"/>
+    <target xmi:type="model:application" href="application_new.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -11,7 +11,8 @@ helper context MM!EcommerceSystem def : getAllCategories() : Sequence(MM!Categor
 helper context MM!Product def : getImages : String = self.product_have_images->collect(i | i.ref)->toString();
  
 --- Returns all the orders of the customer
-helper context MM!Customer def : getAllOrdersOfCustomer() : Sequence(MM!Order) = Sequence{self.customer_have_cart.cart_have_order};
+helper context MM!Customer def : getAllOrdersOfCustomer() : Sequence(MM!Order) = if self.customer_have_cart.oclIsUndefined() 
+							then Sequence {} else Sequence{self.customer_have_cart.cart_have_order} endif;
 
 --- Returns the order of the shipment
 helper context MM!Shipment def : getShipmentOrder() : MM!Order = MM!Order.allInstances()->select(o | o.order_have_shipment.includes(self));

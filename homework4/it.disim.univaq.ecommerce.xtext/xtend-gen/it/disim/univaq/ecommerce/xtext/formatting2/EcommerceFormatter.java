@@ -6,7 +6,9 @@ package it.disim.univaq.ecommerce.xtext.formatting2;
 import com.google.inject.Inject;
 import it.disim.univaq.ecommerce.xtext.services.EcommerceGrammarAccess;
 import java.util.Arrays;
+import model.Administrator;
 import model.Category;
+import model.Customer;
 import model.EcommerceSystem;
 import model.Product;
 import org.eclipse.emf.common.util.EList;
@@ -23,8 +25,18 @@ public class EcommerceFormatter extends AbstractFormatter2 {
   private EcommerceGrammarAccess _ecommerceGrammarAccess;
   
   protected void _format(final EcommerceSystem ecommerceSystem, @Extension final IFormattableDocument document) {
-    throw new Error("Unresolved compilation problems:"
-      + "\nType mismatch: cannot convert from Customer to Iterable<?>");
+    EList<Category> _shop_have_categories = ecommerceSystem.getShop_have_categories();
+    for (final Category category : _shop_have_categories) {
+      document.<Category>format(category);
+    }
+    EList<Customer> _have_clients = ecommerceSystem.getHave_clients();
+    for (final Customer customer : _have_clients) {
+      document.<Customer>format(customer);
+    }
+    EList<Administrator> _shop_have_administrators = ecommerceSystem.getShop_have_administrators();
+    for (final Administrator administrator : _shop_have_administrators) {
+      document.<Administrator>format(administrator);
+    }
   }
   
   protected void _format(final Category category, @Extension final IFormattableDocument document) {

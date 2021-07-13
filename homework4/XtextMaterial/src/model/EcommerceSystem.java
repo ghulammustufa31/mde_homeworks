@@ -36,26 +36,16 @@ public interface EcommerceSystem extends Named {
 	EList<Category> getShop_have_categories();
 
 	/**
-	 * Returns the value of the '<em><b>Have clients</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Have clients</b></em>' containment reference list.
+	 * The list contents are of type {@link model.Customer}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Have clients</em>' containment reference.
-	 * @see #setHave_clients(Customer)
+	 * @return the value of the '<em>Have clients</em>' containment reference list.
 	 * @see model.ModelPackage#getEcommerceSystem_Have_clients()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Customer getHave_clients();
-
-	/**
-	 * Sets the value of the '{@link model.EcommerceSystem#getHave_clients <em>Have clients</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Have clients</em>' containment reference.
-	 * @see #getHave_clients()
-	 * @generated
-	 */
-	void setHave_clients(Customer value);
+	EList<Customer> getHave_clients();
 
 	/**
 	 * Returns the value of the '<em><b>Shop have administrators</b></em>' containment reference list.

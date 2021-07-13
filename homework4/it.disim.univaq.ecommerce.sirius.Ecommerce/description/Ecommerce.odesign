@@ -4,35 +4,7 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="EcommerceDiagram" domainClass="model::application" enablePopupBars="true">
       <metamodel href="../../XtextMaterial/model/model.ecore#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="CustomerNode" domainClass="model::Customer">
-          <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="1" labelSize="12" labelPosition="node" resizeKind="NSEW" shape="triangle">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="AdminNode" domainClass="model::Administrator">
-          <style xsi:type="style:BundledImageDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" shape="triangle">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="ProductNode" domainClass="model::Product">
-          <style xsi:type="style:DotDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="ImageNode" domainClass="model::ProductImage">
-          <style xsi:type="style:DotDescription" labelSize="12" labelExpression="feature:ref" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
-          </style>
-        </nodeMappings>
-        <edgeMappings name="Category2CategroyEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CategoryNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CategoryNode']" targetFinderExpression="feature:have_sub_categories">
+        <edgeMappings name="ImageEdge" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']" targetFinderExpression="feature:product_have_images">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -40,31 +12,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="CustomerEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='CustomerNode']" targetFinderExpression="feature:have_clients">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="AdminEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='AdminNode']" targetFinderExpression="feature:shop_have_administrators">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="ProductEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CategoryNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ProductNode']" targetFinderExpression="feature:have_products">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="ImageEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ProductNode']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ImageNode']" targetFinderExpression="feature:product_have_images">
+        <edgeMappings name="Category2CategoryEdge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']" targetFinderExpression="feature:have_sub_categories">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -73,13 +21,43 @@
           </style>
         </edgeMappings>
         <containerMappings name="ShopContainer" domainClass="model::EcommerceSystem">
-          <subNodeMappings name="CategoryNode" domainClass="model::Category">
-            <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <subNodeMappings name="AdminNode" domainClass="model::Administrator">
+            <style xsi:type="style:BundledImageDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" shape="triangle">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
             </style>
           </subNodeMappings>
+          <subNodeMappings name="CustomerNode" domainClass="model::Customer">
+            <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="1" labelSize="12" labelPosition="node" resizeKind="NSEW" shape="triangle">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </style>
+          </subNodeMappings>
+          <subContainerMappings name="CategoryContainer" domainClass="model::Category">
+            <subContainerMappings name="ProductContainer" semanticCandidatesExpression="feature:eContents" domainClass="model::Product">
+              <subNodeMappings name="ImageNode" semanticCandidatesExpression="feature:eContents" domainClass="model::ProductImage">
+                <style xsi:type="style:DotDescription" labelSize="12" labelExpression="feature:ref" labelPosition="node" resizeKind="NSEW">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" backgroundStyle="GradientTopToBottom">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
           <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -88,25 +66,7 @@
           </style>
         </containerMappings>
         <toolSections name="Create">
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="ShopCreate">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::EcommerceSystem" referenceName="app_have_shops"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="CategoryCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CategoryNode']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::Category" referenceName="shop_have_categories"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Category2CategoryCreate" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@edgeMappings[name='Category2CategroyEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Category2CategoryCreate">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -117,7 +77,52 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="ProductCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@nodeMappings[name='ProductNode']">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CustomerCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='CustomerNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::Customer" referenceName="have_clients"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="AdministratorCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subNodeMappings[name='AdminNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::Administrator" referenceName="shop_have_administrators"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="CategoryCreate" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::Category" referenceName="shop_have_categories"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="ShopCreate" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::EcommerceSystem" referenceName="app_have_shops"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ImageCreate" nodeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']/@subNodeMappings[name='ImageNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="model::ProductImage" referenceName="product_have_images"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="ProductContainerCreate" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='EcommerceDiagram']/@defaultLayer/@containerMappings[name='ShopContainer']/@subContainerMappings[name='CategoryContainer']/@subContainerMappings[name='ProductContainer']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>

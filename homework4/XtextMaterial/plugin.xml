@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated model -->
       <package
-            uri="http://it.disim.univaq.ecommerce/model"
+            uri="platform:/resource/XtextMaterial/model/model.ecore"
             class="model.ModelPackage"
             genModel="model/model.genmodel"/>
    </extension>

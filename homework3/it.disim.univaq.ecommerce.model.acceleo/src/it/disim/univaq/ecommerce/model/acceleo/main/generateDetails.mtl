@@ -107,7 +107,7 @@
 				<div class="row">
 					<div class="col-sm-6 col-lg-6">
 						<ul class="list-unstyled">
-							<li><strong>Available:</strong> [aProduct.available/]</li>
+[comment]							<li><strong>Available:</strong> [aProduct.available/]</li>[/comment]
 							<li><strong>Stock: </strong> [aProduct.stock/]</li>
 							<li><strong>Height: </strong> [aProduct.height/]</li>
 							<li><strong>Weight: </strong> [aProduct.weight/]</li>
@@ -342,7 +342,7 @@
 					<tr>
 				      <td scope="col"><a href="[item.item_cart_have_product.name.replaceAll(' ', '') + '.html'/]">[item.item_cart_have_product.name/]</a></td>
 					<td scope="col">[item.quantity/]</td>
-					<td scope="col">[item.total_price/]</td>
+					<td scope="col">[item.total_price_item_cart/]</td>
 				    </tr>
 				[/for]
 					</tbody>

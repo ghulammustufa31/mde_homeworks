@@ -1,34 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model:application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://it.disim.univaq.ecommerce/model" xsi:schemaLocation="http://it.disim.univaq.ecommerce/model model.ecore" name="Ecommerce_Application_1">
-  <app_have_shops name="music_shop">
-    <shop_have_categories name="Instruments" active="true" root_cat="true">
-      <have_sub_categories name="Piano" active="true">
-        <have_products name="Yamaha B1 PE" available="true" stock="50" height="109.0" weight="174.0" price="3444.0" description="By way of example, b1 embodies the design principles">
-          <product_have_images ref="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp"/>
+<model:application
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:model="http://it.disim.univaq.ecommerce/model"
+    xsi:schemaLocation="http://it.disim.univaq.ecommerce/model /XtextMaterial/model/model.ecore"
+    name="Ecommerce_Application_1">
+  <app_have_shops
+      name="music_shop">
+    <shop_have_categories
+        name="Instruments"
+        active="true"
+        root_cat="true">
+      <have_sub_categories
+          name="Piano"
+          active="true">
+        <have_products
+            name="Yamaha B1 PE"
+            available="true"
+            stock="50"
+            height="109.0"
+            weight="174.0"
+            price="3444.0"
+            description="By way of example, b1 embodies the design principles">
+          <product_have_images
+              ref="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/192787/106414_800.webp"/>
         </have_products>
       </have_sub_categories>
-      <have_sub_categories name="Guitar" active="true">
-        <have_products name="Fender Player Series Strat MN BCR" available="true" stock="50" height="1.0" weight="5.0" price="666.0" description="Arguably the most famous model in the Fender line, this Fender Stratocaster player is a traditional take on the classic  with modern appointments.">
-          <product_have_images ref="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp"/>
-          <product_have_images ref="https://images.static-thomann.de/pics/bdb/439059/13206231_800.jpg"/>
-          <product_have_images ref="https://images.static-thomann.de/pics/bdb/439059/13206241_800.jpg"/>
+      <have_sub_categories
+          name="Guitar"
+          active="true">
+        <have_products
+            name="Fender Player Series Strat MN BCR"
+            available="true"
+            stock="50"
+            height="1.0"
+            weight="5.0"
+            price="666.0"
+            description="Arguably the most famous model in the Fender line, this Fender Stratocaster player is a traditional take on the classic  with modern appointments.">
+          <product_have_images
+              ref="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp"/>
+          <product_have_images
+              ref="https://images.static-thomann.de/pics/bdb/439059/13206231_800.jpg"/>
+          <product_have_images
+              ref="https://images.static-thomann.de/pics/bdb/439059/13206241_800.jpg"/>
         </have_products>
       </have_sub_categories>
     </shop_have_categories>
-    <shop_have_categories name="accessories">
-      <have_sub_categories name="guitar_accessories"/>
+    <shop_have_categories
+        name="accessories">
+      <have_sub_categories
+          name="guitar_accessories"/>
     </shop_have_categories>
-    <have_clients name="Lea" surname="Brown" username="LeBra" password="Pass!" active="true" email="leabra@extemail.com">
-      <customer_have_address name="HOME" country="America" state="Alabama" city="Birmingham" post_code="234234" phone="+01 234 234 2564" active="true" street_address="4455 Landing Lange"/>
-      <customer_have_cart name="cart_1" date_added="2021-07-08T01:00:00.000+0200">
-        <cart_have_items name="item_1" quantity="3" item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
-        <cart_have_items name="item_2" quantity="2" item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
-        <cart_have_order reference_number="abcd" date_created="2021-07-08T00:00:00.000+0200" order_state="COMMITTED" order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart">
-          <order_has_invoice name="invoice_1" invoice_id="12" date="2021-07-08T00:00:00.000+0200" invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart/@cart_have_order"/>
-          <order_have_shipment name="ship_1" shipment_status="TRAVELING" date="2021-07-08T00:00:00.000+0200" shipment_no="123" shipment_has_address="//@app_have_shops.0/@have_clients.0/@customer_have_address.0"/>
+    <have_clients
+        name="Lea"
+        surname="Brown"
+        username="LeBra"
+        password="Pass!"
+        active="true"
+        email="leabra@extemail.com">
+      <customer_have_address
+          name="HOME"
+          country="America"
+          state="Alabama"
+          city="Birmingham"
+          post_code="234234"
+          phone="+01 234 234 2564"
+          active="true"
+          street_address="4455 Landing Lange"/>
+      <customer_have_cart
+          name="cart_1"
+          date_added="2021-07-08T01:00:00.000+0200">
+        <cart_have_items
+            name="item_1"
+            quantity="3"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_products.0"/>
+        <cart_have_items
+            name="item_2"
+            quantity="2"
+            item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.0/@have_products.0"/>
+        <cart_have_order
+            reference_number="abcd"
+            date_created="2021-07-08T00:00:00.000+0200"
+            order_state="COMMITTED"
+            order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart">
+          <order_has_invoice
+              name="invoice_1"
+              invoice_id="12"
+              date="2021-07-08T00:00:00.000+0200"
+              invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart/@cart_have_order"/>
+          <order_have_shipment
+              name="ship_1"
+              shipment_status="TRAVELING"
+              date="2021-07-08T00:00:00.000+0200"
+              shipment_no="123"
+              shipment_has_address="//@app_have_shops.0/@have_clients.0/@customer_have_address.0"/>
         </cart_have_order>
       </customer_have_cart>
     </have_clients>
-    <shop_have_administrators name="Superadmin" surname="liam allan" username="lial_user" password="TopSecretPass!" active="true" email="email@musicshop.com"/>
+    <shop_have_administrators
+        name="Superadmin"
+        surname="liam allan"
+        username="lial_user"
+        password="TopSecretPass!"
+        active="true"
+        email="email@musicshop.com"/>
   </app_have_shops>
 </model:application>
