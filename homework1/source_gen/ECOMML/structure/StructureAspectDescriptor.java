@@ -33,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUser = createDescriptorForUser();
   /*package*/ final EnumerationDescriptor myEnumerationOrderStatus = new EnumerationDescriptor_OrderStatus();
   /*package*/ final EnumerationDescriptor myEnumerationShipmentStatus = new EnumerationDescriptor_ShipmentStatus();
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a070L, "date", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275888", "/^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef0a070L, "date", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275888", "^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypefloat = new ConstrainedStringDatatypeDescriptorImpl(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdcbb99fL, "float", "r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116512159", "^[0-9]+\\.[0-9]+$");
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -151,7 +151,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275852");
     b.version(2);
     b.aggregate("addresses", 0x4c007588fdca7d16L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09ff4L).optional(false).ordered(true).multiple(true).origin("5476506378116431126").done();
-    b.aggregate("cart", 0x73e26ff79fac5430L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f4bL).optional(true).ordered(true).multiple(false).origin("8350359768424797232").done();
+    b.aggregate("cart", 0x73e26ff79fac5430L).target(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x15d9852c2ef09f4bL).optional(true).ordered(true).multiple(true).origin("8350359768424797232").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEcommerceSystem() {
@@ -226,7 +226,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForShipment() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ECOMML", "Shipment", 0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c7fL);
     b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144255");
     b.version(2);
     b.property("shipment_status", 0x4c007588fdc61c82L).type(MetaIdFactory.dataTypeId(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61ca7L)).origin("5476506378116144258").done();

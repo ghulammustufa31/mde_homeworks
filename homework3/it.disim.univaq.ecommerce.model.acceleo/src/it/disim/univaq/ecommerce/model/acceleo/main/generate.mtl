@@ -114,7 +114,8 @@
 						<tbody>
 						[for (admin : Administrator| e_c.shop_have_administrators)]
 							[admin.generateAdminDetails()/]
-						    <tr>
+			
+			    <tr>
 						      <th scope="row">x</th>
 						      <td>[admin.username/]</td>
 						      <td>[admin.email/]</td>

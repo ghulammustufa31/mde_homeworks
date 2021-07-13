@@ -119,7 +119,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Shipment == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A shipment for the order");
-          cpb.presentationByName();
+          cpb.presentationByReference(0xec1bc844bf74e86L, 0x9b15a8f6767d0e4eL, 0x4c007588fdc61c7fL, 0x4c007588fdc61c8bL, "address", "", "");
           props_Shipment = cpb.create();
         }
         return props_Shipment;

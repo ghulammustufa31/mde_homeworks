@@ -19,7 +19,7 @@
       <unit at="10,0,52,0" name="ECOMML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="20,0,252,0" name="ECOMML.structure.StructureAspectDescriptor" />
+      <unit at="20,0,251,0" name="ECOMML.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275541">
@@ -81,23 +81,23 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1574435969555275586" at="33,0,34,0" concept="2" trace="myConceptUser" />
       <node id="1574435969555275586" at="83,38,84,29" concept="6" />
-      <node id="1574435969555275586" at="238,62,239,144" concept="5" />
-      <node id="1574435969555275586" at="239,144,240,33" concept="1" />
-      <node id="1574435969555275586" at="240,33,241,71" concept="1" />
-      <node id="1574435969555275586" at="241,71,242,93" concept="1" />
-      <node id="1574435969555275586" at="242,93,243,17" concept="1" />
-      <node id="1574435969555275633" at="243,17,244,113" concept="1" />
-      <node id="1574435969555275636" at="244,113,245,114" concept="1" />
-      <node id="1574435969555275640" at="245,114,246,114" concept="1" />
-      <node id="1574435969555275645" at="246,114,247,113" concept="1" />
-      <node id="1574435969555275651" at="247,113,248,111" concept="1" />
-      <node id="1574435969555275586" at="248,111,249,22" concept="6" />
-      <node id="1574435969555275586" at="238,0,251,0" concept="8" trace="createDescriptorForUser#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1574435969555275586" at="237,62,238,144" concept="5" />
+      <node id="1574435969555275586" at="238,144,239,33" concept="1" />
+      <node id="1574435969555275586" at="239,33,240,71" concept="1" />
+      <node id="1574435969555275586" at="240,71,241,93" concept="1" />
+      <node id="1574435969555275586" at="241,93,242,17" concept="1" />
+      <node id="1574435969555275633" at="242,17,243,113" concept="1" />
+      <node id="1574435969555275636" at="243,113,244,114" concept="1" />
+      <node id="1574435969555275640" at="244,114,245,114" concept="1" />
+      <node id="1574435969555275645" at="245,114,246,113" concept="1" />
+      <node id="1574435969555275651" at="246,113,247,111" concept="1" />
+      <node id="1574435969555275586" at="247,111,248,22" concept="6" />
+      <node id="1574435969555275586" at="237,0,250,0" concept="8" trace="createDescriptorForUser#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1574435969555275586" at="83,38,84,29" />
-      <scope id="1574435969555275586" at="238,62,249,22">
+      <scope id="1574435969555275586" at="237,62,248,22">
         <var name="b" id="1574435969555275586" />
       </scope>
-      <scope id="1574435969555275586" at="238,0,251,0" />
+      <scope id="1574435969555275586" at="237,0,250,0" />
     </file>
   </root>
   <root nodeRef="r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/1574435969555275589">
@@ -440,8 +440,8 @@
       <node id="1574435969555275852" at="150,71,151,93" concept="1" />
       <node id="1574435969555275852" at="151,93,152,17" concept="1" />
       <node id="5476506378116431126" at="152,17,153,201" concept="1" />
-      <node id="8350359768424797232" at="153,201,154,196" concept="1" />
-      <node id="1574435969555275852" at="154,196,155,22" concept="6" />
+      <node id="8350359768424797232" at="153,201,154,195" concept="1" />
+      <node id="1574435969555275852" at="154,195,155,22" concept="6" />
       <node id="1574435969555275852" at="146,0,157,0" concept="8" trace="createDescriptorForCustomer#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1574435969555275852" at="67,42,68,33" />
       <scope id="1574435969555275852" at="146,66,155,22">
@@ -547,8 +547,8 @@
       <node id="5476506378116144255" at="23,0,24,0" concept="2" trace="props_Shipment" />
       <node id="5476506378116144255" at="119,37,120,76" concept="5" />
       <node id="5476506378116144255" at="120,76,121,52" concept="1" />
-      <node id="5476506378116144255" at="121,52,122,35" concept="1" />
-      <node id="5476506378116144255" at="122,35,123,40" concept="1" />
+      <node id="5476506378116144255" at="121,52,122,140" concept="1" />
+      <node id="5476506378116144255" at="122,140,123,40" concept="1" />
       <node id="5476506378116144255" at="124,9,125,30" concept="6" />
       <node id="5476506378116144255" at="118,42,124,9" concept="3" />
       <scope id="5476506378116144255" at="119,37,123,40">
@@ -565,20 +565,19 @@
       <node id="5476506378116144255" at="81,42,82,33" concept="6" />
       <node id="5476506378116144255" at="226,66,227,148" concept="5" />
       <node id="5476506378116144255" at="227,148,228,34" concept="1" />
-      <node id="5476506378116144255" at="228,34,229,71" concept="1" />
-      <node id="5476506378116144255" at="229,71,230,93" concept="1" />
-      <node id="5476506378116144255" at="230,93,231,17" concept="1" />
-      <node id="5476506378116144258" at="231,17,232,185" concept="1" />
-      <node id="5476506378116144260" at="232,185,233,174" concept="1" />
-      <node id="5476506378116144263" at="233,174,234,117" concept="1" />
-      <node id="5476506378116144267" at="234,117,235,170" concept="1" />
-      <node id="5476506378116144255" at="235,170,236,22" concept="6" />
-      <node id="5476506378116144255" at="226,0,238,0" concept="8" trace="createDescriptorForShipment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="5476506378116144255" at="228,34,229,93" concept="1" />
+      <node id="5476506378116144255" at="229,93,230,17" concept="1" />
+      <node id="5476506378116144258" at="230,17,231,185" concept="1" />
+      <node id="5476506378116144260" at="231,185,232,174" concept="1" />
+      <node id="5476506378116144263" at="232,174,233,117" concept="1" />
+      <node id="5476506378116144267" at="233,117,234,170" concept="1" />
+      <node id="5476506378116144255" at="234,170,235,22" concept="6" />
+      <node id="5476506378116144255" at="226,0,237,0" concept="8" trace="createDescriptorForShipment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="5476506378116144255" at="81,42,82,33" />
-      <scope id="5476506378116144255" at="226,66,236,22">
+      <scope id="5476506378116144255" at="226,66,235,22">
         <var name="b" id="5476506378116144255" />
       </scope>
-      <scope id="5476506378116144255" at="226,0,238,0" />
+      <scope id="5476506378116144255" at="226,0,237,0" />
     </file>
   </root>
   <root nodeRef="r:574a9064-41ef-49c4-a078-66bb8bceb412(ECOMML.structure)/5476506378116144295">

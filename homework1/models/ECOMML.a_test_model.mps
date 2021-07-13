@@ -13,6 +13,7 @@
       </concept>
       <concept id="5476506378116144255" name="ECOMML.structure.Shipment" flags="ng" index="2LLABR">
         <property id="5476506378116144258" name="shipment_status" index="2LLA$a" />
+        <property id="5476506378116144260" name="date" index="2LLA$c" />
         <property id="5476506378116144263" name="shipment_no" index="2LLA$f" />
         <reference id="5476506378116144267" name="address" index="2LLA$3" />
       </concept>
@@ -62,9 +63,11 @@
         <property id="1574435969555275776" name="city" index="VaikG" />
       </concept>
       <concept id="1574435969555275832" name="ECOMML.structure.Invoice" flags="ng" index="Vaikk">
+        <property id="5476506378116144252" name="date" index="2LLABO" />
         <property id="1574435969555275835" name="invoice_id" index="Vaikn" />
       </concept>
       <concept id="1574435969555275802" name="ECOMML.structure.Order" flags="ng" index="VaikQ">
+        <property id="1574435969555275819" name="date_created" index="Vaik7" />
         <property id="1574435969555275814" name="order_status" index="Vaika" />
         <property id="1574435969555275810" name="total_price" index="Vaike" />
         <property id="1574435969555275807" name="reference_number" index="VaikN" />
@@ -113,16 +116,18 @@
           <property role="TrG5h" value="OrderFirstCart" />
           <property role="VaikN" value="0094454532" />
           <property role="Vaike" value="96.0" />
-          <property role="Vaika" value="1npxiKIWa1B/PAID" />
-          <node concept="2LLABR" id="4ZUio0ONaCq" role="2LLA_Q">
-            <property role="TrG5h" value="ShipmentFromItaly" />
+          <property role="Vaika" value="4K0tozXLxMu/UNPAID" />
+          <property role="Vaik7" value="2021-06-23" />
+          <node concept="2LLABR" id="58xfnuIPJbR" role="2LLA_Q">
+            <property role="2LLA$f" value="93373423" />
             <property role="2LLA$a" value="4K0tozXLxMC/PENDING" />
-            <property role="2LLA$f" value="123123" />
+            <property role="2LLA$c" value="2021-03-01" />
             <ref role="2LLA$3" node="4ZUio0OM86M" resolve="Home " />
           </node>
           <node concept="Vaikk" id="4ZUio0OM8d5" role="Vaile">
             <property role="TrG5h" value="InvoiceOrderFirstCart" />
             <property role="Vaikn" value="1" />
+            <property role="2LLABO" value="2021-03-01" />
           </node>
         </node>
       </node>
@@ -209,11 +214,12 @@
         <property role="VahEK" value="2" />
         <node concept="VahD$" id="3b_VjWVOP7Y" role="2LLAA_">
           <property role="TrG5h" value="Fender Player Series Strat MN BCR" />
-          <property role="VahE2" value="0" />
+          <property role="VahE2" value="4" />
           <property role="VahEu" value="1.0" />
           <property role="VahEr" value="5.0" />
           <property role="VahEh" value="666.0" />
           <property role="VahFw" value="Arguably the most famous model in the Fender line, this Fender Stratocaster player is a traditional take on the classic with modern appointments. The Fender Stratocaster player features three powerful Single Player Series coils with Alnico V magnets for crisp, clear Strat sounds, whose classic circuitry with master volume control and two tone controls produces typical Strat sounds from all positions.\n\nOther Fender Player Series Strat features include a synchronized 2-point Tremolo for Vibrato sounds, a solid and precise die-cast action and a classic three-ply Pickguard saddle, while the synthetic bone saddle promotes attack-rich and resonant sounds." />
+          <property role="VahE7" value="true" />
           <node concept="2LLABu" id="3b_VjWVOP80" role="2LLABh">
             <property role="2LLABv" value="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/439059/13206226_800.webp" />
           </node>
@@ -227,8 +233,8 @@
       </node>
     </node>
     <node concept="Vailw" id="3b_VjWVOptV" role="VaAJw">
-      <property role="TrG5h" value="customer_1" />
-      <property role="VahDt" value="Lea Brown" />
+      <property role="TrG5h" value="Lea" />
+      <property role="VahDt" value="Brown" />
       <property role="VahDo" value="LeBra" />
       <property role="VahDk" value="Pass!" />
       <property role="VahDh" value="true" />
@@ -254,23 +260,37 @@
           <property role="TrG5h" value="order_1" />
           <property role="VaikN" value="abcd" />
           <property role="Vaike" value="10.0" />
-          <property role="Vaika" value="1npxiKIWa1B/paid" />
-          <node concept="2LLABR" id="7fyrZuvGGkr" role="2LLA_Q">
-            <property role="TrG5h" value="ship_1" />
-            <property role="2LLA$a" value="4K0tozXLxMC/pending" />
-            <property role="2LLA$f" value="123" />
+          <property role="Vaika" value="1npxiKIWa1C/COMMITED" />
+          <property role="Vaik7" value="2021-07-12" />
+          <node concept="2LLABR" id="58xfnuIPJbV" role="2LLA_Q">
+            <property role="2LLA$f" value="123123123" />
+            <property role="2LLA$a" value="4K0tozXLxMD/TRAVELING" />
+            <property role="2LLA$c" value="2021-07-12" />
             <ref role="2LLA$3" node="4ZUio0ONaCF" resolve="Home" />
+          </node>
+          <node concept="2LLABR" id="58xfnuIPJbZ" role="2LLA_Q">
+            <property role="2LLA$f" value="123123124" />
+            <property role="2LLA$a" value="4K0tozXLxMG/DELIVERED" />
+            <property role="2LLA$c" value="2021-07-12" />
+            <ref role="2LLA$3" node="4ZUio0ONaCM" resolve="Work" />
+          </node>
+          <node concept="2LLABR" id="58xfnuIVrWK" role="2LLA_Q">
+            <property role="2LLA$f" value="123123126" />
+            <property role="2LLA$a" value="4K0tozXLxMC/PENDING" />
+            <property role="2LLA$c" value="2021-07-12" />
+            <ref role="2LLA$3" node="4ZUio0ONaCs" resolve="MainAddress" />
           </node>
           <node concept="Vaikk" id="7fyrZuvGGkp" role="Vaile">
             <property role="TrG5h" value="invoice_1" />
             <property role="Vaikn" value="12" />
+            <property role="2LLABO" value="2021-07-12" />
           </node>
         </node>
       </node>
     </node>
     <node concept="Vailw" id="3b_VjWVOP7H" role="VaAJw">
-      <property role="TrG5h" value="customer_2" />
-      <property role="VahDt" value="Wilfred Roth" />
+      <property role="TrG5h" value="Wilfred" />
+      <property role="VahDt" value="Roth" />
       <property role="VahDo" value="Wilro" />
       <property role="VahDk" value="WRP!" />
       <property role="VahDh" value="true" />

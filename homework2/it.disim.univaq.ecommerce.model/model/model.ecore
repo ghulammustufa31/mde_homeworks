@@ -183,8 +183,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="Customer" eSuperTypes="#//User">
     <eStructuralFeatures xsi:type="ecore:EReference" name="customer_have_address"
         lowerBound="1" upperBound="-1" eType="#//Address" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="customer_have_cart" eType="#//Cart"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customer_have_cart" upperBound="-1"
+        eType="#//Cart" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ShipmentStatus">
     <eLiterals name="PENDING"/>

@@ -396,6 +396,7 @@
       <property role="IQ2ns" value="8350359768424797232" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cart" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1npxiKIW9Xb" resolve="Cart" />
     </node>
   </node>
@@ -419,7 +420,7 @@
   <node concept="Az7Fb" id="1npxiKIWa1K">
     <property role="3F6X1D" value="1574435969555275888" />
     <property role="TrG5h" value="date" />
-    <property role="FLfZY" value="/^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/" />
+    <property role="FLfZY" value="^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$" />
     <property role="3GE5qa" value="DataTypes" />
   </node>
   <node concept="1TIwiD" id="4K0tozXLxLm">
@@ -439,9 +440,6 @@
     <property role="R4oN_" value="A shipment for the order" />
     <property role="3GE5qa" value="Order" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4K0tozXLxM0" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="4K0tozXLxM2" role="1TKVEl">
       <property role="IQ2nx" value="5476506378116144258" />
       <property role="TrG5h" value="shipment_status" />
