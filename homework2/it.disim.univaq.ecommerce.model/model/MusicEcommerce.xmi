@@ -89,12 +89,12 @@
             reference_number="123123123"
             date_created="2021-07-12T00:00:00.000+0200"
             order_state="COMMITTED"
-            order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart">
+            order_for_cart="//@app_have_shops.0/@have_clients.0/@customer_have_cart.0">
           <order_has_invoice
               name="InvoiceForOrder123123123"
               invoice_id="1"
               date="2021-07-12T00:00:00.000+0200"
-              invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart/@cart_have_order"/>
+              invoice_for_order="//@app_have_shops.0/@have_clients.0/@customer_have_cart.0/@cart_have_order"/>
           <order_have_shipment
               name="Shipment1ForOrder"
               date="2021-07-07T00:00:00.000+0200"
