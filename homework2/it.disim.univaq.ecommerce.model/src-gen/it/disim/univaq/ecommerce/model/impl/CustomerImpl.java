@@ -8,17 +8,12 @@ import it.disim.univaq.ecommerce.model.Customer;
 import it.disim.univaq.ecommerce.model.ModelPackage;
 
 import java.util.Collection;
-
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -48,14 +43,14 @@ public class CustomerImpl extends UserImpl implements Customer {
 	protected EList<Address> customer_have_address;
 
 	/**
-	 * The cached value of the '{@link #getCustomer_have_cart() <em>Customer have cart</em>}' containment reference.
+	 * The cached value of the '{@link #getCustomer_have_cart() <em>Customer have cart</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCustomer_have_cart()
 	 * @generated
 	 * @ordered
 	 */
-	protected Cart customer_have_cart;
+	protected EList<Cart> customer_have_cart;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,49 +89,12 @@ public class CustomerImpl extends UserImpl implements Customer {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Cart getCustomer_have_cart() {
-		return customer_have_cart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetCustomer_have_cart(Cart newCustomer_have_cart, NotificationChain msgs) {
-		Cart oldCustomer_have_cart = customer_have_cart;
-		customer_have_cart = newCustomer_have_cart;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART, oldCustomer_have_cart, newCustomer_have_cart);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
+	public EList<Cart> getCustomer_have_cart() {
+		if (customer_have_cart == null) {
+			customer_have_cart = new EObjectContainmentEList<Cart>(Cart.class, this,
+					ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART);
 		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCustomer_have_cart(Cart newCustomer_have_cart) {
-		if (newCustomer_have_cart != customer_have_cart) {
-			NotificationChain msgs = null;
-			if (customer_have_cart != null)
-				msgs = ((InternalEObject) customer_have_cart).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART, null, msgs);
-			if (newCustomer_have_cart != null)
-				msgs = ((InternalEObject) newCustomer_have_cart).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART, null, msgs);
-			msgs = basicSetCustomer_have_cart(newCustomer_have_cart, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART,
-					newCustomer_have_cart, newCustomer_have_cart));
+		return customer_have_cart;
 	}
 
 	/**
@@ -150,7 +108,7 @@ public class CustomerImpl extends UserImpl implements Customer {
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_ADDRESS:
 			return ((InternalEList<?>) getCustomer_have_address()).basicRemove(otherEnd, msgs);
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART:
-			return basicSetCustomer_have_cart(null, msgs);
+			return ((InternalEList<?>) getCustomer_have_cart()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -185,7 +143,8 @@ public class CustomerImpl extends UserImpl implements Customer {
 			getCustomer_have_address().addAll((Collection<? extends Address>) newValue);
 			return;
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART:
-			setCustomer_have_cart((Cart) newValue);
+			getCustomer_have_cart().clear();
+			getCustomer_have_cart().addAll((Collection<? extends Cart>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -203,7 +162,7 @@ public class CustomerImpl extends UserImpl implements Customer {
 			getCustomer_have_address().clear();
 			return;
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART:
-			setCustomer_have_cart((Cart) null);
+			getCustomer_have_cart().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -220,7 +179,7 @@ public class CustomerImpl extends UserImpl implements Customer {
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_ADDRESS:
 			return customer_have_address != null && !customer_have_address.isEmpty();
 		case ModelPackage.CUSTOMER__CUSTOMER_HAVE_CART:
-			return customer_have_cart != null;
+			return customer_have_cart != null && !customer_have_cart.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

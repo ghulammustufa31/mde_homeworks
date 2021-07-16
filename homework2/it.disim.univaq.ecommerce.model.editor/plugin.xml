@@ -33,4 +33,5 @@
             contributorClass="it.disim.univaq.ecommerce.model.presentation.ModelActionBarContributor">
       </editor>
    </extension>
+
 </plugin>

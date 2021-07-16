@@ -9,8 +9,7 @@ Bundle-Activator: it.disim.univaq.ecommerce.model.presentation.ModelEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: it.disim.univaq.ecommerce.ecommerce_application.presentation,
- it.disim.univaq.ecommerce.model.presentation
+Export-Package: it.disim.univaq.ecommerce.model.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  it.disim.univaq.ecommerce.model.edit;visibility:=reexport,

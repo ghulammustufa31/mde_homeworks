@@ -23,7 +23,7 @@
             name="Piano">
           <have_products
               name="Fender Piano"
-              stock="50"
+              stock="5"
               height="50.0"
               weight="50.0"
               price="5000.0"
@@ -63,7 +63,7 @@
         name="Anna"
         surname="Masha"
         username="MaAn"
-        password="re34rfref34"
+        password="123456$#"
         active="true"
         email="frederic@yahoo.ca">
       <customer_have_address
@@ -83,7 +83,7 @@
             item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_sub_categories.1/@have_products.0"/>
         <cart_have_items
             name="It32424"
-            quantity="4"
+            quantity="1"
             item_cart_have_product="//@app_have_shops.0/@shop_have_categories.0/@have_sub_categories.1/@have_sub_categories.1/@have_products.0"/>
         <cart_have_order
             reference_number="123123123"

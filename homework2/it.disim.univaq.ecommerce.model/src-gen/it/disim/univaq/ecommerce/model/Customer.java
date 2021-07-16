@@ -35,25 +35,15 @@ public interface Customer extends User {
 	EList<Address> getCustomer_have_address();
 
 	/**
-	 * Returns the value of the '<em><b>Customer have cart</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Customer have cart</b></em>' containment reference list.
+	 * The list contents are of type {@link it.disim.univaq.ecommerce.model.Cart}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Customer have cart</em>' containment reference.
-	 * @see #setCustomer_have_cart(Cart)
+	 * @return the value of the '<em>Customer have cart</em>' containment reference list.
 	 * @see it.disim.univaq.ecommerce.model.ModelPackage#getCustomer_Customer_have_cart()
 	 * @model containment="true"
 	 * @generated
 	 */
-	Cart getCustomer_have_cart();
-
-	/**
-	 * Sets the value of the '{@link it.disim.univaq.ecommerce.model.Customer#getCustomer_have_cart <em>Customer have cart</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Customer have cart</em>' containment reference.
-	 * @see #getCustomer_have_cart()
-	 * @generated
-	 */
-	void setCustomer_have_cart(Cart value);
+	EList<Cart> getCustomer_have_cart();
 
 } // Customer

@@ -1128,7 +1128,7 @@ public interface ModelPackage extends EPackage {
 	int CUSTOMER__CUSTOMER_HAVE_ADDRESS = USER_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Customer have cart</b></em>' containment reference.
+	 * The feature id for the '<em><b>Customer have cart</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1953,10 +1953,10 @@ public interface ModelPackage extends EPackage {
 	EReference getCustomer_Customer_have_address();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link it.disim.univaq.ecommerce.model.Customer#getCustomer_have_cart <em>Customer have cart</em>}'.
+	 * Returns the meta object for the containment reference list '{@link it.disim.univaq.ecommerce.model.Customer#getCustomer_have_cart <em>Customer have cart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Customer have cart</em>'.
+	 * @return the meta object for the containment reference list '<em>Customer have cart</em>'.
 	 * @see it.disim.univaq.ecommerce.model.Customer#getCustomer_have_cart()
 	 * @see #getCustomer()
 	 * @generated
@@ -2608,7 +2608,7 @@ public interface ModelPackage extends EPackage {
 		EReference CUSTOMER__CUSTOMER_HAVE_ADDRESS = eINSTANCE.getCustomer_Customer_have_address();
 
 		/**
-		 * The meta object literal for the '<em><b>Customer have cart</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Customer have cart</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

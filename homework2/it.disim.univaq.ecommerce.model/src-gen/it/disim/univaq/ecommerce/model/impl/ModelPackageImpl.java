@@ -1231,7 +1231,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEReference(getCustomer_Customer_have_address(), this.getAddress(), null, "customer_have_address", null, 1,
 				-1, Customer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomer_Customer_have_cart(), this.getCart(), null, "customer_have_cart", null, 0, 1,
+		initEReference(getCustomer_Customer_have_cart(), this.getCart(), null, "customer_have_cart", null, 0, -1,
 				Customer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

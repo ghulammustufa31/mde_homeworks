@@ -12,7 +12,9 @@ helper context MM!Product def : getImages : String = self.product_have_images->c
  
 --- Returns all the orders of the customer
 helper context MM!Customer def : getAllOrdersOfCustomer() : Sequence(MM!Order) = if self.customer_have_cart.oclIsUndefined() 
-							then Sequence {} else Sequence{self.customer_have_cart.cart_have_order} endif;
+							then Sequence {} else Sequence{self.customer_have_cart->collect(c | c.cart_have_order)} endif;
+							
+							
 
 --- Returns the order of the shipment
 helper context MM!Shipment def : getShipmentOrder() : MM!Order = MM!Order.allInstances()->select(o | o.order_have_shipment.includes(self));
